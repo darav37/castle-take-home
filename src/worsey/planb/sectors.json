@@ -1,0 +1,176 @@
+{
+ "source": "sector factors (#215) and earnings spillover (#216)",
+ "sectors": {
+  "semis": {
+   "etf": "SMH",
+   "two_day_move_median": 0.578,
+   "two_day_move_p90": 1.538,
+   "two_day_move_p95": 1.973,
+   "residual_daily_sd": 0.00949,
+   "spillover_fraction": 0.118,
+   "spillover_same_direction": 0.633
+  },
+  "software": {
+   "etf": "IGV",
+   "two_day_move_median": 0.672,
+   "two_day_move_p90": 1.863,
+   "two_day_move_p95": 2.471,
+   "residual_daily_sd": 0.00602,
+   "spillover_fraction": 0.007,
+   "spillover_same_direction": 0.55
+  },
+  "internet": {
+   "etf": "FDN",
+   "two_day_move_median": 0.73,
+   "two_day_move_p90": 2.03,
+   "two_day_move_p95": 2.534,
+   "residual_daily_sd": 0.00505,
+   "spillover_fraction": 0.0,
+   "spillover_same_direction": null
+  },
+  "regional banks": {
+   "etf": "KRE",
+   "two_day_move_median": 0.57,
+   "two_day_move_p90": 1.565,
+   "two_day_move_p95": 1.93,
+   "residual_daily_sd": 0.00929,
+   "spillover_fraction": 0.252,
+   "spillover_same_direction": 0.678
+  },
+  "insurers": {
+   "etf": "KIE",
+   "two_day_move_median": 0.586,
+   "two_day_move_p90": 1.66,
+   "two_day_move_p95": 2.138,
+   "residual_daily_sd": 0.00595,
+   "spillover_fraction": 0.0,
+   "spillover_same_direction": 0.56
+  },
+  "biotech": {
+   "etf": "XBI",
+   "two_day_move_median": 0.657,
+   "two_day_move_p90": 1.752,
+   "two_day_move_p95": 2.17,
+   "residual_daily_sd": 0.0107,
+   "spillover_fraction": 0.011,
+   "spillover_same_direction": 0.5
+  },
+  "medtech": {
+   "etf": "IHI",
+   "two_day_move_median": 0.611,
+   "two_day_move_p90": 1.659,
+   "two_day_move_p95": 2.114,
+   "residual_daily_sd": 0.00536,
+   "spillover_fraction": 0.0,
+   "spillover_same_direction": 0.368
+  },
+  "energy stocks": {
+   "etf": "XLE",
+   "two_day_move_median": 0.556,
+   "two_day_move_p90": 1.519,
+   "two_day_move_p95": 1.866,
+   "residual_daily_sd": 0.00658,
+   "spillover_fraction": 0.127,
+   "spillover_same_direction": 0.621
+  },
+  "industrials": {
+   "etf": "XLI",
+   "two_day_move_median": 0.51,
+   "two_day_move_p90": 1.384,
+   "two_day_move_p95": 1.686,
+   "residual_daily_sd": 0.00505,
+   "spillover_fraction": 0.086,
+   "spillover_same_direction": 0.594
+  },
+  "defense": {
+   "etf": "ITA",
+   "two_day_move_median": 0.48,
+   "two_day_move_p90": 1.34,
+   "two_day_move_p95": 1.66,
+   "residual_daily_sd": 0.00963,
+   "spillover_fraction": 0.079,
+   "spillover_same_direction": 0.552
+  },
+  "homebuilders": {
+   "etf": "ITB",
+   "two_day_move_median": 0.508,
+   "two_day_move_p90": 1.36,
+   "two_day_move_p95": 1.688,
+   "residual_daily_sd": 0.01467,
+   "spillover_fraction": 0.019,
+   "spillover_same_direction": 0.506
+  },
+  "transports": {
+   "etf": "IYT",
+   "two_day_move_median": 0.641,
+   "two_day_move_p90": 1.676,
+   "two_day_move_p95": 2.146,
+   "residual_daily_sd": 0.00679,
+   "spillover_fraction": 0.161,
+   "spillover_same_direction": 0.644
+  },
+  "consumer discretionary": {
+   "etf": "XLY",
+   "two_day_move_median": 0.688,
+   "two_day_move_p90": 2.02,
+   "two_day_move_p95": 2.551,
+   "residual_daily_sd": 0.00429,
+   "spillover_fraction": 0.067,
+   "spillover_same_direction": 0.596
+  },
+  "retail": {
+   "etf": "XRT",
+   "two_day_move_median": 0.609,
+   "two_day_move_p90": 1.617,
+   "two_day_move_p95": 2.05,
+   "residual_daily_sd": 0.00815,
+   "spillover_fraction": 0.0,
+   "spillover_same_direction": 0.497
+  },
+  "staples": {
+   "etf": "XLP",
+   "two_day_move_median": 0.595,
+   "two_day_move_p90": 1.665,
+   "two_day_move_p95": 2.228,
+   "residual_daily_sd": 0.00489,
+   "spillover_fraction": 0.072,
+   "spillover_same_direction": 0.591
+  },
+  "utilities": {
+   "etf": "XLU",
+   "two_day_move_median": 0.556,
+   "two_day_move_p90": 1.519,
+   "two_day_move_p95": 1.866,
+   "residual_daily_sd": 0.00658,
+   "spillover_fraction": 0.0,
+   "spillover_same_direction": null
+  },
+  "real estate": {
+   "etf": "IYR",
+   "two_day_move_median": 0.553,
+   "two_day_move_p90": 1.445,
+   "two_day_move_p95": 1.774,
+   "residual_daily_sd": 0.00781,
+   "spillover_fraction": 0.048,
+   "spillover_same_direction": 0.574
+  },
+  "materials": {
+   "etf": "XLB",
+   "two_day_move_median": 0.526,
+   "two_day_move_p90": 1.449,
+   "two_day_move_p95": 1.811,
+   "residual_daily_sd": 0.00641,
+   "spillover_fraction": 0.101,
+   "spillover_same_direction": 0.601
+  },
+  "metals & mining": {
+   "etf": "XME",
+   "two_day_move_median": 0.704,
+   "two_day_move_p90": 1.776,
+   "two_day_move_p95": 2.285,
+   "residual_daily_sd": 0.01052,
+   "spillover_fraction": 0.0,
+   "spillover_same_direction": null
+  }
+ }
+}

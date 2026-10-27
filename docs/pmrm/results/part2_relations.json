@@ -1,0 +1,567 @@
+{
+ "pairs": 35,
+ "agreement": 0.9714285714285714,
+ "bounds_checks": [
+  {
+   "event": "US CPI rises more than 0.3% month over month in October 2026",
+   "market": "KXCPI-26OCT-T0.3",
+   "price": 0.225,
+   "lo": 0.0,
+   "hi": 1.0,
+   "holds": true,
+   "from": []
+  },
+  {
+   "event": "The US average gas price goes above $6.00 by Dec 31, 2026",
+   "market": "KXAAAGASMAX-26DEC31-6.00",
+   "price": 0.085,
+   "lo": 0.0,
+   "hi": 1.0,
+   "holds": true,
+   "from": []
+  },
+  {
+   "event": "The Fed keeps rates unchanged at its October 2026 meeting",
+   "market": "KXFEDDECISION-26OCT-H0",
+   "price": 0.925,
+   "lo": 0.0,
+   "hi": 0.935,
+   "holds": true,
+   "from": [
+    "KXFEDDECISION-26OCT-H25"
+   ]
+  },
+  {
+   "event": "Benjamin Netanyahu leaves office as Israel's prime minister before Jan 1, 2027",
+   "market": "KXLEADERSOUT-27JAN01-BNETISR",
+   "price": 0.385,
+   "lo": 0.0,
+   "hi": 1.0,
+   "holds": true,
+   "from": []
+  }
+ ],
+ "bounds_hold": true,
+ "rows": [
+  {
+   "event": "US CPI rises more than 0.3% month over month in October 2026",
+   "market": "KXCPI-26OCT-T0.3",
+   "title": "Will CPI rise more than 0.3% in October 2026?",
+   "gold": [
+    "same"
+   ],
+   "got": "same",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Same variable, October 2026 MoM CPI, above 0.3% threshold"
+  },
+  {
+   "event": "US CPI rises more than 0.3% month over month in October 2026",
+   "market": "KXCPI-26NOV-T0.2",
+   "title": "Will CPI rise more than 0.2% in November 2026?",
+   "gold": [
+    "correlated",
+    "unrelated"
+   ],
+   "got": "unrelated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Different month's CPI; no logical link, only weak correlation"
+  },
+  {
+   "event": "US CPI rises more than 0.3% month over month in October 2026",
+   "market": "KXFEDDECISION-26DEC-H25",
+   "title": "Will the Federal Reserve Hike rates by 25bps at their December 2026 meeting?",
+   "gold": [
+    "correlated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Hot inflation may raise hike odds; no logical implication"
+  },
+  {
+   "event": "US CPI rises more than 0.35% month over month in October 2026",
+   "market": "KXCPI-26OCT-T0.3",
+   "title": "Will CPI rise more than 0.3% in October 2026?",
+   "gold": [
+    "other_strike",
+    "E_implies_M"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 0.35,
+   "deadline": null,
+   "why": "Same October CPI MoM variable; E uses a 0.35% threshold, market uses 0.3%.",
+   "derived": {
+    "p": 0.15250000000000002,
+    "reason": "interpolated between strikes [-0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5] (above-k markets)"
+   }
+  },
+  {
+   "event": "US CPI rises more than 0.35% month over month in October 2026",
+   "market": "KXCPI-26OCT-T0.4",
+   "title": "Will CPI rise more than 0.4% in October 2026?",
+   "gold": [
+    "other_strike",
+    "M_implies_E"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 0.35,
+   "deadline": null,
+   "why": "Same October CPI MoM variable; E uses a 0.35% threshold, market uses 0.4%.",
+   "derived": {
+    "p": 0.15250000000000002,
+    "reason": "interpolated between strikes [-0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5] (above-k markets)"
+   }
+  },
+  {
+   "event": "US CPI rises more than 0.35% month over month in October 2026",
+   "market": "KXRECSSNBER-26",
+   "title": "Will there be a recession in 2026?",
+   "gold": [
+    "correlated",
+    "unrelated"
+   ],
+   "got": "unrelated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Monthly CPI print has no logical link to two negative GDP quarters."
+  },
+  {
+   "event": "The US average gas price goes above $5.50 by Dec 31, 2026",
+   "market": "KXAAAGASMAX-26DEC31-5.40",
+   "title": "Will average **gas prices** be above $5.40 by Dec 31, 2026?",
+   "gold": [
+    "other_strike",
+    "E_implies_M"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 5.5,
+   "deadline": null,
+   "why": "Same AAA max-price variable; E is above 5.50 vs 5.40",
+   "derived": {
+    "p": 0.125,
+    "reason": "interpolated between strikes [4.6, 4.8, 5.0, 5.2, 5.4, 5.6, 5.8, 6.0, 6.2, 6.4, 6.8, 7.0] (above-k markets)"
+   }
+  },
+  {
+   "event": "The US average gas price goes above $5.50 by Dec 31, 2026",
+   "market": "KXAAAGASMAX-26DEC31-5.60",
+   "title": "Will average **gas prices** be above $5.60 by Dec 31, 2026?",
+   "gold": [
+    "other_strike",
+    "M_implies_E"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 5.5,
+   "deadline": null,
+   "why": "Same AAA max-price variable; E threshold 5.50 below market's 5.60",
+   "derived": {
+    "p": 0.125,
+    "reason": "interpolated between strikes [4.6, 4.8, 5.0, 5.2, 5.4, 5.6, 5.8, 6.0, 6.2, 6.4, 6.8, 7.0] (above-k markets)"
+   }
+  },
+  {
+   "event": "The US average gas price goes above $5.50 by Dec 31, 2026",
+   "market": "KXAAAGASMAXCA-26DEC31-7.00",
+   "title": "Will average **gas prices** be above or below $7.00 by Dec 31, 2026?",
+   "gold": [
+    "correlated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "California price versus national average; related, no implication"
+  },
+  {
+   "event": "The US average gas price goes above $6.00 by Dec 31, 2026",
+   "market": "KXAAAGASMAX-26DEC31-6.00",
+   "title": "Will average **gas prices** be above $6.00 by Dec 31, 2026?",
+   "gold": [
+    "same"
+   ],
+   "got": "same",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Same variable, $6.00 threshold, same Dec 31, 2026 deadline"
+  },
+  {
+   "event": "The US average gas price goes above $6.00 by Dec 31, 2026",
+   "market": "KXAAAGASMAX-26DEC31-5.00",
+   "title": "Will average **gas prices** be above $5.00 by Dec 31, 2026?",
+   "gold": [
+    "E_implies_M",
+    "other_strike"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 6.0,
+   "deadline": null,
+   "why": "Same variable and deadline; E uses a $6.00 threshold, above this $5.00 one",
+   "derived": {
+    "p": 0.085,
+    "reason": "interpolated between strikes [4.6, 4.8, 5.0, 5.2, 5.4, 5.6, 5.8, 6.0, 6.2, 6.4, 6.8, 7.0] (above-k markets)"
+   }
+  },
+  {
+   "event": "The US average gas price goes above $6.00 by Dec 31, 2026",
+   "market": "KXAAAGASMAX-26DEC31-7.00",
+   "title": "Will average **gas prices** be above $7.00 by Dec 31, 2026?",
+   "gold": [
+    "M_implies_E",
+    "other_strike"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 6.0,
+   "deadline": null,
+   "why": "Same variable and deadline; E uses a $6.00 threshold, below this $7.00 one",
+   "derived": {
+    "p": 0.085,
+    "reason": "interpolated between strikes [4.6, 4.8, 5.0, 5.2, 5.4, 5.6, 5.8, 6.0, 6.2, 6.4, 6.8, 7.0] (above-k markets)"
+   }
+  },
+  {
+   "event": "Shipping through the Strait of Hormuz returns to normal before Feb 15, 2027",
+   "market": "KXHORMUZNORM-26MAR17-B270101",
+   "title": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before January 1, 2027?",
+   "gold": [
+    "other_deadline",
+    "M_implies_E"
+   ],
+   "got": "other_deadline",
+   "ok": true,
+   "threshold": null,
+   "deadline": "2027-02-15",
+   "why": "Same normalization event (PortWatch >60 as proxy); E's deadline is Feb 15, 2027.",
+   "derived": {
+    "p": 0.12675,
+    "reason": "interpolated between deadline rungs ['2026-11-01', '2026-12-01', '2027-01-01', '2027-04-01', '2027-07-01']"
+   }
+  },
+  {
+   "event": "Shipping through the Strait of Hormuz returns to normal before Feb 15, 2027",
+   "market": "KXHORMUZNORM-26MAR17-B270401",
+   "title": "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before April 1, 2027?",
+   "gold": [
+    "other_deadline",
+    "E_implies_M"
+   ],
+   "got": "other_deadline",
+   "ok": true,
+   "threshold": null,
+   "deadline": "2027-02-15",
+   "why": "Same normalization event; E's deadline is earlier, Feb 15, 2027.",
+   "derived": {
+    "p": 0.12675,
+    "reason": "interpolated between deadline rungs ['2026-11-01', '2026-12-01', '2027-01-01', '2027-04-01', '2027-07-01']"
+   }
+  },
+  {
+   "event": "Shipping through the Strait of Hormuz returns to normal before Feb 15, 2027",
+   "market": "KXUSAIRANAGREEMENT-27-26NOV",
+   "title": "Will the US agree to a new Iranian nuclear deal this year?",
+   "gold": [
+    "correlated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A US-Iran deal may ease tensions, but implies nothing logically."
+  },
+  {
+   "event": "The Fed raises rates (by any amount) at its December 2026 meeting",
+   "market": "KXFEDDECISION-26DEC-H25",
+   "title": "Will the Federal Reserve Hike rates by 25bps at their December 2026 meeting?",
+   "gold": [
+    "M_implies_E"
+   ],
+   "got": "M_implies_E",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A 25bp hike is a special case of any hike."
+  },
+  {
+   "event": "The Fed raises rates (by any amount) at its December 2026 meeting",
+   "market": "KXFEDDECISION-26DEC-H0",
+   "title": "Will the Federal Reserve Hike rates by 0bps at their December 2026 meeting?",
+   "gold": [
+    "exclusive"
+   ],
+   "got": "exclusive",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "No change and a hike can't both happen."
+  },
+  {
+   "event": "The Fed raises rates (by any amount) at its December 2026 meeting",
+   "market": "KXFEDDECISION-26DEC-C25",
+   "title": "Will the Federal Reserve Cut rates by 25bps at their December 2026 meeting?",
+   "gold": [
+    "exclusive"
+   ],
+   "got": "exclusive",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A cut and a hike can't both happen."
+  },
+  {
+   "event": "The Fed keeps rates unchanged at its October 2026 meeting",
+   "market": "KXFEDDECISION-26OCT-H0",
+   "title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
+   "gold": [
+    "same"
+   ],
+   "got": "same",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A 0bps hike means rates are unchanged at the October meeting."
+  },
+  {
+   "event": "The Fed keeps rates unchanged at its October 2026 meeting",
+   "market": "KXFEDDECISION-26OCT-H25",
+   "title": "Will the Federal Reserve Hike rates by 25bps at their October 2026 meeting?",
+   "gold": [
+    "exclusive"
+   ],
+   "got": "exclusive",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A 25bps hike contradicts keeping rates unchanged."
+  },
+  {
+   "event": "The Fed keeps rates unchanged at its October 2026 meeting",
+   "market": "KXRATECUT-26DEC31",
+   "title": "Will the Federal Reserve cut rates before 2027?",
+   "gold": [
+    "correlated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A cut may have occurred earlier or in December; no logical implication."
+  },
+  {
+   "event": "The Fed cuts rates at least twice before 2027",
+   "market": "KXRATECUTCOUNT-26DEC31-T2",
+   "title": "Will the Fed cut rates 2 times?",
+   "gold": [
+    "M_implies_E"
+   ],
+   "got": "M_implies_E",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Exactly 2 cuts satisfies 'at least two' cuts."
+  },
+  {
+   "event": "The Fed cuts rates at least twice before 2027",
+   "market": "KXRATECUT-26DEC31",
+   "title": "Will the Federal Reserve cut rates before 2027?",
+   "gold": [
+    "E_implies_M"
+   ],
+   "got": "E_implies_M",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Two or more cuts means at least one cut in the window."
+  },
+  {
+   "event": "The Fed cuts rates at least twice before 2027",
+   "market": "KXRATECUTCOUNT-26DEC31-T0",
+   "title": "Will the Fed cut rates 0 times?",
+   "gold": [
+    "exclusive"
+   ],
+   "got": "exclusive",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Zero cuts contradicts at least two cuts."
+  },
+  {
+   "event": "Benjamin Netanyahu leaves office as Israel's prime minister before Jan 1, 2027",
+   "market": "KXLEADERSOUT-27JAN01-BNETISR",
+   "title": "Will Benjamin Netanyahu leave Prime Minister of Israel before Jan 1, 2027?",
+   "gold": [
+    "same"
+   ],
+   "got": "E_implies_M",
+   "ok": false,
+   "threshold": null,
+   "deadline": null,
+   "why": "Actually leaving before the deadline satisfies the market; an announcement alone also resolves it Yes."
+  },
+  {
+   "event": "Benjamin Netanyahu leaves office as Israel's prime minister before Jan 1, 2027",
+   "market": "KXLEADERSOUT-27JAN01-VPUTRUS",
+   "title": "Will Vladimir Putin leave President of Russia before Jan 1, 2027?",
+   "gold": [
+    "unrelated"
+   ],
+   "got": "unrelated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Different leader and country; no logical link to Netanyahu leaving."
+  },
+  {
+   "event": "Benjamin Netanyahu leaves office as Israel's prime minister before Jan 1, 2027",
+   "market": "KXRECOGPERSONIRAN-26",
+   "title": "Will the United States recognize Reza Pahlavi as the leader of Iran in 2026?",
+   "gold": [
+    "unrelated",
+    "correlated"
+   ],
+   "got": "unrelated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "US recognition of Pahlavi has no logical link to Netanyahu's tenure."
+  },
+  {
+   "event": "Nicol\u00e1s Maduro is not Venezuela's head of state on Dec 31, 2026",
+   "market": "KXVENEZUELALEADER-26DEC31-NMAD",
+   "title": "Will Nicol\u00e1s Maduro be the head of state of Venezuela on Dec 31, 2026?",
+   "gold": [
+    "exclusive"
+   ],
+   "got": "exclusive",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "E is the exact negation of Maduro being head of state"
+  },
+  {
+   "event": "Nicol\u00e1s Maduro is not Venezuela's head of state on Dec 31, 2026",
+   "market": "KXVENEZUELALEADER-26DEC31-DROD",
+   "title": "Will Delcy Rodr\u00edguez be the head of state of Venezuela on Dec 31, 2026?",
+   "gold": [
+    "M_implies_E"
+   ],
+   "got": "M_implies_E",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "If Rodr\u00edguez is head of state, Maduro is not"
+  },
+  {
+   "event": "Nicol\u00e1s Maduro is not Venezuela's head of state on Dec 31, 2026",
+   "market": "KXVENEZUELALEADER-26DEC31-MCM",
+   "title": "Will Mar\u00eda Corina Machado be the head of state of Venezuela on Dec 31, 2026?",
+   "gold": [
+    "M_implies_E"
+   ],
+   "got": "M_implies_E",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "If Machado is head of state, Maduro is not"
+  },
+  {
+   "event": "The US and Iran sign a new nuclear deal before Jan 1, 2027",
+   "market": "KXUSAIRANAGREEMENT-27-26NOV",
+   "title": "Will the US agree to a new Iranian nuclear deal this year?",
+   "gold": [
+    "other_deadline",
+    "M_implies_E"
+   ],
+   "got": "other_deadline",
+   "ok": true,
+   "threshold": null,
+   "deadline": "2027-01-01",
+   "why": "Same US-Iran nuclear deal event; E's deadline is later than Nov 1.",
+   "derived": {
+    "p": 0.0965,
+    "reason": "interpolated between deadline rungs ['2026-11-01', '2026-12-01', '2027-01-01']"
+   }
+  },
+  {
+   "event": "The US and Iran sign a new nuclear deal before Jan 1, 2027",
+   "market": "KXTRUMPIRAN-27JAN01",
+   "title": "Will Donald Trump visit Iran before Jan 1, 2027?",
+   "gold": [
+    "correlated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A deal might make a Trump visit more likely, but neither implies the other."
+  },
+  {
+   "event": "The US and Iran sign a new nuclear deal before Jan 1, 2027",
+   "market": "KXPAHLAVIVISITA-27JAN01",
+   "title": "Will Reza Pahlavi visit Iran before Jan 1, 2027?",
+   "gold": [
+    "correlated",
+    "unrelated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "A Pahlavi visit would signal regime upheaval, making a deal less likely; no implication."
+  },
+  {
+   "event": "The US unemployment rate reaches 5.5% at some point before 2027",
+   "market": "KXU3MAX-27-5",
+   "title": "How high will unemployment get before 2027?",
+   "gold": [
+    "other_strike",
+    "E_implies_M"
+   ],
+   "got": "other_strike",
+   "ok": true,
+   "threshold": 5.5,
+   "deadline": null,
+   "why": "Same max-unemployment variable; E needs 5.5%, market needs above 5%.",
+   "derived": {
+    "p": 0.059000000000000004,
+    "reason": "interpolated between strikes [5.0, 6.0, 7.0] (above-k markets)"
+   }
+  },
+  {
+   "event": "The US unemployment rate reaches 5.5% at some point before 2027",
+   "market": "KXRECSSNBER-26",
+   "title": "Will there be a recession in 2026?",
+   "gold": [
+    "correlated"
+   ],
+   "got": "correlated",
+   "ok": true,
+   "threshold": null,
+   "deadline": null,
+   "why": "Recession and high unemployment are linked, but neither implies the other."
+  }
+ ],
+ "llm": {
+  "job": "part2_relations",
+  "model": "claude-sonnet-5-5",
+  "calls": 12,
+  "cache_hits": 0,
+  "est_usd": 0.121,
+  "caps": {
+   "calls": 300,
+   "usd": 5.0
+  }
+ }
+}

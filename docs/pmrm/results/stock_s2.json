@@ -1,0 +1,103 @@
+{
+ "priced": 2718,
+ "by_split": {
+  "validation": 1063,
+  "test": 1062,
+  "train": 593
+ },
+ "train": {
+  "n": 593,
+  "median_implied_move": 0.04802744425385935,
+  "median_realized_move": 0.029383796120197814,
+  "median_realized_over_implied": 0.6152125279642047,
+  "share_realized_bigger": 0.2765598650927487,
+  "buy_every_straddle_pnl_per_premium": -0.10817188071057209,
+  "sell_every_straddle_pnl_per_premium": -0.020479462917901443
+ },
+ "validation": {
+  "n": 1063,
+  "median_implied_move": 0.05373687461395924,
+  "median_realized_move": 0.03732628919260361,
+  "median_realized_over_implied": 0.6744186046511639,
+  "share_realized_bigger": 0.3377234242709313,
+  "buy_every_straddle_pnl_per_premium": -0.07206625668818069,
+  "sell_every_straddle_pnl_per_premium": -0.05533120075947449,
+  "rule_buy": {
+   "n": 213,
+   "pnl_per_premium": -0.10596760647949278,
+   "support": 0.005
+  },
+  "rule_sell": {
+   "n": 564,
+   "pnl_per_premium": -0.04326517691976663,
+   "support": 0.02
+  },
+  "by_history_vs_implied_quartile": {
+   "0": {
+    "hist_vs_impl": 0.379,
+    "realized_over_implied": 0.574,
+    "long_pnl": -0.075
+   },
+   "1": {
+    "hist_vs_impl": 0.595,
+    "realized_over_implied": 0.682,
+    "long_pnl": -0.093
+   },
+   "2": {
+    "hist_vs_impl": 0.782,
+    "realized_over_implied": 0.721,
+    "long_pnl": -0.002
+   },
+   "3": {
+    "hist_vs_impl": 1.083,
+    "realized_over_implied": 0.683,
+    "long_pnl": -0.118
+   }
+  }
+ },
+ "test": {
+  "n": 1062,
+  "median_implied_move": 0.06447460050791057,
+  "median_realized_move": 0.04145105088642265,
+  "median_realized_over_implied": 0.6663097787294775,
+  "share_realized_bigger": 0.3361581920903955,
+  "buy_every_straddle_pnl_per_premium": -0.05850424119795093,
+  "sell_every_straddle_pnl_per_premium": -0.06736659940939975,
+  "rule_buy": {
+   "n": 175,
+   "pnl_per_premium": 0.0017178166610915544,
+   "support": 0.5035
+  },
+  "rule_sell": {
+   "n": 594,
+   "pnl_per_premium": -0.059025619735063865,
+   "support": 0.0035
+  },
+  "by_history_vs_implied_quartile": {
+   "0": {
+    "hist_vs_impl": 0.362,
+    "realized_over_implied": 0.579,
+    "long_pnl": -0.071
+   },
+   "1": {
+    "hist_vs_impl": 0.567,
+    "realized_over_implied": 0.62,
+    "long_pnl": -0.065
+   },
+   "2": {
+    "hist_vs_impl": 0.746,
+    "realized_over_implied": 0.71,
+    "long_pnl": -0.05
+   },
+   "3": {
+    "hist_vs_impl": 1.044,
+    "realized_over_implied": 0.739,
+    "long_pnl": -0.048
+   }
+  }
+ },
+ "tau": {
+  "buy_when_history_over_implied_above": 0.95,
+  "sell_when_below": 0.7
+ }
+}

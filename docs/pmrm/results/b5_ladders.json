@@ -1,0 +1,72 @@
+{
+ "events": {
+  "cpi": 44,
+  "gdp": 14,
+  "jobs": 40
+ },
+ "actual_in_settled_bracket": 0.9591836734693877,
+ "bridge_corr_with_d2y": {
+  "cpi": {
+   "kalshi": 0.5207856264057897,
+   "naive": 0.3435484147005856
+  },
+  "gdp": {
+   "kalshi": -0.13438356875375843,
+   "naive": -0.40361291464963783
+  },
+  "jobs": {
+   "kalshi": 0.5388395918154715,
+   "naive": 0.1239033110746937
+  }
+ },
+ "prediction": {
+  "kalshi surprise": {
+   "industries_r2": -0.029959291620496487,
+   "factors_r2": 0.015940313636350845,
+   "predicts_2y_move_r2": 0.21222624950416924,
+   "industries_chance95": -0.00010255332333558653
+  },
+  "naive surprise": {
+   "industries_r2": -0.17722305832177,
+   "factors_r2": -0.03732763966152253,
+   "predicts_2y_move_r2": -0.01012765512099989,
+   "industries_chance95": -0.13250623465488268
+  },
+  "2y yield move (reaction)": {
+   "industries_r2": 0.030617775579717565,
+   "factors_r2": 0.04965867515578282,
+   "predicts_2y_move_r2": null,
+   "industries_chance95": 0.010997606322407988
+  },
+  "kalshi + 2y move": {
+   "industries_r2": -0.010881498766609043,
+   "factors_r2": 0.04651678116269109,
+   "predicts_2y_move_r2": null,
+   "industries_chance95": -0.0017797226871796423
+  }
+ },
+ "twostage": {
+  "stage1_r2_kalshi_to_rates": {
+   "2y": 0.17658537898243953,
+   "10y": 0.07056957867494984
+  },
+  "releases": 98,
+  "industries": {
+   "chain (Kalshi surprise -> rates -> industries)": 0.003443646952280166,
+   "stage 2 with actual rates (upper bound)": 0.04655019157275686
+  },
+  "factors": {
+   "chain": -0.00936755149449997,
+   "stage 2 with actual rates": -0.01732936969119203
+  },
+  "industries_chain_chance95": 0.008259677052132878
+ },
+ "distribution": {
+  "releases": 98,
+  "basket_cases": 686,
+  "coverage_90": 0.9314868804664723,
+  "coverage_50": 0.5145772594752187,
+  "mean_r2_vs_zero": -0.007701249584339154,
+  "note": "outcome distribution approximated by a discretized normal on the ladder's implied mean and sd; ranges include stage-1 residual spread and the basket's own release-day noise"
+ }
+}

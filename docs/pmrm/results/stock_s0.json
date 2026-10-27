@@ -1,0 +1,190 @@
+{
+ "reports": 25915,
+ "tickers": 493,
+ "first": "2011-07-21",
+ "last": "2026-10-08",
+ "by_year": {
+  "2011": 70,
+  "2012": 1228,
+  "2013": 1594,
+  "2014": 1643,
+  "2015": 1676,
+  "2016": 1709,
+  "2017": 1728,
+  "2018": 1744,
+  "2019": 1768,
+  "2020": 1814,
+  "2021": 1855,
+  "2022": 1870,
+  "2023": 1888,
+  "2024": 1915,
+  "2025": 1943,
+  "2026": 1470
+ },
+ "timing": {
+  "before open": 15106,
+  "after close": 10756,
+  "in hours or unknown": 53
+ },
+ "share_with_eps_estimate": 0.9444337256415204,
+ "share_with_revenue_surprise": 0.9512251591742235,
+ "by_split": {
+  "train": 18699,
+  "validation": 5746,
+  "test": 1470
+ },
+ "size": {
+  "rms_day1_vs_normal_day": 3.9328300016713515,
+  "median_abs_day1": 2.267947392064613,
+  "share_over_2x": 0.5480995562415589,
+  "share_over_3x": 0.386262782172487,
+  "share_over_5x": 0.18012733937873818,
+  "normal_day_share_over_2x": 0.046,
+  "rms_next5": 1.176802226799531
+ },
+ "surprise_direction": {
+  "eps_surprise_pct": {
+   "train": {
+    "n": 15987,
+    "direction_hit_all": 0.5997998373678614,
+    "direction_hit_moves_over_2x": 0.6577391304347826,
+    "rank_corr": 0.25714570896152084
+   },
+   "validation": {
+    "n": 5321,
+    "direction_hit_all": 0.5765833489945499,
+    "direction_hit_moves_over_2x": 0.6121567417463746,
+    "rank_corr": 0.25933989550801906
+   },
+   "test": {
+    "n": 1419,
+    "direction_hit_all": 0.5412262156448203,
+    "direction_hit_moves_over_2x": 0.5820359281437125,
+    "rank_corr": 0.1842403327616647
+   }
+  },
+  "rev_surprise_pct": {
+   "train": {
+    "n": 17345,
+    "direction_hit_all": 0.581896800230614,
+    "direction_hit_moves_over_2x": 0.6300677492203463,
+    "rank_corr": 0.199894960698563
+   },
+   "validation": {
+    "n": 5627,
+    "direction_hit_all": 0.5729518393460103,
+    "direction_hit_moves_over_2x": 0.6031652989449003,
+    "rank_corr": 0.20105679016109126
+   },
+   "test": {
+    "n": 1466,
+    "direction_hit_all": 0.5334242837653479,
+    "direction_hit_moves_over_2x": 0.5533411488862837,
+    "rank_corr": 0.13535026482630522
+   }
+  },
+  "eps_and_revenue_agree": {
+   "train": {
+    "n": 10868,
+    "direction_hit": 0.6321310268678689
+   },
+   "validation": {
+    "n": 3699,
+    "direction_hit": 0.6085428494187618
+   },
+   "test": {
+    "n": 1078,
+    "direction_hit": 0.5482374768089053
+   }
+  }
+ },
+ "abs_move_by_abs_surprise_quintile": {
+  "0": 2.93027028279745,
+  "1": 2.8983896002161726,
+  "2": 3.0377809082643936,
+  "3": 3.098782282017063,
+  "4": 3.029450672653725
+ },
+ "after_day1": {
+  "next5_mean_in_day1_direction": 0.01332763254420891,
+  "big_moves_next5_mean_in_direction": 0.02349007842693694,
+  "share_big_moves_continuing": 0.5044955044955045,
+  "by_split_big": {
+   "train": 0.038983622978847984,
+   "validation": 0.01695127087503526,
+   "test": -0.11984935942952973
+  }
+ },
+ "headline_volume_sample": {
+  "NVDA": {
+   "page_of_1000_spans": "2026-08-31 to 2026-10-23",
+   "per_year_recent": {
+    "2026": 1000
+   }
+  },
+  "MRNA": {
+   "page_of_1000_spans": "2024-05-22 to 2026-10-23",
+   "per_year_recent": {
+    "2024": 333,
+    "2025": 350,
+    "2026": 317
+   }
+  },
+  "AAPL": {
+   "page_of_1000_spans": "2026-06-26 to 2026-10-23",
+   "per_year_recent": {
+    "2026": 1000
+   }
+  },
+  "JPM": {
+   "page_of_1000_spans": "2025-10-29 to 2026-10-23",
+   "per_year_recent": {
+    "2025": 142,
+    "2026": 858
+   }
+  },
+  "XOM": {
+   "page_of_1000_spans": "2024-09-12 to 2026-10-22",
+   "per_year_recent": {
+    "2024": 126,
+    "2025": 373,
+    "2026": 501
+   }
+  },
+  "PFE": {
+   "page_of_1000_spans": "2024-10-11 to 2026-10-23",
+   "per_year_recent": {
+    "2024": 143,
+    "2025": 572,
+    "2026": 285
+   }
+  },
+  "TSLA": {
+   "page_of_1000_spans": "2026-07-17 to 2026-10-23",
+   "per_year_recent": {
+    "2026": 1000
+   }
+  },
+  "WMT": {
+   "page_of_1000_spans": "2025-03-17 to 2026-10-23",
+   "per_year_recent": {
+    "2025": 538,
+    "2026": 462
+   }
+  },
+  "BA": {
+   "page_of_1000_spans": "2025-09-03 to 2026-10-23",
+   "per_year_recent": {
+    "2025": 283,
+    "2026": 717
+   }
+  },
+  "LLY": {
+   "page_of_1000_spans": "2025-08-07 to 2026-10-23",
+   "per_year_recent": {
+    "2025": 389,
+    "2026": 611
+   }
+  }
+ }
+}

@@ -1,0 +1,32 @@
+id: election_2024_11_06_us_presidential
+status: draft
+event: US presidential election result (Republican sweep)
+schema:
+  variable: US presidential election winner
+  comparator: ==
+  threshold: null
+  unit: party
+  jurisdiction: US
+type: election
+date: '2024-11-06'
+window:
+  before: 1
+  after: 1
+  from_close: '2024-11-05'
+  to_close: '2024-11-06'
+  why: result overnight; Nov 5 close → Nov 6 close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: 0.02487
+  TLT: -0.02739
+  UUP: 0.01616
+  USO: -0.00254
+  GLD: -0.03039
+  CREDIT: 0.01206
+  VIXY: -0.10063
+sector_moves:
+  IWM: 0.05793
+  XLF: 0.0608
+  KRE: 0.13411
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

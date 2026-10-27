@@ -1,0 +1,39 @@
+[project]
+name = "worsey"
+version = "0.1.0"
+description = "A worse Percy: scenario analysis and options strategy over a dummy portfolio."
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "statsmodels",
+  "pyyaml",
+  "anthropic",
+  "requests",
+  "matplotlib",
+  "python-dotenv",
+  "tzdata",
+  "fastapi",
+  "uvicorn[standard]",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "playwright"]
+
+[project.scripts]
+worsey = "worsey.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+worsey = ["web/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "eval"]
+pythonpath = ["src"]

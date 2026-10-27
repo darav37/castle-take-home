@@ -1,0 +1,34 @@
+id: tariffs_2025_04_03_liberation_day
+status: draft
+event: US announces broad reciprocal tariffs well above expectations ('Liberation
+  Day')
+schema:
+  variable: US average effective tariff rate
+  comparator: '>='
+  threshold: 15
+  unit: '%'
+  jurisdiction: US
+type: trade_policy
+date: '2025-04-03'
+window:
+  before: 1
+  after: 2
+  from_close: '2025-04-02'
+  to_close: '2025-04-04'
+  why: announced Apr 2 after the close; Apr 2 close → Apr 4 close (China retaliated
+    Apr 4)
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.10494
+  TLT: 0.01553
+  UUP: -0.00668
+  USO: -0.12632
+  GLD: -0.02929
+  CREDIT: -0.03962
+  VIXY: 0.49377
+sector_moves:
+  SMH: -0.1555
+  XLI: -0.11357
+  IWM: -0.10594
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

@@ -1,0 +1,110 @@
+{
+ "cursor": "CgsIkODG1gYQwLDgJxIdS1hKTEVBR1VFMUgtMjZPQ1QxN1ZFUlRPSy1WRVI",
+ "markets": [
+  {
+   "can_close_early": true,
+   "close_time": "2026-10-18T17:15:00Z",
+   "created_time": "2026-10-16T05:21:07.143377Z",
+   "custom_strike": {
+    "table_tennis_competitor": "c1f6a42d-e9c4-5317-99b4-d11ca4bc0e9b"
+   },
+   "early_close_condition": "This market will close and expire after a winner is declared.",
+   "event_ticker": "KXLIGAPROMATCH-26OCT161315KHAZHE",
+   "exchange_index": 0,
+   "expected_expiration_time": "2026-10-16T20:15:00Z",
+   "expiration_time": "2026-10-18T17:15:00Z",
+   "expiration_value": "",
+   "last_price_dollars": "0.0000",
+   "latest_expiration_time": "2026-10-18T17:15:00Z",
+   "market_type": "binary",
+   "no_ask_dollars": "0.9600",
+   "no_bid_dollars": "0.0400",
+   "no_sub_title": "Zhelubenkov Aleksei Evgenevich",
+   "notional_value_dollars": "1.0000",
+   "occurrence_datetime": "2026-10-16T20:15:00Z",
+   "open_interest_fp": "0.00",
+   "open_time": "2026-10-16T05:22:00Z",
+   "previous_price_dollars": "0.0000",
+   "previous_yes_ask_dollars": "0.0000",
+   "previous_yes_bid_dollars": "0.0000",
+   "price_level_structure": "linear_cent",
+   "price_ranges": [
+    {
+     "end": "1.0000",
+     "start": "0.0000",
+     "step": "0.0100"
+    }
+   ],
+   "result": "",
+   "rules_primary": "If Zhelubenkov Aleksei Evgenevich wins the KHaibullin Danil Ruslanovich vs Zhelubenkov Aleksei Evgenevich men's professional Russia Liga Pro table tennis match originally scheduled for Oct 16, 2026 at 1:15 PM EDT, then the market resolves t\u2026",
+   "rules_secondary": "If the match is postponed but begins within 48 hours of its originally scheduled start time, the market will remain open and resolve based on the official final result. If the match is cancelled or postponed more than 48 hours from its orig\u2026",
+   "settlement_bounds_type": "default",
+   "settlement_timer_seconds": 180,
+   "status": "active",
+   "strike_type": "structured",
+   "ticker": "KXLIGAPROMATCH-26OCT161315KHAZHE-ZHE",
+   "title": "Zhelubenkov Aleksei Evgenevich wins",
+   "updated_time": "2026-10-16T05:22:00.163367Z",
+   "volume_24h_fp": "0.00",
+   "volume_fp": "0.00",
+   "yes_ask_dollars": "0.9600",
+   "yes_ask_size_fp": "18.00",
+   "yes_bid_dollars": "0.0400",
+   "yes_bid_size_fp": "37.00",
+   "yes_sub_title": "Zhelubenkov Aleksei Evgenevich"
+  },
+  {
+   "can_close_early": true,
+   "close_time": "2026-10-18T17:15:00Z",
+   "created_time": "2026-10-16T05:21:07.143377Z",
+   "custom_strike": {
+    "table_tennis_competitor": "68a26f61-3e3c-5c0a-b2f5-1fdac2aea2d7"
+   },
+   "early_close_condition": "This market will close and expire after a winner is declared.",
+   "event_ticker": "KXLIGAPROMATCH-26OCT161315KHAZHE",
+   "exchange_index": 0,
+   "expected_expiration_time": "2026-10-16T20:15:00Z",
+   "expiration_time": "2026-10-18T17:15:00Z",
+   "expiration_value": "",
+   "last_price_dollars": "0.0000",
+   "latest_expiration_time": "2026-10-18T17:15:00Z",
+   "market_type": "binary",
+   "no_ask_dollars": "0.9600",
+   "no_bid_dollars": "0.0400",
+   "no_sub_title": "KHaibullin Danil Ruslanovich",
+   "notional_value_dollars": "1.0000",
+   "occurrence_datetime": "2026-10-16T20:15:00Z",
+   "open_interest_fp": "0.00",
+   "open_time": "2026-10-16T05:22:00Z",
+   "previous_price_dollars": "0.0000",
+   "previous_yes_ask_dollars": "0.0000",
+   "previous_yes_bid_dollars": "0.0000",
+   "price_level_structure": "linear_cent",
+   "price_ranges": [
+    {
+     "end": "1.0000",
+     "start": "0.0000",
+     "step": "0.0100"
+    }
+   ],
+   "result": "",
+   "rules_primary": "If KHaibullin Danil Ruslanovich wins the KHaibullin Danil Ruslanovich vs Zhelubenkov Aleksei Evgenevich men's professional Russia Liga Pro table tennis match originally scheduled for Oct 16, 2026 at 1:15 PM EDT, then the market resolves to \u2026",
+   "rules_secondary": "If the match is postponed but begins within 48 hours of its originally scheduled start time, the market will remain open and resolve based on the official final result. If the match is cancelled or postponed more than 48 hours from its orig\u2026",
+   "settlement_bounds_type": "default",
+   "settlement_timer_seconds": 180,
+   "status": "active",
+   "strike_type": "structured",
+   "ticker": "KXLIGAPROMATCH-26OCT161315KHAZHE-KHA",
+   "title": "KHaibullin Danil Ruslanovich wins",
+   "updated_time": "2026-10-16T05:22:00.163367Z",
+   "volume_24h_fp": "0.00",
+   "volume_fp": "0.00",
+   "yes_ask_dollars": "0.9600",
+   "yes_ask_size_fp": "18.00",
+   "yes_bid_dollars": "0.0400",
+   "yes_bid_size_fp": "37.00",
+   "yes_sub_title": "KHaibullin Danil Ruslanovich"
+  },
+  "... 198 more"
+ ]
+}

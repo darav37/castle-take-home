@@ -1,0 +1,29 @@
+{
+ "note": "Tier 2b test pairs (PART2_PROBABILITIES.md step 3). Labelled by the build assistant on Oct 25, 2026 against Kalshi markets live that day; 'gold' lists every acceptable relation.",
+ "events": [
+  {"event": "US CPI rises more than 0.3% month over month in October 2026",
+   "pairs": [["KXCPI-26OCT-T0.3", ["same"]], ["KXCPI-26NOV-T0.2", ["correlated", "unrelated"]], ["KXFEDDECISION-26DEC-H25", ["correlated"]]]},
+  {"event": "US CPI rises more than 0.35% month over month in October 2026",
+   "pairs": [["KXCPI-26OCT-T0.3", ["other_strike", "E_implies_M"]], ["KXCPI-26OCT-T0.4", ["other_strike", "M_implies_E"]], ["KXRECSSNBER-26", ["correlated", "unrelated"]]]},
+  {"event": "The US average gas price goes above $5.50 by Dec 31, 2026",
+   "pairs": [["KXAAAGASMAX-26DEC31-5.40", ["other_strike", "E_implies_M"]], ["KXAAAGASMAX-26DEC31-5.60", ["other_strike", "M_implies_E"]], ["KXAAAGASMAXCA-26DEC31-7.00", ["correlated"]]]},
+  {"event": "The US average gas price goes above $6.00 by Dec 31, 2026",
+   "pairs": [["KXAAAGASMAX-26DEC31-6.00", ["same"]], ["KXAAAGASMAX-26DEC31-5.00", ["E_implies_M", "other_strike"]], ["KXAAAGASMAX-26DEC31-7.00", ["M_implies_E", "other_strike"]]]},
+  {"event": "Shipping through the Strait of Hormuz returns to normal before Feb 15, 2027",
+   "pairs": [["KXHORMUZNORM-26MAR17-B270101", ["other_deadline", "M_implies_E"]], ["KXHORMUZNORM-26MAR17-B270401", ["other_deadline", "E_implies_M"]], ["KXUSAIRANAGREEMENT-27-26NOV", ["correlated"]]]},
+  {"event": "The Fed raises rates (by any amount) at its December 2026 meeting",
+   "pairs": [["KXFEDDECISION-26DEC-H25", ["M_implies_E"]], ["KXFEDDECISION-26DEC-H0", ["exclusive"]], ["KXFEDDECISION-26DEC-C25", ["exclusive"]]]},
+  {"event": "The Fed keeps rates unchanged at its October 2026 meeting",
+   "pairs": [["KXFEDDECISION-26OCT-H0", ["same"]], ["KXFEDDECISION-26OCT-H25", ["exclusive"]], ["KXRATECUT-26DEC31", ["correlated"]]]},
+  {"event": "The Fed cuts rates at least twice before 2027",
+   "pairs": [["KXRATECUTCOUNT-26DEC31-T2", ["M_implies_E"]], ["KXRATECUT-26DEC31", ["E_implies_M"]], ["KXRATECUTCOUNT-26DEC31-T0", ["exclusive"]]]},
+  {"event": "Benjamin Netanyahu leaves office as Israel's prime minister before Jan 1, 2027",
+   "pairs": [["KXLEADERSOUT-27JAN01-BNETISR", ["same"]], ["KXLEADERSOUT-27JAN01-VPUTRUS", ["unrelated"]], ["KXRECOGPERSONIRAN-26", ["unrelated", "correlated"]]]},
+  {"event": "Nicolás Maduro is not Venezuela's head of state on Dec 31, 2026",
+   "pairs": [["KXVENEZUELALEADER-26DEC31-NMAD", ["exclusive"]], ["KXVENEZUELALEADER-26DEC31-DROD", ["M_implies_E"]], ["KXVENEZUELALEADER-26DEC31-MCM", ["M_implies_E"]]]},
+  {"event": "The US and Iran sign a new nuclear deal before Jan 1, 2027",
+   "pairs": [["KXUSAIRANAGREEMENT-27-26NOV", ["other_deadline", "M_implies_E"]], ["KXTRUMPIRAN-27JAN01", ["correlated"]], ["KXPAHLAVIVISITA-27JAN01", ["correlated", "unrelated"]]]},
+  {"event": "The US unemployment rate reaches 5.5% at some point before 2027",
+   "pairs": [["KXU3MAX-27-5", ["other_strike", "E_implies_M"]], ["KXRECSSNBER-26", ["correlated"]]]}
+ ]
+}

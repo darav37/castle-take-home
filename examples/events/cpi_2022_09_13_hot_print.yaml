@@ -1,0 +1,31 @@
+id: cpi_2022_09_13_hot_print
+status: draft
+event: US August CPI prints above consensus (core hot)
+schema:
+  variable: US CPI MoM (core)
+  comparator: '>'
+  threshold: null
+  unit: '%'
+  jurisdiction: US
+type: inflation_print
+date: '2022-09-13'
+window:
+  before: 1
+  after: 1
+  from_close: '2022-09-12'
+  to_close: '2022-09-13'
+  why: 8:30 ET release; prior close → release-day close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.04348
+  TLT: 0.00233
+  UUP: 0.01377
+  USO: -0.00497
+  GLD: -0.01301
+  CREDIT: -0.01712
+  VIXY: 0.08692
+sector_moves:
+  XLK: -0.05308
+  IWM: -0.03912
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

@@ -1,0 +1,189 @@
+{
+ "reports": 18446,
+ "peer_groups": {
+  "software": 18,
+  "medtech": 26,
+  "insurers": 22,
+  "semis": 26,
+  "energy stocks": 38,
+  "materials": 20,
+  "defense": 19,
+  "industrials": 35,
+  "biotech": 6,
+  "real estate": 32,
+  "internet": 4,
+  "homebuilders": 17,
+  "consumer discretionary": 17,
+  "regional banks": 16,
+  "retail": 5,
+  "staples": 25,
+  "transports": 10,
+  "metals & mining": 4
+ },
+ "leaders": {
+  "reports": 2675,
+  "peer_rms": 1.2930983780287775,
+  "peer_share_over_2x": 0.09869158878504673,
+  "normal_day_share_over_2x": 0.046,
+  "direction_from_surprise": 0.5059171597633136,
+  "direction_from_surprise_big_peer_moves": 0.48523206751054854,
+  "direction_from_reporter_move": 0.5663551401869159,
+  "direction_from_big_reporter_moves": 0.627254509018036,
+  "peer_slope_on_reporter_move": 0.048805549274782686,
+  "by_split": {
+   "test": {
+    "n": 144,
+    "rms": 1.3619834563329885,
+    "dir_surprise": 0.5070422535211268,
+    "dir_reporter": 0.6111111111111112,
+    "slope": 0.08886624624958528
+   },
+   "train": {
+    "n": 1955,
+    "rms": 1.2876246012595627,
+    "dir_surprise": 0.5104104699583581,
+    "dir_reporter": 0.5575447570332481,
+    "slope": 0.05522486390510106
+   },
+   "validation": {
+    "n": 576,
+    "rms": 1.2939573315601436,
+    "dir_surprise": 0.49171270718232046,
+    "dir_reporter": 0.5850694444444444,
+    "slope": 0.023577848020765717
+   }
+  }
+ },
+ "all reporters": {
+  "reports": 18446,
+  "peer_rms": 1.2061357586444363,
+  "peer_share_over_2x": 0.08690230944378186,
+  "normal_day_share_over_2x": 0.046,
+  "direction_from_surprise": 0.5066790928859894,
+  "direction_from_surprise_big_peer_moves": 0.5132496513249651,
+  "direction_from_reporter_move": 0.5836495717228668,
+  "direction_from_big_reporter_moves": 0.6294515401953419,
+  "peer_slope_on_reporter_move": 0.06670850371621781,
+  "by_split": {
+   "test": {
+    "n": 992,
+    "rms": 1.3978778517974362,
+    "dir_surprise": 0.5073684210526316,
+    "dir_reporter": 0.5766129032258065,
+    "slope": 0.07973462168626934
+   },
+   "train": {
+    "n": 13501,
+    "rms": 1.1933307068282377,
+    "dir_surprise": 0.5112018061827023,
+    "dir_reporter": 0.5848455669950374,
+    "slope": 0.0704335990772747
+   },
+   "validation": {
+    "n": 3953,
+    "rms": 1.1976659076547644,
+    "dir_surprise": 0.49214659685863876,
+    "dir_reporter": 0.5813306349607893,
+    "slope": 0.05385614986683534
+   }
+  }
+ },
+ "leaders_by_sector": {
+  "biotech": {
+   "n": 174,
+   "rms": 1.261,
+   "dir_reporter": 0.5,
+   "slope": 0.011
+  },
+  "consumer discretionary": {
+   "n": 146,
+   "rms": 1.225,
+   "dir_reporter": 0.596,
+   "slope": 0.067
+  },
+  "defense": {
+   "n": 165,
+   "rms": 1.288,
+   "dir_reporter": 0.552,
+   "slope": 0.079
+  },
+  "energy stocks": {
+   "n": 174,
+   "rms": 0.882,
+   "dir_reporter": 0.621,
+   "slope": 0.127
+  },
+  "homebuilders": {
+   "n": 174,
+   "rms": 0.965,
+   "dir_reporter": 0.506,
+   "slope": 0.019
+  },
+  "industrials": {
+   "n": 175,
+   "rms": 1.152,
+   "dir_reporter": 0.594,
+   "slope": 0.086
+  },
+  "insurers": {
+   "n": 175,
+   "rms": 0.844,
+   "dir_reporter": 0.56,
+   "slope": -0.003
+  },
+  "materials": {
+   "n": 148,
+   "rms": 1.169,
+   "dir_reporter": 0.601,
+   "slope": 0.101
+  },
+  "medtech": {
+   "n": 174,
+   "rms": 1.812,
+   "dir_reporter": 0.368,
+   "slope": -0.144
+  },
+  "real estate": {
+   "n": 148,
+   "rms": 1.046,
+   "dir_reporter": 0.574,
+   "slope": 0.048
+  },
+  "regional banks": {
+   "n": 174,
+   "rms": 1.503,
+   "dir_reporter": 0.678,
+   "slope": 0.252
+  },
+  "retail": {
+   "n": 173,
+   "rms": 1.967,
+   "dir_reporter": 0.497,
+   "slope": -0.033
+  },
+  "semis": {
+   "n": 180,
+   "rms": 1.157,
+   "dir_reporter": 0.633,
+   "slope": 0.118
+  },
+  "software": {
+   "n": 140,
+   "rms": 1.131,
+   "dir_reporter": 0.55,
+   "slope": 0.007
+  },
+  "staples": {
+   "n": 181,
+   "rms": 1.06,
+   "dir_reporter": 0.591,
+   "slope": 0.072
+  },
+  "transports": {
+   "n": 174,
+   "rms": 1.568,
+   "dir_reporter": 0.644,
+   "slope": 0.161
+  }
+ }
+}

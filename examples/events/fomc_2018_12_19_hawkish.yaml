@@ -1,0 +1,32 @@
+id: fomc_2018_12_19_hawkish
+status: draft
+event: FOMC hikes and signals balance-sheet runoff on 'autopilot' (hawkish vs market
+  hopes)
+schema:
+  variable: Fed funds target (upper)
+  comparator: '>='
+  threshold: 2.5
+  unit: '%'
+  jurisdiction: US
+type: monetary_surprise
+date: '2018-12-19'
+window:
+  before: 1
+  after: 1
+  from_close: '2018-12-18'
+  to_close: '2018-12-19'
+  why: 2:00 ET statement + presser; prior close → decision-day close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.01498
+  TLT: 0.01321
+  UUP: 0.00039
+  USO: 0.02349
+  GLD: -0.00609
+  CREDIT: -0.01251
+  VIXY: -0.00397
+sector_moves:
+  XLF: -0.01255
+  IWM: -0.02083
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

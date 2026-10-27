@@ -1,0 +1,75 @@
+{
+ "turn1": {
+  "id": "msg_011Cg5Mzny1UwhL52jZ5bocx",
+  "container": null,
+  "content": [
+   {
+    "id": "toolu_011VDTGJYEMYvfY3KKuFrdtU",
+    "caller": {
+     "type": "direct"
+    },
+    "input": {
+     "ticker": "SPY"
+    },
+    "name": "get_price",
+    "type": "tool_use"
+   }
+  ],
+  "diagnostics": null,
+  "model": "claude-haiku-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 895,
+   "inference_geo": "global",
+   "input_tokens": 88,
+   "output_tokens": 51,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ },
+ "turn2": {
+  "id": "msg_011Cg5MztqEQR81boKCrRY8M",
+  "container": null,
+  "content": [
+   {
+    "text": "SPY is at $600.12.\n\nWant me to check what in your portfolio would move if SPY drops?",
+    "type": "text"
+   }
+  ],
+  "diagnostics": null,
+  "model": "claude-haiku-5-5",
+  "role": "assistant",
+  "stop_details": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "type": "message",
+  "usage": {
+   "cache_creation": {
+    "ephemeral_1h_input_tokens": 0,
+    "ephemeral_5m_input_tokens": 0
+   },
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 895,
+   "inference_geo": "global",
+   "input_tokens": 161,
+   "output_tokens": 34,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "speed": "standard"
+  }
+ }
+}

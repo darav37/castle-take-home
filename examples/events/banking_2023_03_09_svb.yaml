@@ -1,0 +1,31 @@
+id: banking_2023_03_09_svb
+status: draft
+event: Silicon Valley Bank run and failure
+schema:
+  variable: US bank failure (assets > $100bn)
+  comparator: ==
+  threshold: 1
+  unit: event
+  jurisdiction: US
+type: banking_stress
+date: '2023-03-09'
+window:
+  before: 1
+  after: 2
+  from_close: '2023-03-08'
+  to_close: '2023-03-10'
+  why: capital raise news Mar 8 after close, seized Mar 10; Mar 8 close → Mar 10 close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.03261
+  TLT: 0.03703
+  UUP: -0.00909
+  USO: 0.0006
+  GLD: 0.03162
+  CREDIT: -0.03016
+  VIXY: 0.22491
+sector_moves:
+  KRE: -0.12149
+  XLF: -0.05807
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

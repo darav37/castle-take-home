@@ -1,0 +1,31 @@
+id: geopolitical_2022_02_24_russia_ukraine
+status: draft
+event: Russia invades Ukraine
+schema:
+  variable: Russian military invasion of Ukraine
+  comparator: ==
+  threshold: 1
+  unit: event
+  jurisdiction: RU-UA
+type: geopolitical_energy
+date: '2022-02-24'
+window:
+  before: 1
+  after: 1
+  from_close: '2022-02-23'
+  to_close: '2022-02-24'
+  why: invasion overnight; prior close → day close (note the intraday reversal)
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: 0.01505
+  TLT: 0.00066
+  UUP: 0.00815
+  USO: 0.00151
+  GLD: -0.00645
+  CREDIT: 0.0048
+  VIXY: -0.03127
+sector_moves:
+  XLE: -0.00784
+  ITA: 0.02753
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

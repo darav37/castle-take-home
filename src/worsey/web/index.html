@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worsey</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="title"><span class="logo">W</span><div><b>Portfolio chat</b><small id="chat-name"></small></div></div>
+    <div class="members" id="members"></div>
+  </header>
+  <div id="spend" class="spend" hidden></div>
+  <main id="log" class="log" aria-live="polite"></main>
+  <div id="status" class="status" hidden><span class="pulse"></span><span id="status-text"></span></div>
+  <footer class="composer">
+    <div id="quote" class="quote" hidden><span id="quote-text"></span><button id="quote-x" aria-label="cancel quote">×</button></div>
+    <div id="demo" class="demo" hidden><span id="demo-text"></span><button id="demo-next">next →</button></div>
+    <form id="form" autocomplete="off">
+      <input id="input" placeholder="Message the group · @worsey to ask" aria-label="message">
+      <button type="submit" aria-label="send">↑</button>
+    </form>
+  </footer>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

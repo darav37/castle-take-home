@@ -1,0 +1,9 @@
+name: tech_heavy
+status: draft   # tickers from SPEC §2; dollar sizes are the build assistant placeholders, the trainer to finalize
+description: Concentrated tech, $100k. QQQ plus the names it already holds.
+cash_usd: 0
+positions:
+  - {ticker: QQQ,  value_usd: 40000}
+  - {ticker: NVDA, value_usd: 25000}
+  - {ticker: AAPL, value_usd: 20000}
+  - {ticker: TSLA, value_usd: 15000}

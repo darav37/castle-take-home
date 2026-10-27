@@ -1,0 +1,27 @@
+{
+ "latitude": 40.808434,
+ "longitude": -74.0199,
+ "generationtime_ms": 0.46563148498535156,
+ "utc_offset_seconds": -14400,
+ "timezone": "America/New_York",
+ "timezone_abbreviation": "GMT-4",
+ "elevation": 40.0,
+ "daily_units": {
+  "time": "iso8601",
+  "temperature_2m_max": "\u00b0F"
+ },
+ "daily": {
+  "time": [
+   "1995-01-01",
+   "1995-01-02",
+   "1995-01-03",
+   "... 7 more"
+  ],
+  "temperature_2m_max": [
+   49.2,
+   40.6,
+   32.6,
+   "... 7 more"
+  ]
+ }
+}

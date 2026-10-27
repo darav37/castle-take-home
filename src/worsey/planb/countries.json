@@ -1,0 +1,254 @@
+{
+ "source": "country factors: each country ETF's daily move beyond the 13 macro factors (#238)",
+ "since": "2016-01-25",
+ "countries": {
+  "Brazil": {
+   "etf": "EWZ",
+   "two_day_move_median": 0.544,
+   "two_day_move_p90": 1.507,
+   "two_day_move_p95": 1.949,
+   "residual_daily_sd": 0.01542,
+   "macro_r2": 0.507
+  },
+  "Mexico": {
+   "etf": "EWW",
+   "two_day_move_median": 0.56,
+   "two_day_move_p90": 1.531,
+   "two_day_move_p95": 1.864,
+   "residual_daily_sd": 0.01082,
+   "macro_r2": 0.539
+  },
+  "Argentina": {
+   "etf": "ARGT",
+   "two_day_move_median": 0.555,
+   "two_day_move_p90": 1.512,
+   "two_day_move_p95": 1.842,
+   "residual_daily_sd": 0.01448,
+   "macro_r2": 0.452
+  },
+  "Chile": {
+   "etf": "ECH",
+   "two_day_move_median": 0.543,
+   "two_day_move_p90": 1.528,
+   "two_day_move_p95": 1.979,
+   "residual_daily_sd": 0.01275,
+   "macro_r2": 0.439
+  },
+  "Peru": {
+   "etf": "EPU",
+   "two_day_move_median": 0.536,
+   "two_day_move_p90": 1.493,
+   "two_day_move_p95": 1.955,
+   "residual_daily_sd": 0.01027,
+   "macro_r2": 0.548
+  },
+  "Canada": {
+   "etf": "EWC",
+   "two_day_move_median": 0.561,
+   "two_day_move_p90": 1.484,
+   "two_day_move_p95": 1.843,
+   "residual_daily_sd": 0.00548,
+   "macro_r2": 0.786
+  },
+  "Japan": {
+   "etf": "EWJ",
+   "two_day_move_median": 0.556,
+   "two_day_move_p90": 1.585,
+   "two_day_move_p95": 1.957,
+   "residual_daily_sd": 0.00691,
+   "macro_r2": 0.618
+  },
+  "China": {
+   "etf": "MCHI",
+   "two_day_move_median": 0.515,
+   "two_day_move_p90": 1.473,
+   "two_day_move_p95": 1.926,
+   "residual_daily_sd": 0.00913,
+   "macro_r2": 0.713
+  },
+  "Hong Kong": {
+   "etf": "EWH",
+   "two_day_move_median": 0.591,
+   "two_day_move_p90": 1.61,
+   "two_day_move_p95": 2.046,
+   "residual_daily_sd": 0.00796,
+   "macro_r2": 0.585
+  },
+  "Taiwan": {
+   "etf": "EWT",
+   "two_day_move_median": 0.507,
+   "two_day_move_p90": 1.382,
+   "two_day_move_p95": 1.725,
+   "residual_daily_sd": 0.00784,
+   "macro_r2": 0.712
+  },
+  "South Korea": {
+   "etf": "EWY",
+   "two_day_move_median": 0.505,
+   "two_day_move_p90": 1.49,
+   "two_day_move_p95": 1.995,
+   "residual_daily_sd": 0.00976,
+   "macro_r2": 0.726
+  },
+  "India": {
+   "etf": "INDA",
+   "two_day_move_median": 0.569,
+   "two_day_move_p90": 1.479,
+   "two_day_move_p95": 1.867,
+   "residual_daily_sd": 0.00883,
+   "macro_r2": 0.557
+  },
+  "Australia": {
+   "etf": "EWA",
+   "two_day_move_median": 0.543,
+   "two_day_move_p90": 1.423,
+   "two_day_move_p95": 1.785,
+   "residual_daily_sd": 0.00703,
+   "macro_r2": 0.758
+  },
+  "Singapore": {
+   "etf": "EWS",
+   "two_day_move_median": 0.579,
+   "two_day_move_p90": 1.572,
+   "two_day_move_p95": 2.0,
+   "residual_daily_sd": 0.00688,
+   "macro_r2": 0.647
+  },
+  "Indonesia": {
+   "etf": "EIDO",
+   "two_day_move_median": 0.529,
+   "two_day_move_p90": 1.495,
+   "two_day_move_p95": 1.988,
+   "residual_daily_sd": 0.01185,
+   "macro_r2": 0.451
+  },
+  "Malaysia": {
+   "etf": "EWM",
+   "two_day_move_median": 0.501,
+   "two_day_move_p90": 1.457,
+   "two_day_move_p95": 1.857,
+   "residual_daily_sd": 0.00745,
+   "macro_r2": 0.508
+  },
+  "Thailand": {
+   "etf": "THD",
+   "two_day_move_median": 0.542,
+   "two_day_move_p90": 1.47,
+   "two_day_move_p95": 1.853,
+   "residual_daily_sd": 0.0093,
+   "macro_r2": 0.531
+  },
+  "Germany": {
+   "etf": "EWG",
+   "two_day_move_median": 0.558,
+   "two_day_move_p90": 1.523,
+   "two_day_move_p95": 2.024,
+   "residual_daily_sd": 0.00687,
+   "macro_r2": 0.731
+  },
+  "United Kingdom": {
+   "etf": "EWU",
+   "two_day_move_median": 0.55,
+   "two_day_move_p90": 1.537,
+   "two_day_move_p95": 1.951,
+   "residual_daily_sd": 0.00599,
+   "macro_r2": 0.748
+  },
+  "France": {
+   "etf": "EWQ",
+   "two_day_move_median": 0.568,
+   "two_day_move_p90": 1.479,
+   "two_day_move_p95": 1.869,
+   "residual_daily_sd": 0.00666,
+   "macro_r2": 0.741
+  },
+  "Italy": {
+   "etf": "EWI",
+   "two_day_move_median": 0.538,
+   "two_day_move_p90": 1.521,
+   "two_day_move_p95": 1.963,
+   "residual_daily_sd": 0.00873,
+   "macro_r2": 0.65
+  },
+  "Spain": {
+   "etf": "EWP",
+   "two_day_move_median": 0.576,
+   "two_day_move_p90": 1.49,
+   "two_day_move_p95": 1.855,
+   "residual_daily_sd": 0.00841,
+   "macro_r2": 0.64
+  },
+  "Switzerland": {
+   "etf": "EWL",
+   "two_day_move_median": 0.566,
+   "two_day_move_p90": 1.52,
+   "two_day_move_p95": 1.877,
+   "residual_daily_sd": 0.00607,
+   "macro_r2": 0.66
+  },
+  "Netherlands": {
+   "etf": "EWN",
+   "two_day_move_median": 0.575,
+   "two_day_move_p90": 1.58,
+   "two_day_move_p95": 2.016,
+   "residual_daily_sd": 0.00642,
+   "macro_r2": 0.774
+  },
+  "Sweden": {
+   "etf": "EWD",
+   "two_day_move_median": 0.566,
+   "two_day_move_p90": 1.522,
+   "two_day_move_p95": 1.923,
+   "residual_daily_sd": 0.00796,
+   "macro_r2": 0.71
+  },
+  "Poland": {
+   "etf": "EPOL",
+   "two_day_move_median": 0.588,
+   "two_day_move_p90": 1.579,
+   "two_day_move_p95": 1.992,
+   "residual_daily_sd": 0.01136,
+   "macro_r2": 0.57
+  },
+  "Greece": {
+   "etf": "GREK",
+   "two_day_move_median": 0.556,
+   "two_day_move_p90": 1.567,
+   "two_day_move_p95": 2.056,
+   "residual_daily_sd": 0.01373,
+   "macro_r2": 0.474
+  },
+  "Turkey": {
+   "etf": "TUR",
+   "two_day_move_median": 0.505,
+   "two_day_move_p90": 1.452,
+   "two_day_move_p95": 1.893,
+   "residual_daily_sd": 0.01959,
+   "macro_r2": 0.169
+  },
+  "Israel": {
+   "etf": "EIS",
+   "two_day_move_median": 0.547,
+   "two_day_move_p90": 1.571,
+   "two_day_move_p95": 1.991,
+   "residual_daily_sd": 0.0083,
+   "macro_r2": 0.606
+  },
+  "Saudi Arabia": {
+   "etf": "KSA",
+   "two_day_move_median": 0.538,
+   "two_day_move_p90": 1.502,
+   "two_day_move_p95": 1.943,
+   "residual_daily_sd": 0.0101,
+   "macro_r2": 0.357
+  },
+  "South Africa": {
+   "etf": "EZA",
+   "two_day_move_median": 0.588,
+   "two_day_move_p90": 1.567,
+   "two_day_move_p95": 1.978,
+   "residual_daily_sd": 0.01077,
+   "macro_r2": 0.711
+  }
+ }
+}

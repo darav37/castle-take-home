@@ -1,0 +1,56 @@
+{
+ "status": "OK",
+ "request_id": "e4dd3ee65eae4e9b955cbe01110ef16f",
+ "results": [
+  {
+   "currency": "USD",
+   "date_status": "projected",
+   "estimated_eps": 3.58,
+   "previous_eps": 2.22,
+   "benzinga_id": "6a8e9004be8b310001df8ba8",
+   "importance": 5,
+   "company_name": "NVIDIA",
+   "fiscal_period": "Q2",
+   "fiscal_year": 2028,
+   "previous_revenue": 96221000000.0,
+   "ticker": "NVDA",
+   "last_updated": "2026-09-14T23:30:26Z",
+   "date": "2027-08-25",
+   "time": "16:00:00"
+  },
+  {
+   "currency": "USD",
+   "date_status": "projected",
+   "estimated_eps": 3.15,
+   "previous_eps": 1.87,
+   "benzinga_id": "6a0d5cb06694b40001b89002",
+   "importance": 5,
+   "company_name": "NVIDIA",
+   "fiscal_period": "Q1",
+   "fiscal_year": 2028,
+   "previous_revenue": 81615000000.0,
+   "ticker": "NVDA",
+   "last_updated": "2026-09-14T23:30:26Z",
+   "date": "2027-05-19",
+   "time": "16:00:00"
+  },
+  {
+   "currency": "USD",
+   "date_status": "projected",
+   "estimated_eps": 2.74,
+   "previous_eps": 1.62,
+   "benzinga_id": "699e9ea8501b0e0001b69fa5",
+   "importance": 5,
+   "company_name": "NVIDIA",
+   "fiscal_period": "Q4",
+   "fiscal_year": 2027,
+   "estimated_revenue": 124026158184.0,
+   "previous_revenue": 68127000000.0,
+   "ticker": "NVDA",
+   "last_updated": "2026-10-05T23:31:13Z",
+   "date": "2027-02-24",
+   "time": "16:00:00"
+  },
+  "... 10 more"
+ ]
+}

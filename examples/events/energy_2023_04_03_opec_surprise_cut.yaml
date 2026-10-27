@@ -1,0 +1,30 @@
+id: energy_2023_04_03_opec_surprise_cut
+status: draft
+event: OPEC+ announces a surprise production cut (~1.2m bpd)
+schema:
+  variable: OPEC+ production target cut
+  comparator: '>='
+  threshold: 1.0
+  unit: m bpd
+  jurisdiction: OPEC+
+type: geopolitical_energy
+date: '2023-04-03'
+window:
+  before: 1
+  after: 1
+  from_close: '2023-03-31'
+  to_close: '2023-04-03'
+  why: announced Sunday Apr 2; Mar 31 close → Apr 3 close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: 0.00381
+  TLT: 0.00216
+  UUP: -0.00466
+  USO: 0.05765
+  GLD: 0.0072
+  CREDIT: -0.00802
+  VIXY: -0.02652
+sector_moves:
+  XLE: 0.04527
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

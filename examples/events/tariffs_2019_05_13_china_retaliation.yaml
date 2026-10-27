@@ -1,0 +1,32 @@
+id: tariffs_2019_05_13_china_retaliation
+status: draft
+event: China retaliates with tariffs on $60bn of US goods after the US hike to 25%
+schema:
+  variable: US tariff rate on Chinese imports
+  comparator: '>='
+  threshold: 25
+  unit: '%'
+  jurisdiction: US-CN
+type: trade_policy
+date: '2019-05-13'
+window:
+  before: 1
+  after: 1
+  from_close: '2019-05-10'
+  to_close: '2019-05-13'
+  why: retaliation announced before the open; prior close → day close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.02513
+  TLT: 0.00786
+  UUP: 0.0
+  USO: -0.01246
+  GLD: 0.01021
+  CREDIT: -0.01416
+  VIXY: 0.14599
+sector_moves:
+  SMH: -0.04635
+  XLI: -0.02845
+  IWM: -0.03186
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

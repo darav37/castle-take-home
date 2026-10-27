@@ -1,0 +1,10 @@
+name: policy_exposed
+status: draft   # SPEC §2 names categories only; tickers AND sizes are the build assistant placeholders, the trainer to pick
+description: Policy-sensitive book, $100k. Defense, solar, China ADRs, oil.
+cash_usd: 0
+positions:
+  - {ticker: ITA,  value_usd: 25000}   # defense
+  - {ticker: TAN,  value_usd: 20000}   # solar
+  - {ticker: BABA, value_usd: 15000}   # China ADR
+  - {ticker: PDD,  value_usd: 15000}   # China ADR
+  - {ticker: USO,  value_usd: 25000}

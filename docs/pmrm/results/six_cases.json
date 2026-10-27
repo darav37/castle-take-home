@@ -1,0 +1,1159 @@
+[
+ {
+  "book": "Normal book",
+  "question_kind": "What could hit me",
+  "question": "What could hit my portfolio?",
+  "book_value": 100000.0,
+  "options": null,
+  "routing": [
+   {
+    "entry": "scan_risks",
+    "engine": "planb",
+    "plan": [
+     {
+      "expert": "event_analyst",
+      "run": true,
+      "why": "always for events (writes the reply)"
+     }
+    ],
+    "seconds": 10.53
+   }
+  ],
+  "steps": [
+   {
+    "tool": "scan_risks",
+    "input": {
+     "question": "What could hit my portfolio?"
+    },
+    "ok": true
+   }
+  ],
+  "cards": [
+   {
+    "type": "risks",
+    "rows": [
+     [
+      "financial stress (bank failure, credit event)",
+      -302,
+      -3832,
+      [
+       [
+        "SPY",
+        -3275
+       ],
+       [
+        "QQQ",
+        -1223
+       ],
+       [
+        "AAPL",
+        -1170
+       ]
+      ]
+     ],
+     [
+      "supply shock",
+      -184,
+      -2340,
+      [
+       [
+        "SPY",
+        -1955
+       ],
+       [
+        "QQQ",
+        -770
+       ],
+       [
+        "AAPL",
+        -642
+       ]
+      ]
+     ],
+     [
+      "pandemic or health scare",
+      -242,
+      -1983,
+      [
+       [
+        "SPY",
+        -2759
+       ],
+       [
+        "QQQ",
+        -1106
+       ],
+       [
+        "AAPL",
+        -877
+       ]
+      ]
+     ],
+     [
+      "surprise central-bank move",
+      466,
+      -1899,
+      [
+       [
+        "SPY",
+        -2040
+       ],
+       [
+        "AAPL",
+        -845
+       ],
+       [
+        "QQQ",
+        -721
+       ]
+      ]
+     ]
+    ],
+    "sector_risks": [
+     [
+      "software",
+      -178
+     ],
+     [
+      "staples",
+      -115
+     ]
+    ],
+    "coverage": 0.9618
+   },
+   {
+    "type": "upcoming",
+    "rows": [
+     [
+      "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+      0.1,
+      -2920,
+      -2628,
+      292,
+      [
+       [
+        "SPY",
+        -1434
+       ],
+       [
+        "QQQ",
+        -592
+       ],
+       [
+        "AAPL",
+        -437
+       ]
+      ]
+     ],
+     [
+      "How high will unemployment get before 2027?",
+      0.066,
+      -2741,
+      -2560,
+      181,
+      [
+       [
+        "SPY",
+        -1434
+       ],
+       [
+        "QQQ",
+        -579
+       ],
+       [
+        "AAPL",
+        -419
+       ]
+      ]
+     ],
+     [
+      "Will the Fed have an emergency meeting before Jan 1, 2027?",
+      0.035,
+      -2763,
+      -2667,
+      95,
+      [
+       [
+        "SPY",
+        -1434
+       ],
+       [
+        "QQQ",
+        -580
+       ],
+       [
+        "AAPL",
+        -421
+       ]
+      ]
+     ],
+     [
+      "New pandemic by 2026?",
+      0.035,
+      -2740,
+      -2644,
+      96,
+      [
+       [
+        "SPY",
+        -1434
+       ],
+       [
+        "QQQ",
+        -633
+       ],
+       [
+        "AAPL",
+        -278
+       ]
+      ]
+     ],
+     [
+      "Pandemic in 2026?",
+      0.03,
+      -2643,
+      -2564,
+      79,
+      [
+       [
+        "SPY",
+        -1434
+       ],
+       [
+        "QQQ",
+        -585
+       ],
+       [
+        "AAPL",
+        -356
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "reply": "**Your book is mostly a bet on US stocks, so financial stress is the big risk.** Its bad case (1 in 10) is about -$3.8k, and the worst past example, Mar 2020, would cost about -$11.5k today.\n\nUpcoming, gas above $5.80 (10% odds) would cost about -$2.6k and isn't priced in. A Dec Fed hike at 71.5% is mostly priced, so YES costs only about -$253.\n\nWant me to price the financial stress scenario in detail?",
+  "tools": [
+   "scan_risks"
+  ],
+  "llm_calls": 4,
+  "seconds": 13.6
+ },
+ {
+  "book": "Normal book",
+  "question_kind": "Topical event",
+  "question": "What if the US and China announce a big new tariff escalation next week? What happens to my positions?",
+  "book_value": 100000.0,
+  "options": null,
+  "routing": [
+   {
+    "entry": "analyze_event",
+    "engine": "planb",
+    "event": "scenario:us-china-big-tariff-escalation",
+    "query": "US and China announce a big new tariff escalation next week",
+    "plan": [
+     {
+      "expert": "event_analyst",
+      "run": true,
+      "why": "Plan B assisted loop"
+     }
+    ],
+    "seconds": 8.18
+   }
+  ],
+  "steps": [
+   {
+    "tool": "event_evidence",
+    "input": {
+     "title": "US-China big tariff escalation",
+     "category": "trade_tariffs",
+     "severity": "major",
+     "anticipation": "partly_expected",
+     "region": "US, China",
+     "direction": {
+      "escalation": "escalation",
+      "growth_shock": "negative",
+      "inflation_shock": "up",
+      "risk_sentiment": "risk_off",
+      "policy_stance": "none",
+      "oil_supply": "none"
+     },
+     "factor_signs": {
+      "market": "-",
+      "rates_2y": "-",
+      "rates_10y": "-",
+      "dollar": "+",
+      "oil": "-",
+      "gold": "+",
+      "credit": "-"
+     },
+     "factor_sizes": {
+      "market": "medium",
+      "rates_2y": "small",
+      "rates_10y": "small",
+      "dollar": "small",
+      "oil": "small",
+      "gold": "small",
+      "credit": "small"
+     },
+     "targeted_sectors": [
+      "semis",
+      "consumer discretionary",
+      "industrials",
+      "retail"
+     ]
+    },
+    "ok": true
+   },
+   {
+    "tool": "price_scenario",
+    "input": {},
+    "ok": true
+   },
+   {
+    "tool": "analyze_event",
+    "input": {
+     "query": "US and China announce a big new tariff escalation next week",
+     "question": "What happens to my positions if the US and China announce a big new tariff escalation next week?"
+    },
+    "ok": true
+   }
+  ],
+  "cards": [
+   {
+    "type": "scenario",
+    "mode": "if it's a real market mover (directions from the analyst, sizes from the real-event model)",
+    "verdict": {
+     "call": "small",
+     "say": "a small move for your book, less than a normal two-day swing",
+     "middle_vs_normal_2_day_swing": 0.6562,
+     "normal_2_day_swing_usd": 1281.0,
+     "the_event_itself": {
+      "market": "US stocks",
+      "move": "-1.1%",
+      "vs_its_normal_2_day_swing": 0.7429,
+      "call": "barely a market event"
+     }
+    },
+    "factor_moves": {
+     "US stocks": "-1.1%",
+     "2-year yields": "-1.2bp",
+     "10-year yields": "-0.9bp",
+     "the dollar": "+0.1%",
+     "oil": "-0.5%",
+     "gold": "+0.3%",
+     "credit (high yield vs Treasuries)": "-0.1%"
+    },
+    "middle": -841,
+    "range": [
+     -4118,
+     1294
+    ],
+    "history": {
+     "middle_usd": -513.1,
+     "range_9_in_10_usd": [
+      -3357.0,
+      1364.0
+     ]
+    },
+    "positions": [
+     [
+      "SPY",
+      -1.09,
+      -436,
+      {}
+     ],
+     [
+      "QQQ",
+      -1.29,
+      -193,
+      {}
+     ],
+     [
+      "AAPL",
+      -0.82,
+      -82,
+      {}
+     ],
+     [
+      "MSFT",
+      -0.74,
+      -74,
+      {}
+     ],
+     [
+      "IWM",
+      -1.29,
+      -65,
+      {}
+     ],
+     [
+      "BND",
+      0.04,
+      9,
+      {}
+     ]
+    ],
+    "options": [],
+    "sector_news": [],
+    "company_news": [],
+    "probability": null,
+    "priced_in": null
+   }
+  ],
+  "reply": "**If it happens, a small hit: about -$841 by the close, less than your normal two-day swing of \u00b1$1,281.**\n\nNine times in ten the book lands between -$4,118 and +$1,294. The worst close match, March 2018's China tariffs, would cost -$3,401 today. Almost all of it is US stocks, led by SPY and QQQ, and BND is flat.\n\nWant me to price a hedge?",
+  "tools": [
+   "event_evidence",
+   "price_scenario",
+   "analyze_event"
+  ],
+  "llm_calls": 6,
+  "seconds": 10.9
+ },
+ {
+  "book": "Normal book",
+  "question_kind": "Crazy event",
+  "question": "What if NASA confirms tomorrow that we've discovered alien life? What happens to my positions?",
+  "book_value": 100000.0,
+  "options": null,
+  "routing": [
+   {
+    "entry": "analyze_event",
+    "engine": "planb",
+    "event": "scenario:nasa-confirms-discovery-of-alien-life",
+    "query": "NASA confirms discovery of alien life tomorrow",
+    "plan": [
+     {
+      "expert": "event_analyst",
+      "run": true,
+      "why": "Plan B assisted loop"
+     }
+    ],
+    "seconds": 8.14
+   }
+  ],
+  "steps": [
+   {
+    "tool": "event_evidence",
+    "input": {
+     "title": "NASA confirms discovery of alien life",
+     "category": "disaster",
+     "severity": "moderate",
+     "anticipation": "surprise",
+     "market_moving": false,
+     "region": "Global",
+     "direction": {
+      "risk_sentiment": "neutral",
+      "growth_shock": "none",
+      "inflation_shock": "none",
+      "oil_supply": "none",
+      "policy_stance": "none"
+     }
+    },
+    "ok": true
+   },
+   {
+    "tool": "price_scenario",
+    "input": {},
+    "ok": true
+   },
+   {
+    "tool": "analyze_event",
+    "input": {
+     "query": "NASA confirms discovery of alien life tomorrow",
+     "question": "What happens to my positions if NASA confirms alien life tomorrow?"
+    },
+    "ok": true
+   }
+  ],
+  "cards": [
+   {
+    "type": "scenario",
+    "mode": "not a market event: your book's normal range, nothing added",
+    "verdict": {
+     "call": "noise",
+     "say": "no reason to expect this to move markets: your book's normal range applies",
+     "middle_vs_normal_2_day_swing": 0.0,
+     "normal_2_day_swing_usd": 1281.0
+    },
+    "factor_moves": null,
+    "middle": 0,
+    "range": [
+     -1957,
+     1590
+    ],
+    "history": {
+     "middle_usd": 52.94,
+     "range_9_in_10_usd": [
+      -1938.0,
+      1641.0
+     ]
+    },
+    "positions": [
+     [
+      "SPY",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "QQQ",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "BND",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "IWM",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "AAPL",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "MSFT",
+      0.0,
+      0,
+      {}
+     ]
+    ],
+    "options": [],
+    "sector_news": [],
+    "company_news": [],
+    "probability": null,
+    "priced_in": null
+   }
+  ],
+  "reply": "**For your book, this is noise: the middle case is $0 and your normal two-day swing is about \u00b1$1,281.**\n\nHistory says disasters don't move broad markets in a consistent way. If it happened, the 9-in-10 range by the close is -$1,957 to +$1,590, and there's about a 1 in 3 chance of losing more than $500. That's an ordinary day's wobble.\n\nWant me to price something with a real market channel, like a rates or tech selloff?",
+  "tools": [
+   "event_evidence",
+   "price_scenario",
+   "analyze_event"
+  ],
+  "llm_calls": 6,
+  "seconds": 11.3
+ },
+ {
+  "book": "Weird book",
+  "question_kind": "What could hit me",
+  "question": "What could hit my portfolio?",
+  "book_value": 80000.0,
+  "options": [
+   {
+    "position": "USO 157 put Jan 15 2027 x2",
+    "value_usd": 1985.0000001358494
+   },
+   {
+    "position": "TLT 90 call Jan 15 2027 x5",
+    "value_usd": 112.50000653265514
+   }
+  ],
+  "routing": [
+   {
+    "entry": "scan_risks",
+    "engine": "planb",
+    "plan": [
+     {
+      "expert": "event_analyst",
+      "run": true,
+      "why": "always for events (writes the reply)"
+     }
+    ],
+    "seconds": 9.23
+   }
+  ],
+  "steps": [
+   {
+    "tool": "scan_risks",
+    "input": {
+     "question": "What could hit my portfolio?"
+    },
+    "ok": true
+   }
+  ],
+  "cards": [
+   {
+    "type": "risks",
+    "rows": [
+     [
+      "financial stress (bank failure, credit event)",
+      -367,
+      -3693,
+      [
+       [
+        "MRNA",
+        -1635
+       ],
+       [
+        "URA",
+        -974
+       ],
+       [
+        "GDX",
+        -895
+       ]
+      ]
+     ],
+     [
+      "supply shock",
+      -15,
+      -2206,
+      [
+       [
+        "MRNA",
+        -1083
+       ],
+       [
+        "GDX",
+        -655
+       ],
+       [
+        "URA",
+        -515
+       ]
+      ]
+     ],
+     [
+      "natural disaster",
+      -160,
+      -2020,
+      [
+       [
+        "MRNA",
+        -762
+       ],
+       [
+        "GDX",
+        -590
+       ],
+       [
+        "URA",
+        -466
+       ]
+      ]
+     ],
+     [
+      "surprise central-bank move",
+      395,
+      -1789,
+      [
+       [
+        "MRNA",
+        -1305
+       ],
+       [
+        "EWZ",
+        -427
+       ],
+       [
+        "UNG",
+        -415
+       ]
+      ]
+     ]
+    ],
+    "sector_risks": [
+     [
+      "biotech",
+      -611
+     ],
+     [
+      "metals & mining",
+      -576
+     ],
+     [
+      "regional banks",
+      -232
+     ]
+    ],
+    "coverage": 0.5432
+   },
+   {
+    "type": "upcoming",
+    "rows": [
+     [
+      "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+      0.1,
+      -2941,
+      -2647,
+      294,
+      [
+       [
+        "MRNA",
+        -796
+       ],
+       [
+        "USO 157 put Jan 15 2027 x2",
+        -710
+       ],
+       [
+        "URA",
+        -446
+       ]
+      ]
+     ],
+     [
+      "Will the 7-day moving average of transit calls through the Strait of H",
+      0.076,
+      1856,
+      1714,
+      -142,
+      [
+       [
+        "USO 157 put Jan 15 2027 x2",
+        1412
+       ],
+       [
+        "MRNA",
+        251
+       ],
+       [
+        "UNG",
+        -225
+       ]
+      ]
+     ],
+     [
+      "How high will unemployment get before 2027?",
+      0.049,
+      -2099,
+      -1996,
+      103,
+      [
+       [
+        "MRNA",
+        -878
+       ],
+       [
+        "KRE",
+        -460
+       ],
+       [
+        "URA",
+        -364
+       ]
+      ]
+     ],
+     [
+      "Will the Federal Reserve Hike rates by 25bps at their December 2026 me",
+      0.715,
+      -930,
+      -265,
+      665,
+      [
+       [
+        "MRNA",
+        -204
+       ],
+       [
+        "GDX",
+        -179
+       ],
+       [
+        "URA",
+        -167
+       ]
+      ]
+     ],
+     [
+      "Will CPI rise more than 0.4% in November 2026?",
+      0.23,
+      -818,
+      -630,
+      188,
+      [
+       [
+        "MRNA",
+        -285
+       ],
+       [
+        "GDX",
+        -130
+       ],
+       [
+        "URA",
+        -125
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "reply": "**Financial stress is the big one: a bad case (1 in 10) of about -$3.7k, and the 2020-03-11 replay would cost about -$9.5k.** MRNA, URA, KRE and GDX drive it, and your USO puts cushion it. The factors only partly cover MRNA and UNG, so treat the numbers as partial.\n\nUpcoming: the Oct 28 Fed hold is 92.5% likely, so it's mostly priced. The least priced risks are an emergency Fed meeting (3.45%, -$1.7k if it happens) and gas above $5.80 (10%, -$2.6k).\n\nWant me to price the financial-stress scenario in full?",
+  "tools": [
+   "scan_risks"
+  ],
+  "llm_calls": 4,
+  "seconds": 12.9
+ },
+ {
+  "book": "Weird book",
+  "question_kind": "Topical event",
+  "question": "What if the US and China announce a big new tariff escalation next week? What happens to my positions?",
+  "book_value": 80000.0,
+  "options": [
+   {
+    "position": "USO 157 put Jan 15 2027 x2",
+    "value_usd": 1985.0000001358494
+   },
+   {
+    "position": "TLT 90 call Jan 15 2027 x5",
+    "value_usd": 112.50000653265514
+   }
+  ],
+  "routing": [
+   {
+    "entry": "analyze_event",
+    "engine": "planb",
+    "event": "scenario:us-china-big-tariff-escalation",
+    "query": "US and China announce a big new tariff escalation next week",
+    "plan": [
+     {
+      "expert": "event_analyst",
+      "run": true,
+      "why": "Plan B assisted loop"
+     }
+    ],
+    "seconds": 8.83
+   }
+  ],
+  "steps": [
+   {
+    "tool": "event_evidence",
+    "input": {
+     "title": "US-China big tariff escalation",
+     "category": "trade_tariffs",
+     "severity": "major",
+     "anticipation": "partly_expected",
+     "region": "US, China",
+     "direction": {
+      "escalation": "escalation",
+      "growth_shock": "negative",
+      "inflation_shock": "up",
+      "risk_sentiment": "risk_off",
+      "oil_supply": "none",
+      "policy_stance": "none"
+     },
+     "factor_signs": {
+      "market": "-",
+      "rates_2y": "-",
+      "rates_10y": "-",
+      "dollar": "+",
+      "oil": "-",
+      "gold": "+",
+      "credit": "-"
+     },
+     "factor_sizes": {
+      "market": "medium",
+      "rates_2y": "small",
+      "rates_10y": "small",
+      "dollar": "small",
+      "oil": "medium",
+      "gold": "small",
+      "credit": "small"
+     },
+     "targeted_sectors": [
+      "industrials",
+      "semis",
+      "materials"
+     ]
+    },
+    "ok": true
+   },
+   {
+    "tool": "price_scenario",
+    "input": {},
+    "ok": true
+   },
+   {
+    "tool": "analyze_event",
+    "input": {
+     "query": "US and China announce a big new tariff escalation next week",
+     "question": "What happens to my positions if the US and China announce a big new tariff escalation next week?"
+    },
+    "ok": true
+   }
+  ],
+  "cards": [
+   {
+    "type": "scenario",
+    "mode": "if it's a real market mover (directions from the analyst, sizes from the real-event model)",
+    "verdict": {
+     "call": "noise",
+     "say": "for your book this is within normal day-to-day noise",
+     "middle_vs_normal_2_day_swing": 0.09355,
+     "normal_2_day_swing_usd": 2037.0,
+     "the_event_itself": {
+      "market": "US stocks",
+      "move": "-1.1%",
+      "vs_its_normal_2_day_swing": 0.7429,
+      "call": "barely a market event"
+     }
+    },
+    "factor_moves": {
+     "US stocks": "-1.1%",
+     "2-year yields": "-1.2bp",
+     "10-year yields": "-0.9bp",
+     "the dollar": "+0.1%",
+     "oil": "-2.7%",
+     "gold": "+0.3%",
+     "credit (high yield vs Treasuries)": "-0.1%"
+    },
+    "middle": -191,
+    "range": [
+     -3479,
+     3280
+    ],
+    "history": {
+     "middle_usd": -138.2,
+     "range_9_in_10_usd": [
+      -3406.0,
+      3076.0
+     ]
+    },
+    "positions": [
+     [
+      "MRNA",
+      -2.45,
+      -245,
+      {}
+     ],
+     [
+      "KRE",
+      -1.15,
+      -115,
+      {}
+     ],
+     [
+      "URA",
+      -0.87,
+      -87,
+      {}
+     ],
+     [
+      "EWZ",
+      -0.77,
+      -77,
+      {}
+     ],
+     [
+      "GDX",
+      -0.24,
+      -36,
+      {}
+     ],
+     [
+      "DBA",
+      -0.35,
+      -35,
+      {}
+     ],
+     [
+      "UNG",
+      -0.1,
+      -10,
+      {}
+     ],
+     [
+      "SLV",
+      -0.13,
+      -6,
+      {}
+     ]
+    ],
+    "options": [
+     [
+      "USO 157 put Jan 15 2027 x2",
+      345,
+      -542
+     ],
+     [
+      "TLT 90 call Jan 15 2027 x5",
+      -3,
+      -50
+     ]
+    ],
+    "sector_news": [],
+    "company_news": [],
+    "probability": null,
+    "priced_in": null
+   }
+  ],
+  "reply": "**For your book, a big US-China tariff escalation is noise: code's middle is -$190.6 by the close, and your normal two-day swing is \u00b1$2,037.**\n\nThe 9-in-10 range is -$3,479 to +$3,280. The worst close past event, July 2018, would cost about $2,080 today. MRNA (-$245) and KRE (-$115) drag most, and your USO puts gain about $345 as oil falls. Coverage is partial, since MRNA and UNG sit outside the factors.\n\nWant me to price an oil-specific shock instead?",
+  "tools": [
+   "event_evidence",
+   "price_scenario",
+   "analyze_event"
+  ],
+  "llm_calls": 6,
+  "seconds": 12.1
+ },
+ {
+  "book": "Weird book",
+  "question_kind": "Crazy event",
+  "question": "What if NASA confirms tomorrow that we've discovered alien life? What happens to my positions?",
+  "book_value": 80000.0,
+  "options": [
+   {
+    "position": "USO 157 put Jan 15 2027 x2",
+    "value_usd": 1985.0000001358494
+   },
+   {
+    "position": "TLT 90 call Jan 15 2027 x5",
+    "value_usd": 112.50000653265514
+   }
+  ],
+  "routing": [
+   {
+    "entry": "analyze_event",
+    "engine": "planb",
+    "event": "scenario:nasa-confirms-discovery-of-alien-life",
+    "query": "NASA confirms discovery of alien life tomorrow",
+    "plan": [
+     {
+      "expert": "event_analyst",
+      "run": true,
+      "why": "Plan B assisted loop"
+     }
+    ],
+    "seconds": 8.66
+   }
+  ],
+  "steps": [
+   {
+    "tool": "event_evidence",
+    "input": {
+     "title": "NASA confirms discovery of alien life",
+     "category": "disaster",
+     "severity": "moderate",
+     "market_moving": false,
+     "anticipation": "surprise",
+     "region": "Global"
+    },
+    "ok": true
+   },
+   {
+    "tool": "price_scenario",
+    "input": {},
+    "ok": true
+   },
+   {
+    "tool": "analyze_event",
+    "input": {
+     "query": "NASA confirms discovery of alien life tomorrow",
+     "question": "What if NASA confirms tomorrow that we've discovered alien life? What happens to my positions?"
+    },
+    "ok": true
+   }
+  ],
+  "cards": [
+   {
+    "type": "scenario",
+    "mode": "not a market event: your book's normal range, nothing added",
+    "verdict": {
+     "call": "noise",
+     "say": "no reason to expect this to move markets: your book's normal range applies",
+     "middle_vs_normal_2_day_swing": 0.001642,
+     "normal_2_day_swing_usd": 2037.0
+    },
+    "factor_moves": null,
+    "middle": -3,
+    "range": [
+     -3076,
+     2931
+    ],
+    "history": {
+     "middle_usd": 99.29,
+     "range_9_in_10_usd": [
+      -2935.0,
+      2892.0
+     ]
+    },
+    "positions": [
+     [
+      "GDX",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "URA",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "DBA",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "EWZ",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "KRE",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "MRNA",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "UNG",
+      0.0,
+      0,
+      {}
+     ],
+     [
+      "SLV",
+      0.0,
+      0,
+      {}
+     ]
+    ],
+    "options": [
+     [
+      "USO 157 put Jan 15 2027 x2",
+      -20,
+      -493
+     ],
+     [
+      "TLT 90 call Jan 15 2027 x5",
+      -6,
+      -47
+     ]
+    ],
+    "sector_news": [],
+    "company_news": [],
+    "probability": null,
+    "priced_in": null
+   }
+  ],
+  "reply": "**For your book, alien-life news is noise: the middle case is about -$3 by the close, against a normal two-day swing of \u00b1$2,037.**\n\nPast disasters had no consistent effect on markets within days, and the worst of the nearest ones would cost you about $277. The 9-in-10 range is -$3,076 to +$2,931, which is mostly your usual daily noise. MRNA and UNG are only partly covered by the model, so treat those numbers as rough.\n\nWant me to price something that could really hit you, like an oil or rates shock?",
+  "tools": [
+   "event_evidence",
+   "price_scenario",
+   "analyze_event"
+  ],
+  "llm_calls": 6,
+  "seconds": 11.6
+ }
+]

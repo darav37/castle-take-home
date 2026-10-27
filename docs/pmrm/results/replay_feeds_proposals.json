@@ -1,0 +1,595 @@
+{
+ "before": {
+  "the trainer's example book": {
+   "book": "the trainer's example book",
+   "as_of": "2026-10-24",
+   "top3": [
+    "financial_stress",
+    "supply_shock",
+    "disaster"
+   ],
+   "top3_bad_case_usd": {
+    "financial_stress": -4450.973241408963,
+    "supply_shock": -2646.636098703806,
+    "disaster": -2529.3771311499704
+   },
+   "proposals_shown": [
+    {
+     "title": "US-Iran Hormuz agreement signed, shipping normalizes and oil drops",
+     "category": "conflict_war",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: US-Iran Hormuz Agreement by December 31?",
+     "full_impact_usd": 3351.781532246975,
+     "odds": 0.335,
+     "odds_source": "market",
+     "why_this_book": "Long USO puts gain on lower oil; long US stocks and growth names rally."
+    },
+    {
+     "title": "AI bubble bursts: hyperscaler capex cuts hit semis and storage names",
+     "category": "financial_stress",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: AI bubble burst in 2026? (December 31, 2026)",
+     "full_impact_usd": -3905.7286611668974,
+     "odds": 0.0925,
+     "odds_source": "market",
+     "why_this_book": "Large WDC and TSLA positions, growth tilt, semis exposure and a big long-stocks beta."
+    },
+    {
+     "title": "Fed hikes 25bps in December on re-accelerating inflation",
+     "category": "central_bank_unscheduled",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: Will the Federal Reserve Hike rates by 25bps at their December 2026 meeting?",
+     "full_impact_usd": -2080.386603485114,
+     "odds": 0.735,
+     "odds_source": "market",
+     "why_this_book": "Long stocks and gold, growth-heavy book; a hike hurts equities, gold and small caps."
+    },
+    {
+     "title": "China imposes naval blockade of Taiwan, disrupting chip supply chains",
+     "category": "conflict_war",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": null,
+     "full_impact_usd": -4285.023107912571,
+     "odds": 0.8458552239083326,
+     "odds_source": "base rate",
+     "why_this_book": "Heavy semis, WDC and TSLA exposure to supply chains and equity beta; EM underperforms."
+    }
+   ],
+   "proposals_total": 6,
+   "proposals_error": null,
+   "category_in_top3": 1,
+   "from_history_in_top3": 0,
+   "headline": [
+    [
+     "US-Iran Hormuz agreement signed, shipping normalizes and oil drops",
+     "proposal",
+     3351.781532246975
+    ],
+    [
+     "Will the 5-year Treasury yield hit 5.25% before 2027?",
+     "market",
+     -3529.6864641566017
+    ],
+    [
+     "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+     "market",
+     -4181.992240732937
+    ],
+    [
+     "Next Fed decision",
+     "calendar",
+     1143.9515212248798
+    ],
+    [
+     "AI bubble bursts: hyperscaler capex cuts hit semis and storage names",
+     "proposal",
+     -3905.7286611668974
+    ],
+    [
+     "Fed hikes 25bps in December on re-accelerating inflation",
+     "proposal",
+     -2080.386603485114
+    ],
+    [
+     "Will the 10-year Treasury yield hit 5.7% before 2027?",
+     "market",
+     -3635.16501056551
+    ],
+    [
+     "How high will unemployment get before 2027?",
+     "market",
+     -2950.212998041969
+    ]
+   ],
+   "tail_risks": [
+    [
+     "China imposes naval blockade of Taiwan, disrupting chip supply chains",
+     "conflict_war",
+     -4285.023107912571
+    ]
+   ],
+   "threshold_usd": 1106.7341242896741
+  },
+  "Normal book": {
+   "book": "Normal book",
+   "as_of": "2026-10-24",
+   "top3": [
+    "financial_stress",
+    "supply_shock",
+    "health_pandemic"
+   ],
+   "top3_bad_case_usd": {
+    "financial_stress": -3831.9569591015807,
+    "supply_shock": -2340.379112755534,
+    "health_pandemic": -1982.8383081404295
+   },
+   "proposals_shown": [
+    {
+     "title": "Mega-cap tech earnings disappoint on AI capex worries (MSFT/GOOGL/AMZN/AAPL), triggering AI bubble selloff",
+     "category": "financial_stress",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: AI bubble burst in 2026? (December 31, 2026)",
+     "full_impact_usd": -2933.3788311764265,
+     "odds": 0.0925,
+     "odds_source": "market",
+     "why_this_book": "Roughly 40% of book in mega-cap tech names; very long US stocks."
+    },
+    {
+     "title": "Weak labor data and rising unemployment spark recession scare and emergency Fed easing",
+     "category": "central_bank_unscheduled",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: How high will unemployment get before 2027?",
+     "full_impact_usd": -2705.688678482271,
+     "odds": 0.0765,
+     "odds_source": "market",
+     "why_this_book": "High equity beta and credit exposure suffer in a growth scare."
+    },
+    {
+     "title": "China moves on Taiwan (blockade/quarantine), semiconductor supply chain disrupted",
+     "category": "conflict_war",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": null,
+     "full_impact_usd": -2836.944001203713,
+     "odds": 0.8458552239083326,
+     "odds_source": "base rate",
+     "why_this_book": "Apple and Nvidia depend on Taiwan supply chains; large equity beta."
+    }
+   ],
+   "proposals_total": 6,
+   "proposals_error": null,
+   "category_in_top3": 1,
+   "from_history_in_top3": 0,
+   "headline": [
+    [
+     "Will the 5-year Treasury yield hit 5.25% before 2027?",
+     "market",
+     -2848.206671430643
+    ],
+    [
+     "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+     "market",
+     -2920.4083558512225
+    ],
+    [
+     "Mega-cap tech earnings disappoint on AI capex worries (MSFT/GOOGL/AMZN/AAPL), triggering AI bubble selloff",
+     "proposal",
+     -2933.3788311764265
+    ],
+    [
+     "MSFT earnings",
+     "calendar",
+     813.4382725351724
+    ],
+    [
+     "Story develops further: Iran's Islamic Revolutionary Guard Corps reports that an oil tanker has caught on fire and exploded in the southern part",
+     "news",
+     -798.4391253575308
+    ],
+    [
+     "Story develops further: Iran's Islamic Revolutionary Guard Corps reports that seven oil tankers have been hit in the Strait of Hormuz. (Al Jazee",
+     "news",
+     -798.4391253575308
+    ],
+    [
+     "Next Fed decision",
+     "calendar",
+     751.2972193784278
+    ],
+    [
+     "Weak labor data and rising unemployment spark recession scare and emergency Fed easing",
+     "proposal",
+     -2705.688678482271
+    ]
+   ],
+   "tail_risks": [
+    [
+     "China moves on Taiwan (blockade/quarantine), semiconductor supply chain disrupted",
+     "conflict_war",
+     -2836.944001203713
+    ]
+   ],
+   "threshold_usd": 640.6968760628051
+  },
+  "Weird book": {
+   "book": "Weird book",
+   "as_of": "2026-10-24",
+   "top3": [
+    "financial_stress",
+    "supply_shock",
+    "disaster"
+   ],
+   "top3_bad_case_usd": {
+    "financial_stress": -3692.562195221906,
+    "supply_shock": -2205.846819086075,
+    "disaster": -2019.9348844038154
+   },
+   "proposals_shown": [
+    {
+     "title": "US-Iran Hormuz agreement signed, shipping reopens",
+     "category": "conflict_war",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: US-Iran Hormuz Agreement by December 31?",
+     "full_impact_usd": 1350.0856005825344,
+     "odds": 0.335,
+     "odds_source": "market",
+     "why_this_book": "Oil collapse pays the USO puts; lower gold hurts the large miner holdings."
+    },
+    {
+     "title": "Gold crashes as a major central bank sells reserves and the dollar spikes",
+     "category": "financial_stress",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": null,
+     "full_impact_usd": -2605.8698333052253,
+     "odds": 0.6024623981150399,
+     "odds_source": "base rate",
+     "why_this_book": "Gold is the largest factor exposure, with heavy miner and royalty concentration."
+    }
+   ],
+   "proposals_total": 6,
+   "proposals_error": null,
+   "category_in_top3": 1,
+   "from_history_in_top3": 0,
+   "headline": [
+    [
+     "Will the 5-year Treasury yield hit 5.25% before 2027?",
+     "market",
+     -2296.853168094763
+    ],
+    [
+     "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+     "market",
+     -2940.979853192455
+    ],
+    [
+     "Will Gold (XAUUSD) hit (LOW) $3,800 in October? (\u2193 $3,800)",
+     "market",
+     -2463.8242087250787
+    ],
+    [
+     "Will the 10-year Treasury yield hit 5.7% before 2027?",
+     "market",
+     -3020.4061533049917
+    ],
+    [
+     "US-Iran Hormuz agreement signed, shipping reopens",
+     "proposal",
+     1350.0856005825344
+    ],
+    [
+     "AI bubble burst in 2026? (December 31, 2026)",
+     "market",
+     -2117.579890699714
+    ],
+    [
+     "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before January 1, 2027?",
+     "market",
+     1856.1355868426695
+    ],
+    [
+     "How high will unemployment get before 2027?",
+     "market",
+     -2098.626016944607
+    ]
+   ],
+   "tail_risks": [
+    [
+     "Gold crashes as a major central bank sells reserves and the dollar spikes",
+     "financial_stress",
+     -2605.8698333052253
+    ]
+   ],
+   "threshold_usd": 1018.5208515545571
+  },
+  "_llm": {
+   "job": "replay_feeds_compare",
+   "model": "claude-sonnet-5-5",
+   "calls": 3,
+   "cache_hits": 0,
+   "est_usd": 0.138,
+   "caps": {
+    "calls": 300,
+    "usd": 5.0
+   },
+   "ran_at": "2026-10-24T20:19"
+  }
+ },
+ "after": {
+  "the trainer's example book": {
+   "book": "the trainer's example book",
+   "as_of": "2026-10-24",
+   "top3": [
+    "financial_stress",
+    "supply_shock",
+    "disaster"
+   ],
+   "top3_bad_case_usd": {
+    "financial_stress": -4450.973241408963,
+    "supply_shock": -2646.636098703806,
+    "disaster": -2529.3771311499704
+   },
+   "proposals_shown": [
+    {
+     "title": "AI bubble bursts: AI-capex pullback and a hard selloff in semis and storage names",
+     "category": "financial_stress",
+     "from_history": "financial_stress",
+     "from_history_bad_case_usd": -4450.973241408963,
+     "linked_to": "market: AI bubble burst in 2026? (December 31, 2026)",
+     "full_impact_usd": -4015.330115173253,
+     "odds": 0.095,
+     "odds_source": "market",
+     "why_this_book": "Big WDC and TSLA positions plus long US stocks and semis exposure."
+    },
+    {
+     "title": "US-Iran Hormuz agreement signed, shipping normalizes and oil drops sharply",
+     "category": "conflict_war",
+     "from_history": null,
+     "from_history_bad_case_usd": null,
+     "linked_to": "market: US-Iran Hormuz Agreement by December 31?",
+     "full_impact_usd": 2337.389569902244,
+     "odds": 0.335,
+     "odds_source": "market",
+     "why_this_book": "USO puts gain and risk-on helps TSLA and the broad market."
+    },
+    {
+     "title": "Saudi East-West pipeline struck militarily, oil spikes and risk assets sell off",
+     "category": "conflict_war",
+     "from_history": "supply_shock",
+     "from_history_bad_case_usd": -2646.636098703806,
+     "linked_to": "market: Military action against Saudi Oil Pipeline (East-West) by November 30?",
+     "full_impact_usd": -1923.6871694713489,
+     "odds": 0.62,
+     "odds_source": "market",
+     "why_this_book": "Oil spike hurts the USO puts, and the equity-heavy book falls with the market."
+    },
+    {
+     "title": "Regional bank failure and credit event spreads contagion to high-yield funding markets",
+     "category": "financial_stress",
+     "from_history": "financial_stress",
+     "from_history_bad_case_usd": -4450.973241408963,
+     "linked_to": null,
+     "full_impact_usd": -3380.1179054073154,
+     "odds": 0.6024623981150399,
+     "odds_source": "base rate",
+     "why_this_book": "High-beta TSLA and WDC plus long US stocks and small caps."
+    },
+    {
+     "title": "China reimposes sweeping rare earth and critical mineral export controls on the US",
+     "category": "supply_shock",
+     "from_history": "supply_shock",
+     "from_history_bad_case_usd": -2646.636098703806,
+     "linked_to": null,
+     "full_impact_usd": -2108.3413381970677,
+     "odds": 0.6311112880171877,
+     "odds_source": "base rate",
+     "why_this_book": "TSLA and WDC depend on magnets and materials, and it hits semis."
+    }
+   ],
+   "proposals_total": 6,
+   "proposals_error": null,
+   "category_in_top3": 3,
+   "from_history_in_top3": 4,
+   "headline": [
+    [
+     "Will the 5-year Treasury yield hit 5.25% before 2027?",
+     "market",
+     -3529.6864641566017
+    ],
+    [
+     "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+     "market",
+     -4181.992240732937
+    ],
+    [
+     "AI bubble bursts: AI-capex pullback and a hard selloff in semis and storage names",
+     "proposal",
+     -4015.330115173253
+    ],
+    [
+     "Next Fed decision",
+     "calendar",
+     1143.9515212248798
+    ],
+    [
+     "US-Iran Hormuz agreement signed, shipping normalizes and oil drops sharply",
+     "proposal",
+     2337.389569902244
+    ],
+    [
+     "Saudi East-West pipeline struck militarily, oil spikes and risk assets sell off",
+     "proposal",
+     -1923.6871694713489
+    ],
+    [
+     "Will the 10-year Treasury yield hit 5.7% before 2027?",
+     "market",
+     -3635.16501056551
+    ],
+    [
+     "How high will unemployment get before 2027?",
+     "market",
+     -2950.212998041969
+    ]
+   ],
+   "tail_risks": [
+    [
+     "Regional bank failure and credit event spreads contagion to high-yield funding markets",
+     "financial_stress",
+     -3380.1179054073154
+    ],
+    [
+     "China reimposes sweeping rare earth and critical mineral export controls on the US",
+     "supply_shock",
+     -2108.3413381970677
+    ]
+   ],
+   "threshold_usd": 1106.7341242896741
+  },
+  "Normal book": {
+   "book": "Normal book",
+   "as_of": "2026-10-24",
+   "top3": [
+    "financial_stress",
+    "supply_shock",
+    "health_pandemic"
+   ],
+   "top3_bad_case_usd": {
+    "financial_stress": -3831.9569591015807,
+    "supply_shock": -2340.379112755534,
+    "health_pandemic": -1982.8383081404295
+   },
+   "proposals_shown": [],
+   "proposals_total": 0,
+   "proposals_error": "BudgetExceeded: I've hit my hourly usage limit. Try again in a bit.",
+   "category_in_top3": 0,
+   "from_history_in_top3": 0,
+   "headline": [
+    [
+     "Will the 5-year Treasury yield hit 5.25% before 2027?",
+     "market",
+     -2848.206671430643
+    ],
+    [
+     "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+     "market",
+     -2920.4083558512225
+    ],
+    [
+     "AI bubble burst in 2026? (December 31, 2026)",
+     "market",
+     -2867.104849601864
+    ],
+    [
+     "MSFT earnings",
+     "calendar",
+     813.4382725351724
+    ],
+    [
+     "Story develops further: Iran's Islamic Revolutionary Guard Corps reports that an oil tanker has caught on fire and exploded in the southern part",
+     "news",
+     -798.4391253575308
+    ],
+    [
+     "Story develops further: Iran's Islamic Revolutionary Guard Corps reports that seven oil tankers have been hit in the Strait of Hormuz. (Al Jazee",
+     "news",
+     -798.4391253575308
+    ],
+    [
+     "Next Fed decision",
+     "calendar",
+     751.2972193784278
+    ],
+    [
+     "How high will unemployment get before 2027?",
+     "market",
+     -2741.2705063011376
+    ]
+   ],
+   "tail_risks": [],
+   "threshold_usd": 640.6968760628051
+  },
+  "Weird book": {
+   "book": "Weird book",
+   "as_of": "2026-10-24",
+   "top3": [
+    "financial_stress",
+    "supply_shock",
+    "disaster"
+   ],
+   "top3_bad_case_usd": {
+    "financial_stress": -3692.562195221906,
+    "supply_shock": -2205.846819086075,
+    "disaster": -2019.9348844038154
+   },
+   "proposals_shown": [],
+   "proposals_total": 0,
+   "proposals_error": "BudgetExceeded: I've hit my hourly usage limit. Try again in a bit.",
+   "category_in_top3": 0,
+   "from_history_in_top3": 0,
+   "headline": [
+    [
+     "Will the 5-year Treasury yield hit 5.25% before 2027?",
+     "market",
+     -2296.853168094763
+    ],
+    [
+     "US-Iran Hormuz Agreement by December 31?",
+     "market",
+     1856.1355868426695
+    ],
+    [
+     "Will average **gas prices** be above $5.80 by Dec 31, 2026?",
+     "market",
+     -2940.979853192455
+    ],
+    [
+     "Will Gold (XAUUSD) hit (LOW) $3,800 in October? (\u2193 $3,800)",
+     "market",
+     -2463.8242087250787
+    ],
+    [
+     "Will the 10-year Treasury yield hit 5.7% before 2027?",
+     "market",
+     -3020.4061533049917
+    ],
+    [
+     "AI bubble burst in 2026? (December 31, 2026)",
+     "market",
+     -2117.579890699714
+    ],
+    [
+     "Will the 7-day moving average of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be above 60 before January 1, 2027?",
+     "market",
+     1856.1355868426695
+    ],
+    [
+     "How high will unemployment get before 2027?",
+     "market",
+     -2098.626016944607
+    ]
+   ],
+   "tail_risks": [],
+   "threshold_usd": 1018.5208515545571
+  },
+  "_llm": {
+   "job": "replay_feeds_compare",
+   "model": "claude-sonnet-5-5",
+   "calls": 1,
+   "cache_hits": 0,
+   "est_usd": 0.057,
+   "caps": {
+    "calls": 300,
+    "usd": 5.0
+   },
+   "ran_at": "2026-10-24T20:41"
+  }
+ }
+}

@@ -1,0 +1,30 @@
+id: fiscal_2011_08_08_us_downgrade
+status: draft
+event: S&P downgrades US sovereign rating to AA+
+schema:
+  variable: US sovereign rating (S&P)
+  comparator: <
+  threshold: null
+  unit: rating
+  jurisdiction: US
+type: fiscal_debt
+date: '2011-08-08'
+window:
+  before: 1
+  after: 1
+  from_close: '2011-08-05'
+  to_close: '2011-08-08'
+  why: announced Fri Aug 5 after the close; Aug 5 close → Aug 8 close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.06512
+  TLT: 0.03157
+  UUP: 0.00141
+  USO: -0.07187
+  GLD: 0.03319
+  CREDIT: -0.05851
+  VIXY: 0.14646
+sector_moves:
+  XLF: -0.09479
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

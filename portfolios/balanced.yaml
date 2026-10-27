@@ -1,0 +1,12 @@
+name: balanced
+status: draft   # tickers from SPEC §2; dollar sizes are the build assistant placeholders, the trainer to finalize
+description: Multi-asset book, $100k. Equity core with rates, gold, energy and credit.
+cash_usd: 0
+positions:
+  - {ticker: SPY,  value_usd: 25000}
+  - {ticker: QQQ,  value_usd: 15000}
+  - {ticker: NVDA, value_usd: 10000}
+  - {ticker: TLT,  value_usd: 15000}
+  - {ticker: GLD,  value_usd: 10000}
+  - {ticker: XLE,  value_usd: 10000}
+  - {ticker: HYG,  value_usd: 15000}

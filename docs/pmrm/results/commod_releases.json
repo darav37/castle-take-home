@@ -1,0 +1,206 @@
+{
+ "EIA crude stocks | USO": {
+  "events": 946,
+  "first": "2008-06-04",
+  "hour": {
+   "size_vs_control_rms": 1.340201116724219,
+   "share_over_2x_control_sd": 0.12684989429175475,
+   "control_share_over_2x": 0.05708245243128964,
+   "direction_hit_bearish_on_build": 0.5253699788583509,
+   "direction_hit_on_big_moves": 0.6333333333333333,
+   "rank_corr_surprise_move": -0.12782850485712083,
+   "by_split_direction_hit": {
+    "test": 0.34146341463414637,
+    "train": 0.5352862849533955,
+    "validation": 0.525974025974026
+   },
+   "by_split_n": {
+    "train": 751,
+    "validation": 154,
+    "test": 41
+   }
+  },
+  "to_close": {
+   "size_vs_control_rms": 1.2816743748020176,
+   "share_over_2x_control_sd": 0.09513742071881606,
+   "control_share_over_2x": 0.04334038054968287,
+   "direction_hit_bearish_on_build": 0.5264270613107822,
+   "direction_hit_on_big_moves": 0.5111111111111111,
+   "rank_corr_surprise_move": -0.04840298006663162,
+   "by_split_direction_hit": {
+    "test": 0.5365853658536586,
+    "train": 0.5406125166444741,
+    "validation": 0.45454545454545453
+   },
+   "by_split_n": {
+    "train": 751,
+    "validation": 154,
+    "test": 41
+   }
+  }
+ },
+ "EIA gas storage | UNG": {
+  "events": 695,
+  "first": "2013-01-10",
+  "hour": {
+   "size_vs_control_rms": 1.6498533424977515,
+   "share_over_2x_control_sd": 0.19136690647482013,
+   "control_share_over_2x": 0.0618705035971223,
+   "direction_hit_bearish_on_build": 0.520863309352518,
+   "direction_hit_on_big_moves": 0.6466165413533834,
+   "rank_corr_surprise_move": -0.08055503614484878,
+   "by_split_direction_hit": {
+    "test": 0.36585365853658536,
+    "train": 0.5267326732673268,
+    "validation": 0.5436241610738255
+   },
+   "by_split_n": {
+    "train": 505,
+    "validation": 149,
+    "test": 41
+   }
+  },
+  "to_close": {
+   "size_vs_control_rms": 1.2860402224252447,
+   "share_over_2x_control_sd": 0.1079136690647482,
+   "control_share_over_2x": 0.05755395683453238,
+   "direction_hit_bearish_on_build": 0.4906474820143885,
+   "direction_hit_on_big_moves": 0.52,
+   "rank_corr_surprise_move": -0.004880935410059077,
+   "by_split_direction_hit": {
+    "test": 0.43902439024390244,
+    "train": 0.504950495049505,
+    "validation": 0.4563758389261745
+   },
+   "by_split_n": {
+    "train": 505,
+    "validation": 149,
+    "test": 41
+   }
+  }
+ },
+ "USDA WASDE | CORN": {
+  "events": 194,
+  "first": "2010-08-12",
+  "hour": {
+   "size_vs_control_rms": 4.574679896666845,
+   "share_over_2x_control_sd": 0.5567010309278351,
+   "control_share_over_2x": 0.07216494845360824
+  },
+  "to_close": {
+   "size_vs_control_rms": 3.1517886062929064,
+   "share_over_2x_control_sd": 0.4536082474226804,
+   "control_share_over_2x": 0.04639175257731959
+  }
+ },
+ "USDA WASDE | DBA": {
+  "events": 225,
+  "first": "2008-06-10",
+  "hour": {
+   "size_vs_control_rms": 1.8794531795983827,
+   "share_over_2x_control_sd": 0.21333333333333335,
+   "control_share_over_2x": 0.04
+  },
+  "to_close": {
+   "size_vs_control_rms": 1.470535535833218,
+   "share_over_2x_control_sd": 0.14222222222222222,
+   "control_share_over_2x": 0.04
+  }
+ },
+ "USDA WASDE | SOYB": {
+  "events": 149,
+  "first": "2012-03-09",
+  "hour": {
+   "size_vs_control_rms": 3.955296637728736,
+   "share_over_2x_control_sd": 0.4429530201342282,
+   "control_share_over_2x": 0.04697986577181208
+  },
+  "to_close": {
+   "size_vs_control_rms": 2.7042970361824135,
+   "share_over_2x_control_sd": 0.348993288590604,
+   "control_share_over_2x": 0.04697986577181208
+  }
+ },
+ "USDA WASDE | WEAT": {
+  "events": 165,
+  "first": "2011-12-09",
+  "hour": {
+   "size_vs_control_rms": 2.1080939691966667,
+   "share_over_2x_control_sd": 0.2727272727272727,
+   "control_share_over_2x": 0.030303030303030304
+  },
+  "to_close": {
+   "size_vs_control_rms": 2.2266732147568047,
+   "share_over_2x_control_sd": 0.3212121212121212,
+   "control_share_over_2x": 0.05454545454545454
+  }
+ },
+ "hurricanes": {
+  "landfalls": 25,
+  "storms": [
+   "HUMBERTO",
+   "DOLLY",
+   "GUSTAV",
+   "IKE",
+   "ISAAC",
+   "HERMINE",
+   "HARVEY",
+   "IRMA",
+   "NATE",
+   "MICHAEL",
+   "BARRY",
+   "HANNA",
+   "LAURA",
+   "SALLY",
+   "DELTA",
+   "ZETA",
+   "IDA",
+   "NICHOLAS",
+   "IAN",
+   "IDALIA",
+   "BERYL",
+   "DEBBY",
+   "FRANCINE",
+   "HELENE",
+   "MILTON"
+  ],
+  "by_asset": {
+   "UNG": {
+    "mean_z": 0.014643724495081596,
+    "rms_z": 1.064616875488925,
+    "share_over_2x": 0.08,
+    "share_up": 0.6
+   },
+   "USO": {
+    "mean_z": -0.1762284141219948,
+    "rms_z": 1.1693239162556464,
+    "share_over_2x": 0.08,
+    "share_up": 0.4
+   },
+   "UGA": {
+    "mean_z": -0.23077278105267662,
+    "rms_z": 1.417379758782141,
+    "share_over_2x": 0.08,
+    "share_up": 0.48
+   },
+   "XLE": {
+    "mean_z": -0.2091205970660633,
+    "rms_z": 1.2353986088651105,
+    "share_over_2x": 0.08,
+    "share_up": 0.44
+   },
+   "KIE": {
+    "mean_z": -0.15370051301519308,
+    "rms_z": 1.5026977704737137,
+    "share_over_2x": 0.12,
+    "share_up": 0.56
+   },
+   "ITB": {
+    "mean_z": 0.027683579336210382,
+    "rms_z": 0.6667148770861446,
+    "share_over_2x": 0.0,
+    "share_up": 0.56
+   }
+  }
+ }
+}

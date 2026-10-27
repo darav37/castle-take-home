@@ -1,0 +1,3071 @@
+{
+ "summary": {
+  "events": 31,
+  "exact_market": 5,
+  "story_market": 14,
+  "news_precursor": 4,
+  "covered_any": 20,
+  "covered_strict": 9,
+  "book": "PFE 20k, WDC 15k, TSLA 20k, URA 15k, GLD 20k (options left out: no 2026 option marks)",
+  "book_normal_2_day_swing_usd": 2213.4682485793483,
+  "book_loss_events": 16,
+  "book_loss_total_usd": 24183.471888549448,
+  "book_loss_share_covered": 0.7202442752875047,
+  "book_loss_share_market": 0.7202442752875047,
+  "book_loss_share_strict": 0.11731177006133069,
+  "llm": {
+   "job": "universe_coverage",
+   "model": "claude-sonnet-5-5",
+   "calls": 0,
+   "cache_hits": 4,
+   "est_usd": 0.0,
+   "caps": {
+    "calls": 300,
+    "usd": 5.0
+   }
+  }
+ },
+ "rows": [
+  {
+   "id": "ev0190",
+   "date": "2026-01-20",
+   "category": "trade_tariffs",
+   "severity": "major",
+   "title": "Trump threatens 25% tariff on European countries over Greenland",
+   "candidates": [
+    {
+     "ticker": "KXGREENTERRITORY-29",
+     "title": "Will the United States acquire any part of Greenland before 2029?",
+     "sub": "Before January 21, 2029",
+     "open": "2025-01-09",
+     "close": "2029-01-21"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-NOACQ",
+     "title": "Will there be no U.S. acquisition of Greenland during Trump's term?",
+     "sub": "$0 / No Acquisition",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-749B",
+     "title": "Will the U.S. pay between $600 billion and $899 billion for Greenland during Trump's term?",
+     "sub": "$600 billion to $899 billion",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-5B",
+     "title": "Will the U.S. pay between $1 billion and $9 billion for Greenland during Trump's term?",
+     "sub": "$1 billion to $9 billion",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-54B",
+     "title": "Will the U.S. pay between $10 billion and $99 billion for Greenland during Trump's term?",
+     "sub": "$10 billion to $99 billion",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-449B",
+     "title": "Will the U.S. pay between $300 billion and $599 billion for Greenland during Trump's term?",
+     "sub": "$300 billion to $599 billion",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-199B",
+     "title": "Will the U.S. pay between $100 billion and $299 billion for Greenland during Trump's term?",
+     "sub": "$100 billion to $299 billion",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-1200B",
+     "title": "Will the U.S. pay at least $1200 billion for Greenland during Trump's term?",
+     "sub": "$1.2 trillion or more",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDPRICE-29JAN21-1049B",
+     "title": "Will the U.S. pay between $900 billion and $1199 billion for Greenland during Trump's term?",
+     "sub": "$900 billion to $1199 billion",
+     "open": "2026-01-17",
+     "close": "2029-01-22"
+    },
+    {
+     "ticker": "KXGREENLANDMILITARYBILL-26FEB01",
+     "title": "Will Senate pass a bill to require approval for military action in Greenland in January?",
+     "sub": "Yes",
+     "open": "2026-01-07",
+     "close": "2026-02-01"
+    },
+    {
+     "ticker": "KXGREENLAND-29-26MAY",
+     "title": "Will Trump buy Greenland?",
+     "sub": "Before May 1, 2026",
+     "open": "2026-01-10",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXGREENIND-27",
+     "title": "Will Greenland vote for independence before 2027?",
+     "sub": "Before 2027",
+     "open": "2026-01-06",
+     "close": "2027-01-01"
+    }
+   ],
+   "precursor": "2026-01-09: Twenty-one of the 27 countries of the European Union approve a trade deal with M",
+   "market_verdict": "story",
+   "market": "KXGREENTERRITORY-29",
+   "why": "Greenland acquisition markets price the story; none on tariffs themselves",
+   "covered": true,
+   "book_move_usd": 910.0037935913452
+  },
+  {
+   "id": "ev0191",
+   "date": "2026-02-20",
+   "category": "trade_tariffs",
+   "severity": "extreme",
+   "title": "Supreme Court rules IEEPA does not authorize tariffs",
+   "candidates": [
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-9",
+     "title": "Will exactly 9 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "9",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-8",
+     "title": "Will exactly 8 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "8",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-7",
+     "title": "Will exactly 7 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "7",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-6",
+     "title": "Will exactly 6 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "6",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-5",
+     "title": "Will exactly 5 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "5",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-4",
+     "title": "Will exactly 4 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "4",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-3",
+     "title": "Will exactly 3 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "3",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-2",
+     "title": "Will exactly 2 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "2",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-1",
+     "title": "Will exactly 1 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "1",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    },
+    {
+     "ticker": "KXTRUMPSCOTUSVOTE-26-0",
+     "title": "Will exactly 0 justices vote for the petitioner in Donald J. Trump, et al., v. V.O.S. Selections, Inc.?",
+     "sub": "0",
+     "open": "2025-11-03",
+     "close": "2026-02-20"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "exact",
+   "market": "KXTRUMPSCOTUSVOTE-26-6",
+   "why": "Vote-count markets on Trump v. V.O.S. Selections resolved on this ruling",
+   "covered": true,
+   "book_move_usd": 876.7630169438033
+  },
+  {
+   "id": "ev0193",
+   "date": "2026-08-24",
+   "category": "sanctions",
+   "severity": "major",
+   "title": "OFAC expands Iran sectoral sanctions and suspends general licenses",
+   "candidates": [
+    {
+     "ticker": "KXUSAIRANAGREEMENT-27-26SEP",
+     "title": "Will the US agree to a new Iranian nuclear deal this year?",
+     "sub": "Before Sep 1, 2026",
+     "open": "2026-04-09",
+     "close": "2026-09-01"
+    },
+    {
+     "ticker": "KXTRUMPSUPREMELEADER-27JAN01-SEP01",
+     "title": "Will Donald Trump meet in person the Supreme Leader of Iran before Sep 1, 2026?",
+     "sub": "Before Sep 1, 2026",
+     "open": "2026-06-03",
+     "close": "2026-09-01"
+    },
+    {
+     "ticker": "KXTRUMPSUPREMELEADER-27JAN01-JAN01",
+     "title": "Will Donald Trump meet in person the Supreme Leader of Iran before Jan 1, 2027?",
+     "sub": "Before Jan 1, 2027",
+     "open": "2026-06-03",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPIRAN-27JAN01",
+     "title": "Will Donald Trump visit Iran before Jan 1, 2027?",
+     "sub": "Before Jan 1, 2027",
+     "open": "2026-03-01",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXPAHLAVIVISITA-27JAN01",
+     "title": "Will Reza Pahlavi visit Iran before Jan 1, 2027?",
+     "sub": "Yes",
+     "open": "2026-01-08",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXPAHLAVIHEAD-27JAN-RPAH",
+     "title": "Who will be the next the head of state or government of Iran?",
+     "sub": "Reza Pahlavi",
+     "open": "2026-01-10",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXIRANIMPORTS-27FEB01-T5000000",
+     "title": "Will U.S. imports from Iran for 2026 be greater than $5M?",
+     "sub": "in 2026",
+     "open": "2026-03-04",
+     "close": "2027-02-01"
+    },
+    {
+     "ticker": "KXIRANEMBASSY-27-26SEP",
+     "title": "Will the US reopen its embassy in Iran before Sep 1, 2026?",
+     "sub": "Before September 2026",
+     "open": "2026-05-11",
+     "close": "2026-09-01"
+    },
+    {
+     "ticker": "KXIRANEMBASSY-27",
+     "title": "Will the US reopen its embassy in Iran before Jan 1, 2027?",
+     "sub": "Before 2027",
+     "open": "2026-03-01",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXIRANDEMOCRACY-27MAR01-T6",
+     "title": "Will Iran's score in the Economist Intelligence Unit's Democracy Index be at least 6 in the 2026 edition?",
+     "sub": "Yes",
+     "open": "2026-03-01",
+     "close": "2027-03-01"
+    },
+    {
+     "ticker": "KXIRANCRUDE-26SEP10-T3.6",
+     "title": "Will Iran\u2019s average daily crude oil production for August 2026 be at least 3.6M bpd?",
+     "sub": "At least 3.6M bpd",
+     "open": "2026-08-12",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXIRANCRUDE-26SEP10-T3.4",
+     "title": "Will Iran\u2019s average daily crude oil production for August 2026 be at least 3.4M bpd?",
+     "sub": "At least 3.4M bpd",
+     "open": "2026-08-12",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXIRANCRUDE-26SEP10-T3.2",
+     "title": "Will Iran\u2019s average daily crude oil production for August 2026 be at least 3.2M bpd?",
+     "sub": "At least 3.2M bpd",
+     "open": "2026-08-12",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXIRANCRUDE-26SEP10-T3.0",
+     "title": "Will Iran\u2019s average daily crude oil production for August 2026 be at least 3.0M bpd?",
+     "sub": "At least 3.0M bpd",
+     "open": "2026-08-12",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXIRANCRUDE-26SEP10-T2.8",
+     "title": "Will Iran\u2019s average daily crude oil production for August 2026 be at least 2.8M bpd?",
+     "sub": "At least 2.8M bpd",
+     "open": "2026-08-12",
+     "close": "2026-09-10"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXUSAIRANAGREEMENT-27-26SEP",
+   "why": "Iran nuclear deal market prices the US-Iran relations story",
+   "covered": true,
+   "book_move_usd": 25.907004542947295
+  },
+  {
+   "id": "w202601022",
+   "date": "2026-01-05",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "The United States carries out airstrikes around Caracas, Venezuela, killing at least 40 people, including civilians and ",
+   "candidates": [
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-JRATN",
+     "title": "Will John Ratcliffe visit Venezuela before May 1, 2026?",
+     "sub": "John Ratcliffe",
+     "open": "2026-01-03",
+     "close": "2026-01-16"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-CMYE",
+     "title": "Will Charles Myers visit Venezuela before May 1, 2026?",
+     "sub": "Charles Myers",
+     "open": "2026-01-03",
+     "close": "2026-03-25"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-DJTN",
+     "title": "Will Donald Trump visit Venezuela before May 1, 2026?",
+     "sub": "Donald Trump",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-PHEGN",
+     "title": "Will Pete Hegseth visit Venezuela before May 1, 2026?",
+     "sub": "Pete Hegseth",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-MRUBN",
+     "title": "Will Marco Rubio visit Venezuela before May 1, 2026?",
+     "sub": "Marco Rubio",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-EGUN",
+     "title": "Will Edmundo Gonz\u00e1lez Urrutia visit Venezuela before May 1, 2026?",
+     "sub": "Edmundo Gonz\u00e1lez Urrutia",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-MCMN",
+     "title": "Will Mar\u00eda Corina Machado visit Venezuela before May 1, 2026?",
+     "sub": "Mar\u00eda Corina Machado",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-DCANN",
+     "title": "Will Dan Caine visit Venezuela before May 1, 2026?",
+     "sub": "Dan Caine",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-DFIGN",
+     "title": "Will Dinorah Figuera visit Venezuela before May 1, 2026?",
+     "sub": "Dinorah Figuera",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-RGREN",
+     "title": "Will Richard Grenell visit Venezuela before May 1, 2026?",
+     "sub": "Richard Grenell",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-KLEAN",
+     "title": "Will Karoline Leavitt visit Venezuela before May 1, 2026?",
+     "sub": "Karoline Leavitt",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-JDVN",
+     "title": "Will JD Vance visit Venezuela before May 1, 2026?",
+     "sub": "JD Vance",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-KSTAN",
+     "title": "Will Keir Starmer visit Venezuela before May 1, 2026?",
+     "sub": "Keir Starmer",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-EMACN",
+     "title": "Will Emmanuel Macron visit Venezuela before May 1, 2026?",
+     "sub": "Emmanuel Macron",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXVISITVENEZUELA-26MAY01-NMADN",
+     "title": "Will Nicol\u00e1s Maduro visit Venezuela before May 1, 2026?",
+     "sub": "Nicol\u00e1s Maduro",
+     "open": "2026-01-03",
+     "close": "2026-05-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXVISITVENEZUELA-26MAY01-DJTN",
+   "why": "Venezuela visit markets on same developing US-Venezuela situation; none on strikes",
+   "covered": true,
+   "book_move_usd": 2585.1242883442833
+  },
+  {
+   "id": "w202601128",
+   "date": "2026-01-21",
+   "category": "trade_tariffs",
+   "severity": "major",
+   "title": "United States president Donald Trump announces he will cancel the planned tariffs on Denmark, Finland, France, Germany, ",
+   "candidates": [
+    {
+     "ticker": "KXFINLANDPARLI-27-SDP",
+     "title": "Who will win the next Finnish general election?",
+     "sub": "Social Democratic Party",
+     "open": "2025-07-15",
+     "close": "2028-04-29"
+    },
+    {
+     "ticker": "KXDENMARKPARLI-26-DF",
+     "title": "Who will win the next Danish general election?",
+     "sub": "People's Party",
+     "open": "2025-07-15",
+     "close": "2026-03-26"
+    }
+   ],
+   "precursor": "2026-01-20: Trump threatens 25% tariff on European countries over Greenland",
+   "market_verdict": "none",
+   "market": null,
+   "why": "Finnish and Danish election markets unrelated to tariff cancellation",
+   "covered": true,
+   "book_move_usd": 2710.4587699567955
+  },
+  {
+   "id": "w202602190",
+   "date": "2026-03-02",
+   "category": "conflict_war",
+   "severity": "extreme",
+   "title": "Israel launches an attack on Iran, calling it a preemptive strike, killing several Iranian high-ranking officials includ",
+   "candidates": [
+    {
+     "ticker": "KXVISITIRAN-26JUL01-JKUS",
+     "title": "Will Jared Kushner visit Iran before Jul 1, 2026?",
+     "sub": "Jared Kushner",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-PHEG",
+     "title": "Will Pete Hegseth visit Iran before Jul 1, 2026?",
+     "sub": "Pete Hegseth",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-BNET",
+     "title": "Will Benjamin Netanyahu visit Iran before Jul 1, 2026?",
+     "sub": "Benjamin Netanyahu",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-MRUB",
+     "title": "Will Marco Rubio visit Iran before Jul 1, 2026?",
+     "sub": "Marco Rubio",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-RPAH",
+     "title": "Will Reza Pahlavi visit Iran before Jul 1, 2026?",
+     "sub": "Reza Pahlavi",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-AHOU",
+     "title": "Will any U.S. House member visit Iran before Jul 1, 2026?",
+     "sub": "Any U.S. House member",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-JVAN",
+     "title": "Will JD Vance visit Iran before Jul 1, 2026?",
+     "sub": "JD Vance",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-ASEN",
+     "title": "Will any U.S. Senator visit Iran before Jul 1, 2026?",
+     "sub": "Any U.S. Senator",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXUSAIRANAGREEMENT-27-26APR",
+     "title": "Will the US agree to a new Iranian nuclear deal before April?",
+     "sub": "Before April",
+     "open": "2026-02-05",
+     "close": "2026-04-01"
+    },
+    {
+     "ticker": "KXUSAIRANAGREEMENT-27-26AUG",
+     "title": "Will the US agree to a new Iranian nuclear deal before August?",
+     "sub": "Before Aug 1, 2026",
+     "open": "2026-02-05",
+     "close": "2026-08-01"
+    },
+    {
+     "ticker": "KXUSAIRANAGREEMENT-27",
+     "title": "Will the US agree to a new Iranian nuclear deal this year?",
+     "sub": "Before Jan 1, 2027",
+     "open": "2026-01-08",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPIRAN-26APR01",
+     "title": "Will Donald Trump visit Iran before Apr 1, 2026?",
+     "sub": "Before Apr 1, 2026",
+     "open": "2026-03-01",
+     "close": "2026-04-01"
+    },
+    {
+     "ticker": "KXTRUMPIRAN-26MAY01",
+     "title": "Will Donald Trump visit Iran before May 1, 2026?",
+     "sub": "Before May 1, 2026",
+     "open": "2026-03-01",
+     "close": "2026-05-01"
+    },
+    {
+     "ticker": "KXTRUMPIRAN-26JUN01",
+     "title": "Will Donald Trump visit Iran before Jun 1, 2026?",
+     "sub": "Before Jun 1, 2026",
+     "open": "2026-03-01",
+     "close": "2026-06-01"
+    },
+    {
+     "ticker": "KXTRUMPIRAN-27JAN01",
+     "title": "Will Donald Trump visit Iran before Jan 1, 2027?",
+     "sub": "Before Jan 1, 2027",
+     "open": "2026-03-01",
+     "close": "2027-01-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXUSAIRANAGREEMENT-27-26APR",
+   "why": "Iran deal and visit markets price the US/Israel-Iran conflict",
+   "covered": true,
+   "book_move_usd": -2709.807962056642
+  },
+  {
+   "id": "w202602147",
+   "date": "2026-02-20",
+   "category": "regulatory_court",
+   "severity": "major",
+   "title": "The United States Supreme Court rules in Learning Resources v. Trump that the International Emergency Economic Powers Ac",
+   "candidates": [
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWICOURT-26-RBRA",
+     "title": "Who will win the Supreme Court race in Wisconsin?",
+     "sub": "Rebecca Bradley",
+     "open": "2025-07-17",
+     "close": "2026-04-08"
+    },
+    {
+     "ticker": "KXTRUMPVSLAUGHTER",
+     "title": "Will the Supreme Court rule in favor of Trump in Trump v. Slaughter",
+     "sub": "Yes",
+     "open": "2026-01-12",
+     "close": "2026-06-29"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXTRUMPVSLAUGHTER",
+   "why": "Only a different Supreme Court Trump case; no IEEPA market open",
+   "covered": true,
+   "book_move_usd": 876.7630169438033
+  },
+  {
+   "id": "w202605008",
+   "date": "2026-05-07",
+   "category": "regulatory_court",
+   "severity": "major",
+   "title": "The U.S. Court of International Trade rules that the 10% global tariffs imposed by president Donald Trump are illegal. (",
+   "candidates": [
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWISUPRTURNOUT-26APR07-1300000",
+     "title": "Will the total vote count for all participants in the 2026 Wisconsin Supreme Court election be above 1300000?",
+     "sub": "Above 1.3M",
+     "open": "2026-04-07",
+     "close": "2026-05-20"
+    },
+    {
+     "ticker": "KXWISUPRTURNOUT-26APR07-1700000",
+     "title": "Will the total vote count for all participants in the 2026 Wisconsin Supreme Court election be above 1700000?",
+     "sub": "Above 1.7M",
+     "open": "2026-03-31",
+     "close": "2026-05-20"
+    },
+    {
+     "ticker": "KXWISUPRTURNOUT-26APR07-2200000",
+     "title": "Will the total vote count for all participants in the 2026 Wisconsin Supreme Court election be above 2200000?",
+     "sub": "Above 2.2M",
+     "open": "2026-03-19",
+     "close": "2026-05-20"
+    },
+    {
+     "ticker": "KXWISUPRTURNOUT-26APR07-2000000",
+     "title": "Will the total vote count for all participants in the 2026 Wisconsin Supreme Court election be above 2000000?",
+     "sub": "Above 2.0M",
+     "open": "2026-03-19",
+     "close": "2026-05-20"
+    },
+    {
+     "ticker": "KXWISUPRTURNOUT-26APR07-1800000",
+     "title": "Will the total vote count for all participants in the 2026 Wisconsin Supreme Court election be above 1800000?",
+     "sub": "Above 1.8M",
+     "open": "2026-03-19",
+     "close": "2026-05-20"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "No open market on tariffs or the CIT ruling",
+   "covered": false,
+   "book_move_usd": 602.523569760062
+  },
+  {
+   "id": "w202605003",
+   "date": "2026-05-04",
+   "category": "supply_shock",
+   "severity": "major",
+   "title": "JPMorgan Chase analysts estimate that oil inventories in OECD countries will begin running out between May 9 and May 30.",
+   "candidates": [
+    {
+     "ticker": "KXWARMING-50",
+     "title": "Will the world pass 2 degrees Celsius over pre-industrial levels before 2050?",
+     "sub": "Before 2050",
+     "open": "2025-06-05",
+     "close": "2050-01-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "Only a long-run climate market open; nothing on oil inventories.",
+   "covered": false,
+   "book_move_usd": 649.2688906408205
+  },
+  {
+   "id": "w202605051",
+   "date": "2026-05-04",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "United States president Donald Trump announces that the U.S. Navy will start guiding neutral ships through the Strait of",
+   "candidates": [
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T70.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 70.0%?",
+     "sub": "Above 70.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T68.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 68.0%?",
+     "sub": "Above 68.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T66.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 66.0%?",
+     "sub": "Above 66.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T64.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 64.0%?",
+     "sub": "Above 64.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T62.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 62.0%?",
+     "sub": "Above 62.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "No Hormuz or Navy escort market; only unrelated withdrawal and USDT markets.",
+   "covered": false,
+   "book_move_usd": 649.2688906408205
+  },
+  {
+   "id": "w202605104",
+   "date": "2026-05-07",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "The U.S. Central Command confirms that the military carried out \"self-defense\" strikes against military facilities in re",
+   "candidates": [
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T70.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 70.0%?",
+     "sub": "Above 70.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T68.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 68.0%?",
+     "sub": "Above 68.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T66.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 66.0%?",
+     "sub": "Above 66.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T64.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 64.0%?",
+     "sub": "Above 64.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T62.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 62.0%?",
+     "sub": "Above 62.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "No Iran strikes or CENTCOM market; unrelated withdrawal and USDT markets.",
+   "covered": false,
+   "book_move_usd": 602.523569760062
+  },
+  {
+   "id": "w202605143",
+   "date": "2026-05-11",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "United States president Donald Trump calls the Iranian response \"totally unacceptable\" and says he would reject it. (Axi",
+   "candidates": [
+    {
+     "ticker": "KXFALLOUTRELEASE-26-FAL",
+     "title": "Will Bethesda Softworks release A new Fallout video game (standalone title; excludes DLCs, expansions, remaste",
+     "sub": "A new Fallout video game (standalone tit",
+     "open": "2026-01-07",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "SENATEDE-26-R",
+     "title": "Will Republicans win the Senate race in Delaware?",
+     "sub": "Michael Katz",
+     "open": "2024-12-03",
+     "close": "2027-11-03"
+    },
+    {
+     "ticker": "SENATEDE-26-D",
+     "title": "Will Democratics win the Senate race in Delaware?",
+     "sub": "Chris Coons",
+     "open": "2024-12-03",
+     "close": "2027-11-03"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "Open markets are Fallout and Delaware Senate; nothing on Iran talks.",
+   "covered": false,
+   "book_move_usd": -1128.241325127431
+  },
+  {
+   "id": "w202605182",
+   "date": "2026-05-12",
+   "category": "elections_politics",
+   "severity": "major",
+   "title": "British prime minister Keir Starmer tells his cabinet he has \"no intention\" of resigning after several ministers and mor",
+   "candidates": [
+    {
+     "ticker": "KXLEAVESTARMER-26MAY15",
+     "title": "Will Keir Starmer leave Prime Minister of the United Kingdom before May 15, 2026?",
+     "sub": "Before May 15, 2026",
+     "open": "2026-05-11",
+     "close": "2026-05-15"
+    },
+    {
+     "ticker": "KXLEAVESTARMER-26JUN01",
+     "title": "Will Keir Starmer leave Prime Minister of the United Kingdom before Jun 1, 2026?",
+     "sub": "Before Jun 1, 2026",
+     "open": "2026-04-18",
+     "close": "2026-06-01"
+    },
+    {
+     "ticker": "KXLEAVESTARMER-26SEP01",
+     "title": "Will Keir Starmer leave Prime Minister of the United Kingdom before Sep 1, 2026?",
+     "sub": "Before Sep 1, 2026",
+     "open": "2026-02-05",
+     "close": "2026-06-22"
+    },
+    {
+     "ticker": "KXLEAVESTARMER-26JUL01",
+     "title": "Will Keir Starmer leave Prime Minister of the United Kingdom before Jul 1, 2026?",
+     "sub": "Before Jul 1, 2026",
+     "open": "2026-02-05",
+     "close": "2026-06-22"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-WSTR",
+     "title": "Will Wes Streeting be out as Health Secretary before July 2026?",
+     "sub": "Wes Streeting",
+     "open": "2026-05-04",
+     "close": "2026-05-14"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-EMIL",
+     "title": "Will Ed Miliband be out as Energy Secretary before July 2026?",
+     "sub": "Ed Miliband",
+     "open": "2026-05-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-PMCF",
+     "title": "Will Pat McFadden be out as Work and Pensions Secretary before July 2026?",
+     "sub": "Pat McFadden",
+     "open": "2026-05-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-RREE",
+     "title": "Will Rachel Reeves be out as Chancellor before July 2026?",
+     "sub": "Rachel Reeves",
+     "open": "2026-05-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-DLAM",
+     "title": "Will David Lammy be out as Deputy PM before July 2026?",
+     "sub": "David Lammy",
+     "open": "2026-05-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-JREY",
+     "title": "Will Jonathan Reynolds be out as Chief Whip before July 2026?",
+     "sub": "Jonathan Reynolds",
+     "open": "2026-05-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXSTARMERCABLEAVE-26MAY-SMAH",
+     "title": "Will Shabana Mahmood be out as Home Secretary before July 2026?",
+     "sub": "Shabana Mahmood",
+     "open": "2026-05-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXISRAELPM-26OCT27-YEDE",
+     "title": "Will Yuli Edelstein become Prime Minister of Israel following the 2026 Israeli legislative election?",
+     "sub": "Yuli Edelstein",
+     "open": "2026-04-28",
+     "close": "2027-10-27"
+    },
+    {
+     "ticker": "KXISRAELPM-26OCT27-YLEV",
+     "title": "Will Yariv Levin become Prime Minister of Israel following the 2026 Israeli legislative election?",
+     "sub": "Yariv Levin",
+     "open": "2026-04-11",
+     "close": "2027-10-27"
+    },
+    {
+     "ticker": "KXISRAELPM-26OCT27-YLAP",
+     "title": "Will Yair Lapid become Prime Minister of Israel following the 2026 Israeli legislative election?",
+     "sub": "Yair Lapid",
+     "open": "2026-04-11",
+     "close": "2027-10-27"
+    },
+    {
+     "ticker": "KXISRAELPM-26OCT27-YHEN",
+     "title": "Will Yoaz Hendel become Prime Minister of Israel following the 2026 Israeli legislative election?",
+     "sub": "Yoaz Hendel",
+     "open": "2026-04-11",
+     "close": "2027-10-27"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "exact",
+   "market": "KXLEAVESTARMER-26MAY15",
+   "why": "Markets on Starmer leaving office and cabinet departures directly priced this.",
+   "covered": true,
+   "book_move_usd": -673.4362702108199
+  },
+  {
+   "id": "w202605208",
+   "date": "2026-05-14",
+   "category": "trade_tariffs",
+   "severity": "major",
+   "title": "The Executive Office of the President of the United States says that China and the U.S. have both agreed during the Trum",
+   "candidates": [
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-55",
+     "title": "Will the tariff rate on China imports be between 50% and 60% on Jul 1, 2026?",
+     "sub": "Between 50% and 60%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-5",
+     "title": "Will the tariff rate on China imports be below 10% on Jul 1, 2026?",
+     "sub": "Below 10%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-44",
+     "title": "Will the tariff rate on China imports be between 40% and 49.99% on Jul 1, 2026?",
+     "sub": "Between 40% and 49.99%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-34",
+     "title": "Will the tariff rate on China imports be between 30% and 39.99% on Jul 1, 2026?",
+     "sub": "Between 30% and 39.99%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-30",
+     "title": "Will the tariff rate on China imports be above 60% on Jul 1, 2026?",
+     "sub": "Above 60%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-24",
+     "title": "Will the tariff rate on China imports be between 20% and 29.99% on Jul 1, 2026?",
+     "sub": "Between 20% and 29.99%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXTARIFFRATEPRC-26JUL01-14",
+     "title": "Will the tariff rate on China imports be between 10% and 19.99% on Jul 1, 2026?",
+     "sub": "Between 10% and 19.99%",
+     "open": "2026-02-04",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXTARIFFRATEPRC-26JUL01-34",
+   "why": "China tariff-rate markets track the US-China trade deal story.",
+   "covered": true,
+   "book_move_usd": -2153.468501075305
+  },
+  {
+   "id": "w202605269",
+   "date": "2026-05-18",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "U.S. president Donald Trump announces that he has called off planned military strikes against Iran for tomorrow at the r",
+   "candidates": [
+    {
+     "ticker": "KXIRANIMPORTS-27FEB01-T5000000",
+     "title": "Will U.S. imports from Iran for 2026 be greater than $5M?",
+     "sub": "in 2026",
+     "open": "2026-03-04",
+     "close": "2027-02-01"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-JKUS",
+     "title": "Will Jared Kushner visit Iran before Jul 1, 2026?",
+     "sub": "Jared Kushner",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-PHEG",
+     "title": "Will Pete Hegseth visit Iran before Jul 1, 2026?",
+     "sub": "Pete Hegseth",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-BNET",
+     "title": "Will Benjamin Netanyahu visit Iran before Jul 1, 2026?",
+     "sub": "Benjamin Netanyahu",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-MRUB",
+     "title": "Will Marco Rubio visit Iran before Jul 1, 2026?",
+     "sub": "Marco Rubio",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXVISITIRAN-26JUL01-JKUS",
+   "why": "Iran-related visit markets exist but none on strikes being called off.",
+   "covered": true,
+   "book_move_usd": -1903.5357156191806
+  },
+  {
+   "id": "w202606000",
+   "date": "2026-06-01",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "Oil prices increase by nearly 8% on the announcement of the peace talks ending, with West Texas Intermediate rising to U",
+   "candidates": [
+    {
+     "ticker": "KXFALLOUTRELEASE-26-FAL",
+     "title": "Will Bethesda Softworks release A new Fallout video game (standalone title; excludes DLCs, expansions, remaste",
+     "sub": "A new Fallout video game (standalone tit",
+     "open": "2026-01-07",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "SENATEDE-26-R",
+     "title": "Will Republicans win the Senate race in Delaware?",
+     "sub": "Michael Katz",
+     "open": "2024-12-03",
+     "close": "2027-11-03"
+    },
+    {
+     "ticker": "SENATEDE-26-D",
+     "title": "Will Democratics win the Senate race in Delaware?",
+     "sub": "Chris Coons",
+     "open": "2024-12-03",
+     "close": "2027-11-03"
+    },
+    {
+     "ticker": "KXWARMING-50",
+     "title": "Will the world pass 2 degrees Celsius over pre-industrial levels before 2050?",
+     "sub": "Before 2050",
+     "open": "2025-06-05",
+     "close": "2050-01-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "Open markets unrelated to oil prices or Iran peace talks.",
+   "covered": false,
+   "book_move_usd": 560.4476779773524
+  },
+  {
+   "id": "w202606013",
+   "date": "2026-06-09",
+   "category": "supply_shock",
+   "severity": "extreme",
+   "title": "The United States Energy Information Administration reports that Middle Eastern oil producers have reduced output by mor",
+   "candidates": [
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-TGAB",
+     "title": "Will Tulsi Gabbard leaves Director of National Intelligence in before 2027?",
+     "sub": "Tulsi Gabbard",
+     "open": "2025-12-13",
+     "close": "2026-06-19"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-TBLA",
+     "title": "Will Todd Blanche leaves Deputy Attorney General in before 2027?",
+     "sub": "Todd Blanche",
+     "open": "2026-01-03",
+     "close": "2026-08-10"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-KLEA",
+     "title": "Will Karoline Leavitt leaves White House Press Secretary in before 2027?",
+     "sub": "Karoline Leavitt",
+     "open": "2025-12-13",
+     "close": "2026-08-28"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26JUN-SCHE",
+     "title": "Will Steven Cheung be out as White House Communications Director before 2027?",
+     "sub": "Steven Cheung",
+     "open": "2026-06-08",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-RSCO",
+     "title": "Will Rodney Scott leaves CBP Commissioner in before 2027?",
+     "sub": "Rodney Scott",
+     "open": "2026-01-28",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-JRAT",
+     "title": "Will John Ratcliffe leaves Director of the CIA in before 2027?",
+     "sub": "John Ratcliffe",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-KLOE",
+     "title": "Will Kelly Loeffler leaves Administrator of the Small Business Administration in before 2027?",
+     "sub": "Kelly Loeffler",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-DCOL",
+     "title": "Will Doug Collins leaves Secretary of Veterans Affairs in before 2027?",
+     "sub": "Doug Collins",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-DBUR",
+     "title": "Will Doug Burgum leaves Secretary of the Interior in before 2027?",
+     "sub": "Doug Burgum",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-STUR",
+     "title": "Will Scott Turner leaves Secretary of Housing and Urban Development in before 2027?",
+     "sub": "Scott Turner",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-CWRI",
+     "title": "Will Chris Wright leaves Secretary of Energy in before 2027?",
+     "sub": "Chris Wright",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-BROL",
+     "title": "Will Brooke Rollins leaves Secretary of Agriculture in before 2027?",
+     "sub": "Brooke Rollins",
+     "open": "2025-12-19",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-SWIL",
+     "title": "Will Susie WIles leaves Chief of Staff in before 2027?",
+     "sub": "Susie Wiles",
+     "open": "2025-12-16",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-THOM",
+     "title": "Will Tom Homan leaves White House Border Czar in before 2027?",
+     "sub": "Tom Homan",
+     "open": "2025-12-13",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPADMINLEAVE-26DEC31-SWIT",
+     "title": "Will Steve Witkoff leaves Special Envoy to the Middle East in before 2027?",
+     "sub": "Steve Witkoff",
+     "open": "2025-12-13",
+     "close": "2027-01-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "Open markets are about cabinet departures; none cover Middle East oil output.",
+   "covered": false,
+   "book_move_usd": -3718.268114115631
+  },
+  {
+   "id": "w202606018",
+   "date": "2026-06-12",
+   "category": "financial_stress",
+   "severity": "major",
+   "title": "Businessman Elon Musk becomes the world's first U.S.-dollar trillionaire after his company SpaceX debuts on the Nasdaq s",
+   "candidates": [
+    {
+     "ticker": "KXMUSKNW-26JUN30-T1400",
+     "title": "Will Elon Musk's net worth for June be above $1.40 trillion?",
+     "sub": "Above $1.40 trillion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T1300",
+     "title": "Will Elon Musk's net worth for June be above $1.30 trillion?",
+     "sub": "Above $1.30 trillion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T1200",
+     "title": "Will Elon Musk's net worth for June be above $1.20 trillion?",
+     "sub": "Above $1.20 trillion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T1100",
+     "title": "Will Elon Musk's net worth for June be above $1.10 trillion?",
+     "sub": "Above $1.10 trillion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T1050",
+     "title": "Will Elon Musk's net worth for June be above $1.05 trillion?",
+     "sub": "Above $1.05 trillion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T1000",
+     "title": "Will Elon Musk's net worth for June be above $1.00 trillion?",
+     "sub": "Above $1.00 trillion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T950",
+     "title": "Will Elon Musk's net worth for June be above $950 billion?",
+     "sub": "Above $950 billion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T900",
+     "title": "Will Elon Musk's net worth for June be above $900 billion?",
+     "sub": "Above $900 billion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T850",
+     "title": "Will Elon Musk's net worth for June be above $850 billion?",
+     "sub": "Above $850 billion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T800",
+     "title": "Will Elon Musk's net worth for June be above $800 billion?",
+     "sub": "Above $800 billion",
+     "open": "2026-06-09",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T790",
+     "title": "Will Elon Musk's net worth for June be above $790 billion?",
+     "sub": "Above $790 billion",
+     "open": "2026-06-01",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T780",
+     "title": "Will Elon Musk's net worth for June be above $780 billion?",
+     "sub": "Above $780 billion",
+     "open": "2026-06-01",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T770",
+     "title": "Will Elon Musk's net worth for June be above $770 billion?",
+     "sub": "Above $770 billion",
+     "open": "2026-06-01",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T760",
+     "title": "Will Elon Musk's net worth for June be above $760 billion?",
+     "sub": "Above $760 billion",
+     "open": "2026-06-01",
+     "close": "2026-06-30"
+    },
+    {
+     "ticker": "KXMUSKNW-26JUN30-T750",
+     "title": "Will Elon Musk's net worth for June be above $750 billion?",
+     "sub": "Above $750 billion",
+     "open": "2026-06-01",
+     "close": "2026-06-30"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "exact",
+   "market": "KXMUSKNW-26JUN30-T1000",
+   "why": "Net worth above $1.00T threshold resolves on Musk becoming trillionaire.",
+   "covered": true,
+   "book_move_usd": 3584.5352724668223
+  },
+  {
+   "id": "w202606019",
+   "date": "2026-06-15",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "Oil prices, including crude oil, fall by 5% after U.S. president Donald Trump announced that a deal has been reached to ",
+   "candidates": [
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T70.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 70.0%?",
+     "sub": "Above 70.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T68.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 68.0%?",
+     "sub": "Above 68.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T66.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 66.0%?",
+     "sub": "Above 66.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T64.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 64.0%?",
+     "sub": "Above 64.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    },
+    {
+     "ticker": "KXUSDTTBILL-27FEB28-T62.0",
+     "title": "Will percentage of USDT reserves held in U.S. Treasury Bills at the end of 2026 be above 62.0%?",
+     "sub": "Above 62.0%",
+     "open": "2026-03-28",
+     "close": "2027-02-28"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "Open markets cover US withdrawals and USDT reserves, not an oil or Iran deal.",
+   "covered": false,
+   "book_move_usd": 1976.5423599704277
+  },
+  {
+   "id": "w202606027",
+   "date": "2026-06-22",
+   "category": "sanctions",
+   "severity": "major",
+   "title": "The U.S. treasury department lifts sanctions against Iran and authorizes the production, delivery and sale of Iranian oi",
+   "candidates": [
+    {
+     "ticker": "KXIRANIMPORTS-27FEB01-T5000000",
+     "title": "Will U.S. imports from Iran for 2026 be greater than $5M?",
+     "sub": "in 2026",
+     "open": "2026-03-04",
+     "close": "2027-02-01"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-JKUS",
+     "title": "Will Jared Kushner visit Iran before Jul 1, 2026?",
+     "sub": "Jared Kushner",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-PHEG",
+     "title": "Will Pete Hegseth visit Iran before Jul 1, 2026?",
+     "sub": "Pete Hegseth",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-BNET",
+     "title": "Will Benjamin Netanyahu visit Iran before Jul 1, 2026?",
+     "sub": "Benjamin Netanyahu",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    },
+    {
+     "ticker": "KXVISITIRAN-26JUL01-MRUB",
+     "title": "Will Marco Rubio visit Iran before Jul 1, 2026?",
+     "sub": "Marco Rubio",
+     "open": "2026-03-01",
+     "close": "2026-07-01"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXIRANIMPORTS-27FEB01-T5000000",
+   "why": "US imports from Iran depend on sanctions lifting; same Iran story.",
+   "covered": true,
+   "book_move_usd": -3637.526243890613
+  },
+  {
+   "id": "w202607003",
+   "date": "2026-07-01",
+   "category": "trade_tariffs",
+   "severity": "major",
+   "title": "U.S. trade representative Jamieson Greer says that the United States will not renew the USMCA trade agreement signed dur",
+   "candidates": [
+    {
+     "ticker": "SENATEND-28-D",
+     "title": "Will Democratics win the Senate race in North Dakota?",
+     "sub": "Democratic party",
+     "open": "2025-07-15",
+     "close": "2029-11-07"
+    },
+    {
+     "ticker": "SENATEND-28-R",
+     "title": "Will Republicans win the Senate race in North Dakota?",
+     "sub": "Republican party",
+     "open": "2025-07-15",
+     "close": "2029-11-07"
+    },
+    {
+     "ticker": "SENATENC-28-R",
+     "title": "Will Republicans win the Senate race in North Carolina?",
+     "sub": "Republican party",
+     "open": "2025-07-15",
+     "close": "2029-11-07"
+    },
+    {
+     "ticker": "SENATENC-28-D",
+     "title": "Will Democratics win the Senate race in North Carolina?",
+     "sub": "Democratic party",
+     "open": "2025-07-15",
+     "close": "2029-11-07"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXVOTESAVEAMERICA-26APR-AUG08",
+     "title": "Will the Senate vote on the SAVE America Act?",
+     "sub": "Before Aug 8, 2026",
+     "open": "2026-04-21",
+     "close": "2026-08-08"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "No market on USMCA or trade agreements; only unrelated Senate and withdrawal markets.",
+   "covered": false,
+   "book_move_usd": -988.7102020903733
+  },
+  {
+   "id": "w202607016",
+   "date": "2026-07-20",
+   "category": "trade_tariffs",
+   "severity": "major",
+   "title": "U.S. president Donald Trump signs another executive order imposing 50% tariffs on many Canadian goods, including USMCA-c",
+   "candidates": [
+    {
+     "ticker": "KXCANUSTRIPS-27FEB23-T20",
+     "title": "Will the decline in Canadian-resident return trips from the United States for 2026 be above 20%?",
+     "sub": "Decline greater than 20%",
+     "open": "2026-05-06",
+     "close": "2027-02-23"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXCANUSTRIPS-27FEB23-T20",
+   "why": "Canadian return trips from US tied to US-Canada tariff tensions.",
+   "covered": true,
+   "book_move_usd": 1920.1649521251672
+  },
+  {
+   "id": "w202607107",
+   "date": "2026-07-08",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "U.S. president Donald Trump says that the ceasefire between Iran and the United States is over and that airstrikes will ",
+   "candidates": [
+    {
+     "ticker": "KXIRANIMPORTS-27FEB01-T5000000",
+     "title": "Will U.S. imports from Iran for 2026 be greater than $5M?",
+     "sub": "in 2026",
+     "open": "2026-03-04",
+     "close": "2027-02-01"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-UN",
+     "title": "Will the U.S. withdraw from United Nations before Jan 20, 2029?",
+     "sub": "United Nations",
+     "open": "2025-03-02",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-OECD",
+     "title": "Will the U.S. withdraw from OECD before Jan 20, 2029?",
+     "sub": "OECD",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-INTERPOL",
+     "title": "Will the U.S. withdraw from Interpol before Jan 20, 2029?",
+     "sub": "Interpol",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IDB",
+     "title": "Will the U.S. withdraw from Inter-American Development Bank before Jan 20, 2029?",
+     "sub": "Inter-American Development Bank",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IAEA",
+     "title": "Will the U.S. withdraw from International Atomic Energy Agency before Jan 20, 2029?",
+     "sub": "International Atomic Energy Agency",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WTO",
+     "title": "Will the U.S. withdraw from World Trade Organization before Jan 20, 2029?",
+     "sub": "World Trade Organization",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-WBANK",
+     "title": "Will the U.S. withdraw from World Bank Group before Jan 20, 2029?",
+     "sub": "World Bank Group",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-IMF",
+     "title": "Will the U.S. withdraw from International Monetary Fund before Jan 20, 2029?",
+     "sub": "International Monetary Fund",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G7",
+     "title": "Will the U.S. withdraw from G7 before Jan 20, 2029?",
+     "sub": "G7",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXWITHDRAW-29-G20",
+     "title": "Will the U.S. withdraw from G20 before Jan 20, 2029?",
+     "sub": "G20",
+     "open": "2025-02-18",
+     "close": "2029-01-20"
+    }
+   ],
+   "precursor": "2026-07-07: The United States revokes the temporary sanctions waiver against Iranian oil iss",
+   "market_verdict": "story",
+   "market": "KXIRANIMPORTS-27FEB01-T5000000",
+   "why": "Iran imports market priced on US-Iran conflict and sanctions trajectory.",
+   "covered": true,
+   "book_move_usd": 1017.9741529850536
+  },
+  {
+   "id": "w202607161",
+   "date": "2026-07-13",
+   "category": "supply_shock",
+   "severity": "extreme",
+   "title": "The IRGC Navy declares the Strait of Hormuz to be closed until further notice and says that they have fired a shot at tw",
+   "candidates": [
+    {
+     "ticker": "KXMAXSHIPSHORMUZ-26JUL31-AL90",
+     "title": "Will the highest daily number of transit calls through the Strait of Hormuz as reported by the IMF PortWatch b",
+     "sub": "At least 90",
+     "open": "2026-07-02",
+     "close": "2026-08-04"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T300",
+     "title": "Will there be more than 300 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 300",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T275",
+     "title": "Will there be more than 275 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 275",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T250",
+     "title": "Will there be more than 250 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 250",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T225",
+     "title": "Will there be more than 225 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 225",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T200",
+     "title": "Will there be more than 200 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 200",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T175",
+     "title": "Will there be more than 175 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 175",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T150",
+     "title": "Will there be more than 150 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 150",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T125",
+     "title": "Will there be more than 125 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 125",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL12-T100",
+     "title": "Will there be more than 100 transit calls through the Strait of Hormuz from Jul 6, 2026 to Jul 12, 2026?",
+     "sub": "Above 100",
+     "open": "2026-07-06",
+     "close": "2026-07-14"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL19-T75",
+     "title": "Will there be more than 75 transit calls through the Strait of Hormuz from Jul 13, 2026 to Jul 19, 2026?",
+     "sub": "Above 75",
+     "open": "2026-07-10",
+     "close": "2026-07-21"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL19-T50",
+     "title": "Will there be more than 50 transit calls through the Strait of Hormuz from Jul 13, 2026 to Jul 19, 2026?",
+     "sub": "Above 50",
+     "open": "2026-07-10",
+     "close": "2026-07-21"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL19-T250",
+     "title": "Will there be more than 250 transit calls through the Strait of Hormuz from Jul 13, 2026 to Jul 19, 2026?",
+     "sub": "Above 250",
+     "open": "2026-07-10",
+     "close": "2026-07-21"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL19-T225",
+     "title": "Will there be more than 225 transit calls through the Strait of Hormuz from Jul 13, 2026 to Jul 19, 2026?",
+     "sub": "Above 225",
+     "open": "2026-07-10",
+     "close": "2026-07-21"
+    },
+    {
+     "ticker": "KXHORMUZWEEKLY-26JUL19-T200",
+     "title": "Will there be more than 200 transit calls through the Strait of Hormuz from Jul 13, 2026 to Jul 19, 2026?",
+     "sub": "Above 200",
+     "open": "2026-07-10",
+     "close": "2026-07-21"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "exact",
+   "market": "KXHORMUZWEEKLY-26JUL19-T200",
+   "why": "Weekly Hormuz transit-call markets directly forecast the closure's effect.",
+   "covered": true,
+   "book_move_usd": -1029.9569767183475
+  },
+  {
+   "id": "w202607023",
+   "date": "2026-07-23",
+   "category": "supply_shock",
+   "severity": "major",
+   "title": "Oil prices, including Brent Crude and West Texas Intermediate, increase to over US$101 per barrel and to nearly $93 per ",
+   "candidates": [
+    {
+     "ticker": "KXWARMING-50",
+     "title": "Will the world pass 2 degrees Celsius over pre-industrial levels before 2050?",
+     "sub": "Before 2050",
+     "open": "2025-06-05",
+     "close": "2050-01-01"
+    },
+    {
+     "ticker": "KXMAXSHIPSHORMUZ-26JUL31-AL90",
+     "title": "Will the highest daily number of transit calls through the Strait of Hormuz as reported by the IMF PortWatch b",
+     "sub": "At least 90",
+     "open": "2026-07-02",
+     "close": "2026-08-04"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXMAXSHIPSHORMUZ-26JUL31-AL90",
+   "why": "Hormuz transit counts tied to the same oil/Hormuz disruption story",
+   "covered": true,
+   "book_move_usd": -2591.140578636168
+  },
+  {
+   "id": "w202607035",
+   "date": "2026-07-01",
+   "category": "disaster",
+   "severity": "major",
+   "title": "Venezuelan acting president Delcy Rodr\u00edguez declares seven days of national mourning for the victims of the earthquakes ",
+   "candidates": [
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-JGUA",
+     "title": "Will Juan Guaid\u00f3 be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Juan Guaid\u00f3",
+     "open": "2026-01-06",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-MRT",
+     "title": "Will Miguel Rodr\u00edguez Torres be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Miguel Rodr\u00edguez Torres",
+     "open": "2026-01-06",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-SMIL",
+     "title": "Will Stephen Miller be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Stephen Miller",
+     "open": "2026-01-06",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-DRON",
+     "title": "Will Diosdado Cabello Rond\u00f3n be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Diosdado Cabello Rond\u00f3n",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-VLOP",
+     "title": "Will Vladimir Padrino L\u00f3pez be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Vladimir Padrino L\u00f3pez",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-RGRE",
+     "title": "Will Richard Grenell be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Richard Grenell",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-PHEG",
+     "title": "Will Pete Hegseth be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Pete Hegseth",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-NMAD",
+     "title": "Will Nicol\u00e1s Maduro be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Nicol\u00e1s Maduro",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-MRUB",
+     "title": "Will Marco Rubio be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Marco Rubio",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-MCM",
+     "title": "Will Mar\u00eda Corina Machado be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Mar\u00eda Corina Machado",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-JROD",
+     "title": "Will Jorge Rodr\u00edguez be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Jorge Rodr\u00edguez",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-FDON",
+     "title": "Will Frank Donovan be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Frank Donovan",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-EPET",
+     "title": "Will Evan Pettus be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Evan Pettus",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-EGON",
+     "title": "Will Edmundo Gonz\u00e1lez Urrutia be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Edmundo Gonz\u00e1lez",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    },
+    {
+     "ticker": "KXVENEZUELALEADER-26DEC31-DROD",
+     "title": "Will Delcy Rodr\u00edguez be the head of state of Venezuela on Dec 31, 2026?",
+     "sub": "Delcy Rodr\u00edguez",
+     "open": "2026-01-03",
+     "close": "2026-12-31"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXVENEZUELALEADER-26DEC31-DROD",
+   "why": "Delcy Rodr\u00edguez's status as head of state was being priced, but no market on the earthquakes or mourning",
+   "covered": true,
+   "book_move_usd": -988.7102020903733
+  },
+  {
+   "id": "w202609028",
+   "date": "2026-09-01",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "The United States carries out additional airstrikes against Islamic Revolutionary Guards Corp (IRGC) targets in Iran, in",
+   "candidates": [
+    {
+     "ticker": "KXUSAIRANAGREEMENT-27-26SEP",
+     "title": "Will the US agree to a new Iranian nuclear deal this year?",
+     "sub": "Before Sep 1, 2026",
+     "open": "2026-04-09",
+     "close": "2026-09-01"
+    },
+    {
+     "ticker": "KXTRUMPSUPREMELEADER-27JAN01-SEP01",
+     "title": "Will Donald Trump meet in person the Supreme Leader of Iran before Sep 1, 2026?",
+     "sub": "Before Sep 1, 2026",
+     "open": "2026-06-03",
+     "close": "2026-09-01"
+    },
+    {
+     "ticker": "KXTRUMPSUPREMELEADER-27JAN01-JAN01",
+     "title": "Will Donald Trump meet in person the Supreme Leader of Iran before Jan 1, 2027?",
+     "sub": "Before Jan 1, 2027",
+     "open": "2026-06-03",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXTRUMPIRAN-27JAN01",
+     "title": "Will Donald Trump visit Iran before Jan 1, 2027?",
+     "sub": "Before Jan 1, 2027",
+     "open": "2026-03-01",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXPAHLAVIVISITA-27JAN01",
+     "title": "Will Reza Pahlavi visit Iran before Jan 1, 2027?",
+     "sub": "Yes",
+     "open": "2026-01-08",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXPAHLAVIHEAD-27JAN-RPAH",
+     "title": "Who will be the next the head of state or government of Iran?",
+     "sub": "Reza Pahlavi",
+     "open": "2026-01-10",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXIRANIMPORTS-27FEB01-T5000000",
+     "title": "Will U.S. imports from Iran for 2026 be greater than $5M?",
+     "sub": "in 2026",
+     "open": "2026-03-04",
+     "close": "2027-02-01"
+    },
+    {
+     "ticker": "KXIRANEMBASSY-27-26SEP",
+     "title": "Will the US reopen its embassy in Iran before Sep 1, 2026?",
+     "sub": "Before September 2026",
+     "open": "2026-05-11",
+     "close": "2026-09-01"
+    },
+    {
+     "ticker": "KXIRANEMBASSY-27",
+     "title": "Will the US reopen its embassy in Iran before Jan 1, 2027?",
+     "sub": "Before 2027",
+     "open": "2026-03-01",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXIRANDEMOCRACY-27MAR01-T6",
+     "title": "Will Iran's score in the Economist Intelligence Unit's Democracy Index be at least 6 in the 2026 edition?",
+     "sub": "Yes",
+     "open": "2026-03-01",
+     "close": "2027-03-01"
+    }
+   ],
+   "precursor": "2026-08-24: OFAC expands Iran sectoral sanctions and suspends general licenses",
+   "market_verdict": "story",
+   "market": "KXUSAIRANAGREEMENT-27-26SEP",
+   "why": "US-Iran deal and conflict markets track the same developing story",
+   "covered": true,
+   "book_move_usd": -668.4901150890124
+  },
+  {
+   "id": "w202609009",
+   "date": "2026-09-10",
+   "category": "central_bank_unscheduled",
+   "severity": "major",
+   "title": "The European Central Bank raises its three key interest rates by 0.25 percentage points, lifting the deposit rate to 2.5",
+   "candidates": [
+    {
+     "ticker": "KXCBDTURKEY-26SEP10-HOLD",
+     "title": "Will the Central Bank of the Republic of T\u00fcrkiye maintain current rate at the September Monetary Policy Commit",
+     "sub": "Maintain current rate",
+     "open": "2026-09-08",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDTURKEY-26SEP10-H250P",
+     "title": "Will the Central Bank of the Republic of T\u00fcrkiye hike more than 250bps at the September Monetary Policy Commit",
+     "sub": "Hike more than 250bps",
+     "open": "2026-09-08",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDTURKEY-26SEP10-H250",
+     "title": "Will the Central Bank of the Republic of T\u00fcrkiye hike 1-250bps at the September Monetary Policy Committee Meet",
+     "sub": "Hike 1-250bps",
+     "open": "2026-09-08",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDTURKEY-26SEP10-C250P",
+     "title": "Will the Central Bank of the Republic of T\u00fcrkiye cut more than 250bps at the September Monetary Policy Committ",
+     "sub": "Cut more than 250bps",
+     "open": "2026-09-08",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDTURKEY-26SEP10-C250",
+     "title": "Will the Central Bank of the Republic of T\u00fcrkiye cut 1-250bps at the September Monetary Policy Committee Meeti",
+     "sub": "Cut 1-250bps",
+     "open": "2026-09-08",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26SEP10-HOLD",
+     "title": "Will the European Central Bank Maintain current rate at the September ECB Governing Council monetary policy me",
+     "sub": "Maintain current rate",
+     "open": "2026-07-22",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26SEP10-H25P",
+     "title": "Will the European Central Bank Hike more than 25bps at the September ECB Governing Council monetary policy mee",
+     "sub": "Hike more than 25bps",
+     "open": "2026-07-22",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26SEP10-H25",
+     "title": "Will the European Central Bank Hike 1-25bps at the September ECB Governing Council monetary policy meeting?",
+     "sub": "Hike 1-25bps",
+     "open": "2026-07-22",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26SEP10-C25P",
+     "title": "Will the European Central Bank Cut more than 25bps at the September ECB Governing Council monetary policy meet",
+     "sub": "Cut more than 25bps",
+     "open": "2026-07-22",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26SEP10-C25",
+     "title": "Will the European Central Bank Cut 1-25bps at the September ECB Governing Council monetary policy meeting?",
+     "sub": "Cut 1-25bps",
+     "open": "2026-07-22",
+     "close": "2026-09-10"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26DEC17-HOLD",
+     "title": "Will the European Central Bank Maintain current rate at the December ECB Governing Council monetary policy mee",
+     "sub": "Maintain current rate",
+     "open": "2026-08-25",
+     "close": "2026-12-17"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26DEC17-H25P",
+     "title": "Will the European Central Bank Hike more than 25bps at the December ECB Governing Council monetary policy meet",
+     "sub": "Hike more than 25bps",
+     "open": "2026-08-25",
+     "close": "2026-12-17"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26DEC17-H25",
+     "title": "Will the European Central Bank Hike 1-25bps at the December ECB Governing Council monetary policy meeting?",
+     "sub": "Hike 1-25bps",
+     "open": "2026-08-25",
+     "close": "2026-12-17"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26DEC17-C25P",
+     "title": "Will the European Central Bank Cut more than 25bps at the December ECB Governing Council monetary policy meeti",
+     "sub": "Cut more than 25bps",
+     "open": "2026-08-25",
+     "close": "2026-12-17"
+    },
+    {
+     "ticker": "KXCBDECISIONEU-26DEC17-C25",
+     "title": "Will the European Central Bank Cut 1-25bps at the December ECB Governing Council monetary policy meeting?",
+     "sub": "Cut 1-25bps",
+     "open": "2026-08-25",
+     "close": "2026-12-17"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "exact",
+   "market": "KXCBDECISIONEU-26SEP10-H25",
+   "why": "ECB September meeting market resolves on a 25bp hike",
+   "covered": true,
+   "book_move_usd": -465.1225314559873
+  },
+  {
+   "id": "w202609008",
+   "date": "2026-09-10",
+   "category": "supply_shock",
+   "severity": "major",
+   "title": "Crude oil prices in the United States, including from Brent Crude and West Texas Intermediate, reach US$100, the highest",
+   "candidates": [
+    {
+     "ticker": "KXWARMING-50",
+     "title": "Will the world pass 2 degrees Celsius over pre-industrial levels before 2050?",
+     "sub": "Before 2050",
+     "open": "2025-06-05",
+     "close": "2050-01-01"
+    },
+    {
+     "ticker": "KXVGA-27FEBLNGVOL-1940",
+     "title": "Will Venture Global, Inc. report Above 1940 tbtu lng volumes in fiscal 2026?",
+     "sub": "Above 1940 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-05-06"
+    },
+    {
+     "ticker": "KXVGA-27FEBLNGVOL-1900",
+     "title": "Will Venture Global, Inc. report Above 1900 tbtu lng volumes in fiscal 2026?",
+     "sub": "Above 1900 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-05-06"
+    },
+    {
+     "ticker": "KXVGA-27FEBLNGVOL-1860",
+     "title": "Will Venture Global, Inc. report Above 1860 tbtu lng volumes in fiscal 2026?",
+     "sub": "Above 1860 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-05-06"
+    },
+    {
+     "ticker": "KXVGA-27FEBLNGVOL-1820",
+     "title": "Will Venture Global, Inc. report Above 1820 tbtu lng volumes in fiscal 2026?",
+     "sub": "Above 1820 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-05-06"
+    },
+    {
+     "ticker": "KXVGA-27FEBLNGVOL-1780",
+     "title": "Will Venture Global, Inc. report Above 1780 tbtu lng volumes in fiscal 2026?",
+     "sub": "Above 1780 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-05-06"
+    },
+    {
+     "ticker": "KXVG-26OCTLNGVOL-520",
+     "title": "Will Venture Global, Inc. report Above 520 tbtu lng volumes in Q3 2026?",
+     "sub": "Above 520 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-02-12"
+    },
+    {
+     "ticker": "KXVG-26OCTLNGVOL-500",
+     "title": "Will Venture Global, Inc. report Above 500 tbtu lng volumes in Q3 2026?",
+     "sub": "Above 500 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-02-12"
+    },
+    {
+     "ticker": "KXVG-26OCTLNGVOL-480",
+     "title": "Will Venture Global, Inc. report Above 480 tbtu lng volumes in Q3 2026?",
+     "sub": "Above 480 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-02-12"
+    },
+    {
+     "ticker": "KXVG-26OCTLNGVOL-460",
+     "title": "Will Venture Global, Inc. report Above 460 tbtu lng volumes in Q3 2026?",
+     "sub": "Above 460 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-02-12"
+    },
+    {
+     "ticker": "KXVG-26OCTLNGVOL-440",
+     "title": "Will Venture Global, Inc. report Above 440 tbtu lng volumes in Q3 2026?",
+     "sub": "Above 440 tbtu",
+     "open": "2026-08-13",
+     "close": "2027-02-12"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T900000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 900K bpd?",
+     "sub": "At least 900K bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T800000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 800K bpd?",
+     "sub": "At least 800K bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T1500000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 1.5M bpd?",
+     "sub": "At least 1.5M bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T1400000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 1.4M bpd?",
+     "sub": "At least 1.4M bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "No market on crude price levels; Venezuela and LNG markets are only loosely related",
+   "covered": false,
+   "book_move_usd": -465.1225314559873
+  },
+  {
+   "id": "w202609131",
+   "date": "2026-09-10",
+   "category": "supply_shock",
+   "severity": "major",
+   "title": "Multiple projectile explosives launched from Iraq strike pumping stations along the East\u2013West Crude Oil Pipeline in Saud",
+   "candidates": [
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-IRAN",
+     "title": "Will Israel and Iran normalize relations before Jan 1, 2027?",
+     "sub": "Iran",
+     "open": "2026-05-24",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-LEB",
+     "title": "Will Israel and Lebanon normalize relations before Jan 1, 2027?",
+     "sub": "Lebanon",
+     "open": "2025-12-10",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-SYR",
+     "title": "Will Israel and Syria normalize relations before Jan 1, 2027?",
+     "sub": "Syria",
+     "open": "2025-11-07",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-BELI",
+     "title": "Will Israel and Belize normalize relations before Jan 1, 2027?",
+     "sub": "Belize",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-COMO",
+     "title": "Will Israel and Comoros normalize relations before Jan 1, 2027?",
+     "sub": "Comoros",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-DJIB",
+     "title": "Will Israel and Djibouti normalize relations before Jan 1, 2027?",
+     "sub": "Djibouti",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-MALD",
+     "title": "Will Israel and Maldives normalize relations before Jan 1, 2027?",
+     "sub": "Maldives",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-INDO",
+     "title": "Will Israel and Indonesia normalize relations before Jan 1, 2027?",
+     "sub": "Indonesia",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-MAUR",
+     "title": "Will Israel and Mauritania normalize relations before Jan 1, 2027?",
+     "sub": "Mauritania",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01-OMAN",
+     "title": "Will Israel and Oman normalize relations before Jan 1, 2027?",
+     "sub": "Oman",
+     "open": "2025-11-06",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-27-JAN01",
+     "title": "Will Israel and Saudi Arabia normalize relations before Jan 1, 2027?",
+     "sub": "Saudi Arabia",
+     "open": "2024-11-21",
+     "close": "2027-01-01"
+    },
+    {
+     "ticker": "KXABRAHAMSA-29-JAN20",
+     "title": "Will Israel and Saudi Arabia normalize relations before Jan 20, 2029?",
+     "sub": "During Trump's term",
+     "open": "2024-11-21",
+     "close": "2029-01-20"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T900000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 900K bpd?",
+     "sub": "At least 900K bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T800000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 800K bpd?",
+     "sub": "At least 800K bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    },
+    {
+     "ticker": "KXVENEZCRUDE-26OCT13-T1500000",
+     "title": "Will Venezuela\u2019s average daily crude oil production for September be at least 1.5M bpd?",
+     "sub": "At least 1.5M bpd",
+     "open": "2026-09-02",
+     "close": "2026-10-13"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "none",
+   "market": null,
+   "why": "No market on Saudi pipeline attacks; normalization markets are only loosely related",
+   "covered": false,
+   "book_move_usd": -465.1225314559873
+  },
+  {
+   "id": "w202609140",
+   "date": "2026-09-11",
+   "category": "conflict_war",
+   "severity": "major",
+   "title": "In Yemen, the Houthis seize Perim Island in the Strait of Bab al-Mandab after government forces withdrew, completing the",
+   "candidates": [
+    {
+     "ticker": "KXBABELMANDEBWEEKLY-26SEP13-T250",
+     "title": "Will there be more than 250 transit calls through the Bab el-Mandeb Strait from Sep 7, 2026 to Sep 13, 2026?",
+     "sub": "Above 250",
+     "open": "2026-09-04",
+     "close": "2026-09-15"
+    },
+    {
+     "ticker": "KXBABELMANDEBWEEKLY-26SEP13-T225",
+     "title": "Will there be more than 225 transit calls through the Bab el-Mandeb Strait from Sep 7, 2026 to Sep 13, 2026?",
+     "sub": "Above 225",
+     "open": "2026-09-04",
+     "close": "2026-09-15"
+    },
+    {
+     "ticker": "KXBABELMANDEBWEEKLY-26SEP13-T200",
+     "title": "Will there be more than 200 transit calls through the Bab el-Mandeb Strait from Sep 7, 2026 to Sep 13, 2026?",
+     "sub": "Above 200",
+     "open": "2026-09-04",
+     "close": "2026-09-15"
+    },
+    {
+     "ticker": "KXBABELMANDEBWEEKLY-26SEP13-T175",
+     "title": "Will there be more than 175 transit calls through the Bab el-Mandeb Strait from Sep 7, 2026 to Sep 13, 2026?",
+     "sub": "Above 175",
+     "open": "2026-09-04",
+     "close": "2026-09-15"
+    },
+    {
+     "ticker": "KXBABELMANDEBWEEKLY-26SEP13-T150",
+     "title": "Will there be more than 150 transit calls through the Bab el-Mandeb Strait from Sep 7, 2026 to Sep 13, 2026?",
+     "sub": "Above 150",
+     "open": "2026-09-04",
+     "close": "2026-09-15"
+    },
+    {
+     "ticker": "SENATERI-26-D",
+     "title": "Will Democratics win the Senate race in Rhode Island?",
+     "sub": "Jack Reed",
+     "open": "2024-12-03",
+     "close": "2027-11-03"
+    },
+    {
+     "ticker": "SENATERI-26-R",
+     "title": "Will Republicans win the Senate race in Rhode Island?",
+     "sub": "Raymond McKay",
+     "open": "2024-12-03",
+     "close": "2027-11-03"
+    },
+    {
+     "ticker": "KXTRUMPSTRAIT-26SEP-SEP15",
+     "title": "Will Trump rename the Strait of Hormuz after himself?",
+     "sub": "Before Sep 15, 2026",
+     "open": "2026-09-02",
+     "close": "2026-09-15"
+    },
+    {
+     "ticker": "KXSNOWCRABCATCH-26-NONE",
+     "title": "2026/27 Bering Sea snow crab fishery closed?",
+     "sub": "Closed",
+     "open": "2026-09-01",
+     "close": "2026-10-14"
+    },
+    {
+     "ticker": "KXSNOWCRABCATCH-26-B7000000-10999999",
+     "title": "2026/27 snow crab TAC: 7 million-10,999,999 lb?",
+     "sub": "Between 7 million and 10,999,999 pounds",
+     "open": "2026-09-01",
+     "close": "2026-10-14"
+    },
+    {
+     "ticker": "KXSNOWCRABCATCH-26-B1-6999999",
+     "title": "2026/27 snow crab TAC: 1-6,999,999 lb?",
+     "sub": "Between 1 and 6,999,999 pounds",
+     "open": "2026-09-01",
+     "close": "2026-10-14"
+    },
+    {
+     "ticker": "KXSNOWCRABCATCH-26-B16000000-22999999",
+     "title": "2026/27 snow crab TAC: 16 million-22,999,999 lb?",
+     "sub": "Between 16 million and 22,999,999 pounds",
+     "open": "2026-09-01",
+     "close": "2026-10-14"
+    },
+    {
+     "ticker": "KXSNOWCRABCATCH-26-B11000000-15999999",
+     "title": "2026/27 snow crab TAC: 11 million-15,999,999 lb?",
+     "sub": "Between 11 million and 15,999,999 pounds",
+     "open": "2026-09-01",
+     "close": "2026-10-14"
+    },
+    {
+     "ticker": "KXSNOWCRABCATCH-26-A23000000",
+     "title": "2026/27 snow crab TAC: at least 23 million lb?",
+     "sub": "At least 23 million pounds",
+     "open": "2026-09-01",
+     "close": "2026-10-14"
+    },
+    {
+     "ticker": "KXSEA-27FEBGMV-176000000000",
+     "title": "Will Sea Limited report Above $176 billion shopee gmv in fiscal 2026?",
+     "sub": "Above $176 billion",
+     "open": "2026-08-05",
+     "close": "2027-05-27"
+    }
+   ],
+   "precursor": null,
+   "market_verdict": "story",
+   "market": "KXBABELMANDEBWEEKLY-26SEP13-T200",
+   "why": "Bab el-Mandeb transit counts reflect the same Houthi strait story",
+   "covered": true,
+   "book_move_usd": -596.812087461588
+  }
+ ]
+}

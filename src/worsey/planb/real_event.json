@@ -1,0 +1,90 @@
+{
+ "source": "Plan C rung D (gate + LLM sign), frozen for the shadow run",
+ "model_hash": "fd5a7d0449d89089",
+ "events": 3571,
+ "evidence": "fitted before 2023 it beat zero + normal noise on 2023-26 (2026: 98% support, big events 99%); direction on big moves 63% (2023-25) and 68-75% (2026); DECISIONS #194, #197, #201",
+ "signed_factors": [
+  "market",
+  "rates_2y",
+  "rates_10y",
+  "dollar",
+  "oil",
+  "gold",
+  "credit"
+ ],
+ "factors": {
+  "market": {
+   "push_in_llm_direction": 0.731,
+   "real_event_width": 2.5639
+  },
+  "rates_2y": {
+   "push_in_llm_direction": 0.7126,
+   "real_event_width": 1.8718
+  },
+  "rates_10y": {
+   "push_in_llm_direction": 0.6997,
+   "real_event_width": 1.3857
+  },
+  "dollar": {
+   "push_in_llm_direction": 0.2161,
+   "real_event_width": 2.2974
+  },
+  "oil": {
+   "push_in_llm_direction": 1.3096,
+   "real_event_width": 1.5361
+  },
+  "gold": {
+   "push_in_llm_direction": 0.1219,
+   "real_event_width": 2.5215
+  },
+  "credit": {
+   "push_in_llm_direction": 0.5758,
+   "real_event_width": 2.4613
+  },
+  "size": {
+   "push_in_llm_direction": 0.0,
+   "real_event_width": 1.7559
+  },
+  "value": {
+   "push_in_llm_direction": 0.0,
+   "real_event_width": 2.3951
+  },
+  "asia_em": {
+   "push_in_llm_direction": 0.0,
+   "real_event_width": 1.9997
+  },
+  "healthcare": {
+   "push_in_llm_direction": 0.0,
+   "real_event_width": 1.8025
+  },
+  "agriculture": {
+   "push_in_llm_direction": 0.0,
+   "real_event_width": 2.6413
+  },
+  "defensive_vs_producers": {
+   "push_in_llm_direction": 0.0,
+   "real_event_width": 2.1575
+  }
+ },
+ "size_map": {
+  "large": {
+   "move_in_llm_direction": 2.4406,
+   "spread": 2.5816,
+   "events": 200,
+   "move_2023_2026": 2.0464
+  },
+  "medium": {
+   "move_in_llm_direction": 0.7429,
+   "spread": 1.6184,
+   "events": 771,
+   "move_2023_2026": 0.2453
+  },
+  "small": {
+   "move_in_llm_direction": 0.1393,
+   "spread": 1.2137,
+   "events": 3268,
+   "move_2023_2026": 0.0881
+  }
+ },
+ "size_map_note": "the LLM's size call per factor vs the real move in its direction, 745 major and extreme events 2004-2026 (DECISIONS #196, #214); pre-2023 may carry hindsight, so the 2023-26 figure is shown beside it"
+}

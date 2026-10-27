@@ -1,0 +1,65 @@
+{
+ "events": 31,
+ "factors": {
+  "product (shipped, #182)": 0.018373902245837903,
+  "product (#180, LLM buckets)": -0.0725682641062293,
+  "untrained": -0.07365791328689641,
+  "model": 0.018373902245837903,
+  "market direction": {
+   "product (shipped, #182)": 0.4838709677419355,
+   "product (#180, LLM buckets)": 0.5483870967741935,
+   "untrained": 0.4838709677419355,
+   "model": 0.4838709677419355
+  },
+  "shipped - untrained (90% range)": [
+   -0.0338317736398397,
+   0.2495773400836613
+  ],
+  "shipped beats untrained (bootstrap share)": 0.8795,
+  "shipped == engine alone": true
+ },
+ "books": {
+  "Balanced (demo book)": {
+   "n": 31,
+   "product (shipped, #182)": 0.07063328276774739,
+   "product (#180, LLM buckets)": -0.24874090341630017,
+   "untrained": -0.09318295287393474,
+   "model": 0.07063328276774739
+  },
+  "Energy producers": {
+   "n": 31,
+   "product (shipped, #182)": 0.05658583210311485,
+   "product (#180, LLM buckets)": -0.1907140172467925,
+   "untrained": -0.25314808007050815,
+   "model": 0.05658583210311485
+  },
+  "Gold miners": {
+   "n": 31,
+   "product (shipped, #182)": -0.008525047332372804,
+   "product (#180, LLM buckets)": 0.03904137308810962,
+   "untrained": 0.029019765725907143,
+   "model": -0.008525047332372804
+  },
+  "Latin America": {
+   "n": 31,
+   "product (shipped, #182)": 0.00017920131108217774,
+   "product (#180, LLM buckets)": -0.1489606267000847,
+   "untrained": -0.0170476689806085,
+   "model": 0.00017920131108217774
+  },
+  "Long Treasuries": {
+   "n": 31,
+   "product (shipped, #182)": 0.12371743791259782,
+   "product (#180, LLM buckets)": -0.5228971854675721,
+   "untrained": 0.06059673620288497,
+   "model": 0.12371743791259782
+  },
+  "Agriculture / weather": {
+   "n": 31,
+   "product (shipped, #182)": 0.030438184506845323,
+   "product (#180, LLM buckets)": -0.12492235686685627,
+   "untrained": -0.005038314860459803,
+   "model": 0.030438184506845323
+  }
+ }
+}

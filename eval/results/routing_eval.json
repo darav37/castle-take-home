@@ -1,0 +1,1545 @@
+{
+ "n_cases": 30,
+ "models": {
+  "claude-haiku-5-5": {
+   "accuracy": 0.9833,
+   "misses": [
+    {
+     "id": "view_tariffs_nvda",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": false,
+     "s": 3.33
+    }
+   ],
+   "cases": [
+    {
+     "id": "load_named",
+     "rep": 0,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.22
+    },
+    {
+     "id": "load_demo_quoted",
+     "rep": 0,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 0.76
+    },
+    {
+     "id": "load_typed_holdings",
+     "rep": 0,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.78
+    },
+    {
+     "id": "discovery_3m",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.76
+    },
+    {
+     "id": "discovery_casual",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.87
+    },
+    {
+     "id": "discovery_1m",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.71
+    },
+    {
+     "id": "discovery_horizon_change",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.8
+    },
+    {
+     "id": "exposure_concentration",
+     "rep": 0,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 0.74
+    },
+    {
+     "id": "exposure_nvda",
+     "rep": 0,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 0.72
+    },
+    {
+     "id": "exposure_semis",
+     "rep": 0,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 0.61
+    },
+    {
+     "id": "pointed_tariff",
+     "rep": 0,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 0.98
+    },
+    {
+     "id": "pointed_fed_why",
+     "rep": 0,
+     "expect": [
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.01
+    },
+    {
+     "id": "pointed_drivers",
+     "rep": 0,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.04
+    },
+    {
+     "id": "pointed_fed_cut",
+     "rep": 0,
+     "expect": [
+      "analyze_event",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.19
+    },
+    {
+     "id": "pointed_probability",
+     "rep": 0,
+     "expect": [
+      "analyze_event",
+      "event_analyst",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.36
+    },
+    {
+     "id": "hedge_that",
+     "rep": 0,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 0.92
+    },
+    {
+     "id": "hedge_cheapest",
+     "rep": 0,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 1.05
+    },
+    {
+     "id": "hedge_kalshi_contract",
+     "rep": 0,
+     "expect": [
+      "compare_hedges",
+      "none"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 1.94
+    },
+    {
+     "id": "hedge_ambiguous_no_event",
+     "rep": 0,
+     "expect": [
+      "scan_risks",
+      "compare_hedges",
+      "options_desk",
+      "exposures",
+      "none"
+     ],
+     "called": [
+      "exposures",
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.44
+    },
+    {
+     "id": "view_tariffs_nvda",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 3.01
+    },
+    {
+     "id": "view_make_2w",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.69
+    },
+    {
+     "id": "view_conviction",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.58
+    },
+    {
+     "id": "view_vol_rich",
+     "rep": 0,
+     "expect": [
+      "options_desk"
+     ],
+     "called": [
+      "options_desk"
+     ],
+     "ok": true,
+     "s": 0.77
+    },
+    {
+     "id": "view_calm_market",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 2.11
+    },
+    {
+     "id": "chart_payoff",
+     "rep": 0,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 1.33
+    },
+    {
+     "id": "chart_scan",
+     "rep": 0,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 0.8
+    },
+    {
+     "id": "chitchat_hi",
+     "rep": 0,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 0.89
+    },
+    {
+     "id": "chitchat_thanks",
+     "rep": 0,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 2.16
+    },
+    {
+     "id": "concept_put_spread",
+     "rep": 0,
+     "expect": [
+      "none",
+      "options_desk"
+     ],
+     "called": [
+      "options_desk"
+     ],
+     "ok": true,
+     "s": 1.39
+    },
+    {
+     "id": "iran_iwm_trace",
+     "rep": 0,
+     "expect": [
+      "load_portfolio",
+      "scan_risks",
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 2.82
+    },
+    {
+     "id": "load_named",
+     "rep": 1,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.29
+    },
+    {
+     "id": "load_demo_quoted",
+     "rep": 1,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 0.95
+    },
+    {
+     "id": "load_typed_holdings",
+     "rep": 1,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.38
+    },
+    {
+     "id": "discovery_3m",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.73
+    },
+    {
+     "id": "discovery_casual",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.84
+    },
+    {
+     "id": "discovery_1m",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.71
+    },
+    {
+     "id": "discovery_horizon_change",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 0.75
+    },
+    {
+     "id": "exposure_concentration",
+     "rep": 1,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 0.69
+    },
+    {
+     "id": "exposure_nvda",
+     "rep": 1,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.12
+    },
+    {
+     "id": "exposure_semis",
+     "rep": 1,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 0.83
+    },
+    {
+     "id": "pointed_tariff",
+     "rep": 1,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.07
+    },
+    {
+     "id": "pointed_fed_why",
+     "rep": 1,
+     "expect": [
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 0.98
+    },
+    {
+     "id": "pointed_drivers",
+     "rep": 1,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.02
+    },
+    {
+     "id": "pointed_fed_cut",
+     "rep": 1,
+     "expect": [
+      "analyze_event",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 0.98
+    },
+    {
+     "id": "pointed_probability",
+     "rep": 1,
+     "expect": [
+      "analyze_event",
+      "event_analyst",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.14
+    },
+    {
+     "id": "hedge_that",
+     "rep": 1,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 0.8
+    },
+    {
+     "id": "hedge_cheapest",
+     "rep": 1,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 0.96
+    },
+    {
+     "id": "hedge_kalshi_contract",
+     "rep": 1,
+     "expect": [
+      "compare_hedges",
+      "none"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 1.39
+    },
+    {
+     "id": "hedge_ambiguous_no_event",
+     "rep": 1,
+     "expect": [
+      "scan_risks",
+      "compare_hedges",
+      "options_desk",
+      "exposures",
+      "none"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.63
+    },
+    {
+     "id": "view_tariffs_nvda",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": false,
+     "s": 3.33
+    },
+    {
+     "id": "view_make_2w",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 3.03
+    },
+    {
+     "id": "view_conviction",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.84
+    },
+    {
+     "id": "view_vol_rich",
+     "rep": 1,
+     "expect": [
+      "options_desk"
+     ],
+     "called": [
+      "options_desk"
+     ],
+     "ok": true,
+     "s": 0.84
+    },
+    {
+     "id": "view_calm_market",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.9
+    },
+    {
+     "id": "chart_payoff",
+     "rep": 1,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 1.05
+    },
+    {
+     "id": "chart_scan",
+     "rep": 1,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 0.84
+    },
+    {
+     "id": "chitchat_hi",
+     "rep": 1,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 1.21
+    },
+    {
+     "id": "chitchat_thanks",
+     "rep": 1,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 1.42
+    },
+    {
+     "id": "concept_put_spread",
+     "rep": 1,
+     "expect": [
+      "none",
+      "options_desk"
+     ],
+     "called": [
+      "options_desk"
+     ],
+     "ok": true,
+     "s": 1.17
+    },
+    {
+     "id": "iran_iwm_trace",
+     "rep": 1,
+     "expect": [
+      "load_portfolio",
+      "scan_risks",
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 2.36
+    }
+   ]
+  },
+  "claude-sonnet-5-5": {
+   "accuracy": 1.0,
+   "misses": [],
+   "cases": [
+    {
+     "id": "load_named",
+     "rep": 0,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.58
+    },
+    {
+     "id": "load_demo_quoted",
+     "rep": 0,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.24
+    },
+    {
+     "id": "load_typed_holdings",
+     "rep": 0,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.56
+    },
+    {
+     "id": "discovery_3m",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.19
+    },
+    {
+     "id": "discovery_casual",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.15
+    },
+    {
+     "id": "discovery_1m",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.22
+    },
+    {
+     "id": "discovery_horizon_change",
+     "rep": 0,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.31
+    },
+    {
+     "id": "exposure_concentration",
+     "rep": 0,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.4
+    },
+    {
+     "id": "exposure_nvda",
+     "rep": 0,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.2
+    },
+    {
+     "id": "exposure_semis",
+     "rep": 0,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.19
+    },
+    {
+     "id": "pointed_tariff",
+     "rep": 0,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.22
+    },
+    {
+     "id": "pointed_fed_why",
+     "rep": 0,
+     "expect": [
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.4
+    },
+    {
+     "id": "pointed_drivers",
+     "rep": 0,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.49
+    },
+    {
+     "id": "pointed_fed_cut",
+     "rep": 0,
+     "expect": [
+      "analyze_event",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.37
+    },
+    {
+     "id": "pointed_probability",
+     "rep": 0,
+     "expect": [
+      "analyze_event",
+      "event_analyst",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.46
+    },
+    {
+     "id": "hedge_that",
+     "rep": 0,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 2.32
+    },
+    {
+     "id": "hedge_cheapest",
+     "rep": 0,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 2.23
+    },
+    {
+     "id": "hedge_kalshi_contract",
+     "rep": 0,
+     "expect": [
+      "compare_hedges",
+      "none"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 2.29
+    },
+    {
+     "id": "hedge_ambiguous_no_event",
+     "rep": 0,
+     "expect": [
+      "scan_risks",
+      "compare_hedges",
+      "options_desk",
+      "exposures",
+      "none"
+     ],
+     "called": [
+      "exposures",
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 2.91
+    },
+    {
+     "id": "view_tariffs_nvda",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 3.1
+    },
+    {
+     "id": "view_make_2w",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.34
+    },
+    {
+     "id": "view_conviction",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.7
+    },
+    {
+     "id": "view_vol_rich",
+     "rep": 0,
+     "expect": [
+      "options_desk"
+     ],
+     "called": [
+      "options_desk"
+     ],
+     "ok": true,
+     "s": 1.78
+    },
+    {
+     "id": "view_calm_market",
+     "rep": 0,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 2.37
+    },
+    {
+     "id": "chart_payoff",
+     "rep": 0,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 1.17
+    },
+    {
+     "id": "chart_scan",
+     "rep": 0,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 1.18
+    },
+    {
+     "id": "chitchat_hi",
+     "rep": 0,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 2.55
+    },
+    {
+     "id": "chitchat_thanks",
+     "rep": 0,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 2.77
+    },
+    {
+     "id": "concept_put_spread",
+     "rep": 0,
+     "expect": [
+      "none",
+      "options_desk"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 3.43
+    },
+    {
+     "id": "iran_iwm_trace",
+     "rep": 0,
+     "expect": [
+      "load_portfolio",
+      "scan_risks",
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.57
+    },
+    {
+     "id": "load_named",
+     "rep": 1,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.4
+    },
+    {
+     "id": "load_demo_quoted",
+     "rep": 1,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.49
+    },
+    {
+     "id": "load_typed_holdings",
+     "rep": 1,
+     "expect": [
+      "load_portfolio"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.37
+    },
+    {
+     "id": "discovery_3m",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.21
+    },
+    {
+     "id": "discovery_casual",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.11
+    },
+    {
+     "id": "discovery_1m",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.21
+    },
+    {
+     "id": "discovery_horizon_change",
+     "rep": 1,
+     "expect": [
+      "scan_risks"
+     ],
+     "called": [
+      "scan_risks"
+     ],
+     "ok": true,
+     "s": 1.24
+    },
+    {
+     "id": "exposure_concentration",
+     "rep": 1,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.21
+    },
+    {
+     "id": "exposure_nvda",
+     "rep": 1,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.17
+    },
+    {
+     "id": "exposure_semis",
+     "rep": 1,
+     "expect": [
+      "exposures"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 1.13
+    },
+    {
+     "id": "pointed_tariff",
+     "rep": 1,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.3
+    },
+    {
+     "id": "pointed_fed_why",
+     "rep": 1,
+     "expect": [
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.5
+    },
+    {
+     "id": "pointed_drivers",
+     "rep": 1,
+     "expect": [
+      "analyze_event"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.4
+    },
+    {
+     "id": "pointed_fed_cut",
+     "rep": 1,
+     "expect": [
+      "analyze_event",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.42
+    },
+    {
+     "id": "pointed_probability",
+     "rep": 1,
+     "expect": [
+      "analyze_event",
+      "event_analyst",
+      "scan_risks"
+     ],
+     "called": [
+      "analyze_event"
+     ],
+     "ok": true,
+     "s": 1.51
+    },
+    {
+     "id": "hedge_that",
+     "rep": 1,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 2.16
+    },
+    {
+     "id": "hedge_cheapest",
+     "rep": 1,
+     "expect": [
+      "compare_hedges"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 2.28
+    },
+    {
+     "id": "hedge_kalshi_contract",
+     "rep": 1,
+     "expect": [
+      "compare_hedges",
+      "none"
+     ],
+     "called": [
+      "compare_hedges"
+     ],
+     "ok": true,
+     "s": 2.35
+    },
+    {
+     "id": "hedge_ambiguous_no_event",
+     "rep": 1,
+     "expect": [
+      "scan_risks",
+      "compare_hedges",
+      "options_desk",
+      "exposures",
+      "none"
+     ],
+     "called": [
+      "exposures"
+     ],
+     "ok": true,
+     "s": 2.03
+    },
+    {
+     "id": "view_tariffs_nvda",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 2.62
+    },
+    {
+     "id": "view_make_2w",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.33
+    },
+    {
+     "id": "view_conviction",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 1.52
+    },
+    {
+     "id": "view_vol_rich",
+     "rep": 1,
+     "expect": [
+      "options_desk"
+     ],
+     "called": [
+      "options_desk"
+     ],
+     "ok": true,
+     "s": 1.23
+    },
+    {
+     "id": "view_calm_market",
+     "rep": 1,
+     "expect": [
+      "view_and_strategies",
+      "options_desk"
+     ],
+     "called": [
+      "view_and_strategies"
+     ],
+     "ok": true,
+     "s": 2.81
+    },
+    {
+     "id": "chart_payoff",
+     "rep": 1,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 1.25
+    },
+    {
+     "id": "chart_scan",
+     "rep": 1,
+     "expect": [
+      "chart"
+     ],
+     "called": [
+      "chart"
+     ],
+     "ok": true,
+     "s": 1.19
+    },
+    {
+     "id": "chitchat_hi",
+     "rep": 1,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 2.16
+    },
+    {
+     "id": "chitchat_thanks",
+     "rep": 1,
+     "expect": [
+      "none"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 2.36
+    },
+    {
+     "id": "concept_put_spread",
+     "rep": 1,
+     "expect": [
+      "none",
+      "options_desk"
+     ],
+     "called": [
+      "none"
+     ],
+     "ok": true,
+     "s": 3.27
+    },
+    {
+     "id": "iran_iwm_trace",
+     "rep": 1,
+     "expect": [
+      "load_portfolio",
+      "scan_risks",
+      "analyze_event",
+      "event_analyst"
+     ],
+     "called": [
+      "load_portfolio"
+     ],
+     "ok": true,
+     "s": 1.86
+    }
+   ]
+  }
+ },
+ "decision": {
+  "keep_haiku": false,
+  "rule": "Haiku if \u2265 95% and not worse than Sonnet (pooled over repeats)"
+ }
+}

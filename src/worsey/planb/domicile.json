@@ -1,0 +1,280 @@
+{
+ "source": "home country of common US-listed foreign stocks and ADRs, by where the business is (#238); used for the country layer: a stock in this table is mapped to its home country, kept only if that country's factor adds > 2% of its daily moves",
+ "countries": {
+  "Brazil": [
+   "VALE",
+   "PBR",
+   "PBR.A",
+   "ITUB",
+   "BBD",
+   "BBDO",
+   "ABEV",
+   "SBS",
+   "ERJ",
+   "GGB",
+   "SID",
+   "CIG",
+   "ELP",
+   "UGP",
+   "BRFS",
+   "SUZ",
+   "XP",
+   "NU",
+   "STNE",
+   "PAGS",
+   "BSBR",
+   "VIV",
+   "TIMB",
+   "CBD",
+   "AZUL",
+   "BAK"
+  ],
+  "Mexico": [
+   "AMX",
+   "FMX",
+   "KOF",
+   "TV",
+   "CX",
+   "ASR",
+   "PAC",
+   "OMAB",
+   "BSMX",
+   "SIM",
+   "VLRS"
+  ],
+  "Argentina": [
+   "YPF",
+   "MELI",
+   "GGAL",
+   "BMA",
+   "PAM",
+   "TEO",
+   "TGS",
+   "CEPU",
+   "LOMA",
+   "CRESY",
+   "IRS",
+   "SUPV",
+   "BBAR",
+   "EDN",
+   "DESP",
+   "GLOB",
+   "VIST"
+  ],
+  "Chile": [
+   "SQM",
+   "BCH",
+   "BSAC",
+   "CCU",
+   "LTM",
+   "ENIC"
+  ],
+  "Peru": [
+   "BVN",
+   "SCCO",
+   "BAP",
+   "IFS"
+  ],
+  "Canada": [
+   "RY",
+   "TD",
+   "BNS",
+   "BMO",
+   "CM",
+   "ENB",
+   "CNQ",
+   "SU",
+   "CP",
+   "CNI",
+   "SHOP",
+   "BCE",
+   "TRP",
+   "MFC",
+   "SLF",
+   "NTR",
+   "GOLD",
+   "WPM",
+   "FNV",
+   "AEM",
+   "TECK",
+   "CVE",
+   "IMO",
+   "CCJ",
+   "BAM",
+   "BN",
+   "QSR",
+   "TRI",
+   "OTEX",
+   "TU",
+   "WCN",
+   "KGC",
+   "AGI",
+   "NXE",
+   "DNN"
+  ],
+  "Japan": [
+   "TM",
+   "SONY",
+   "MUFG",
+   "SMFG",
+   "MFG",
+   "HMC",
+   "NMR",
+   "IX",
+   "TAK",
+   "CAJ"
+  ],
+  "China": [
+   "BABA",
+   "JD",
+   "BIDU",
+   "PDD",
+   "NIO",
+   "LI",
+   "XPEV",
+   "BILI",
+   "TME",
+   "NTES",
+   "TCOM",
+   "YUMC",
+   "ZTO",
+   "BEKE",
+   "VIPS",
+   "IQ",
+   "HTHT",
+   "EDU",
+   "TAL",
+   "FUTU",
+   "LU",
+   "KC",
+   "BZ",
+   "QFIN",
+   "GDS",
+   "WB",
+   "ZK",
+   "HSAI",
+   "ATHM"
+  ],
+  "Taiwan": [
+   "TSM",
+   "UMC",
+   "ASX",
+   "CHT",
+   "HIMX"
+  ],
+  "South Korea": [
+   "PKX",
+   "KB",
+   "SHG",
+   "KEP",
+   "SKM",
+   "LPL",
+   "CPNG",
+   "WF"
+  ],
+  "India": [
+   "INFY",
+   "WIT",
+   "HDB",
+   "IBN",
+   "RDY",
+   "MMYT",
+   "SIFY",
+   "YTRA",
+   "WNS"
+  ],
+  "Australia": [
+   "BHP",
+   "WBK",
+   "JHX"
+  ],
+  "Singapore": [
+   "SE",
+   "GRAB"
+  ],
+  "Indonesia": [
+   "TLK"
+  ],
+  "Germany": [
+   "SAP",
+   "DB",
+   "BNTX",
+   "FMS",
+   "SIEGY"
+  ],
+  "United Kingdom": [
+   "BP",
+   "SHEL",
+   "HSBC",
+   "AZN",
+   "GSK",
+   "UL",
+   "DEO",
+   "BTI",
+   "RIO",
+   "BCS",
+   "LYG",
+   "NWG",
+   "VOD",
+   "RELX",
+   "NGG",
+   "ARM",
+   "IHG",
+   "SNN",
+   "AU"
+  ],
+  "France": [
+   "TTE",
+   "SNY",
+   "CRTO"
+  ],
+  "Italy": [
+   "E",
+   "RACE"
+  ],
+  "Spain": [
+   "SAN",
+   "BBVA",
+   "TEF"
+  ],
+  "Netherlands": [
+   "ASML",
+   "ING",
+   "PHG",
+   "STLA",
+   "NXPI"
+  ],
+  "Switzerland": [
+   "NVS",
+   "UBS",
+   "LOGI",
+   "ALC",
+   "ABBNY"
+  ],
+  "Sweden": [
+   "ERIC",
+   "SPOT"
+  ],
+  "Turkey": [
+   "TKC"
+  ],
+  "Israel": [
+   "TEVA",
+   "CHKP",
+   "NICE",
+   "CYBR",
+   "WIX",
+   "MNDY",
+   "ICL",
+   "ESLT",
+   "TSEM"
+  ],
+  "South Africa": [
+   "GFI",
+   "SBSW",
+   "HMY",
+   "SSL",
+   "DRD"
+  ]
+ }
+}

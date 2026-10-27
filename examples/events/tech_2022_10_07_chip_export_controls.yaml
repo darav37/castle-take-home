@@ -1,0 +1,31 @@
+id: tech_2022_10_07_chip_export_controls
+status: draft
+event: US announces sweeping semiconductor export controls on China
+schema:
+  variable: US export controls on advanced chips to China
+  comparator: ==
+  threshold: 1
+  unit: event
+  jurisdiction: US-CN
+type: tech_sector
+date: '2022-10-07'
+window:
+  before: 1
+  after: 2
+  from_close: '2022-10-06'
+  to_close: '2022-10-10'
+  why: rules released Oct 7 midday; Oct 6 close → Oct 10 close
+surprise: ''
+reasoning: ''
+factor_moves:
+  SPY: -0.03532
+  TLT: -0.0251
+  UUP: 0.00828
+  USO: 0.01082
+  GLD: -0.026
+  CREDIT: -0.01348
+  VIXY: 0.06626
+sector_moves:
+  SMH: -0.09105
+  NVDA: -0.1112
+computed_by: scripts/draft_worked_examples.py (Massive adjusted daily closes)

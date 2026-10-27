@@ -1,0 +1,83 @@
+{
+ "results": [
+  {
+   "id": "8ab18e8b0f04203caa0548be68dea0ab32d10bfbe2281d68948f92acb4ee1390",
+   "publisher": {
+    "name": "The Motley Fool",
+    "homepage_url": "https://www.fool.com/",
+    "logo_url": "https://s3.massive.com/public/assets/news/logos/themotleyfool.svg",
+    "favicon_url": "https://s3.massive.com/public/assets/news/favicons/themotleyfool.ico"
+   },
+   "title": "Lenders Are Getting Nervous About CoreWeave. I'd Still Buy Nvidia Stock.",
+   "author": "Daniel Sparks",
+   "published_utc": "2026-10-16T03:46:02Z",
+   "article_url": "https://www.fool.com/investing/2026/10/15/lenders-are-getting-nervous-about-coreweave-i-d-still-buy-nvidia-stock/?source=iedfolrf0000001",
+   "tickers": [
+    "CRWV",
+    "NVDA"
+   ],
+   "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F7766ceb7d7312b2b4cba9b8c84b947066f404457-2000x1200.png%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+   "description": "CoreWeave's bond yields surged to a record 14.5%, signaling lender concerns about the AI cloud company's heavy debt burden and operating losses. Despite CoreWeave's revenue doubling, the company loses money operationally and carries $35.6 b\u2026",
+   "keywords": [
+    "AI infrastructure",
+    "debt financing",
+    "... 6 more"
+   ],
+   "insights": [
+    {
+     "ticker": "CRWV",
+     "sentiment": "negative",
+     "sentiment_reasoning": "CoreWeave faces significant financial stress with record bond yields at 14.5%, indicating lender nervousness. The company has $35.6 billion in debt, operates at a loss despite doubling revenue, and net interest expenses of $640 million exce\u2026"
+    },
+    {
+     "ticker": "NVDA",
+     "sentiment": "positive",
+     "sentiment_reasoning": "Despite CoreWeave concerns, Nvidia demonstrates strong fundamentals with operating income of $63.7 billion (up 124% YoY) and a low P/E ratio of ~14. The analyst recommends buying the stock, arguing Nvidia's exposure to CoreWeave is manageab\u2026"
+    }
+   ]
+  },
+  {
+   "id": "5ee28458ffca90c990d19939b22878f4b95d20dd99ebff1903e83171c9c6f4f4",
+   "publisher": {
+    "name": "The Motley Fool",
+    "homepage_url": "https://www.fool.com/",
+    "logo_url": "https://s3.massive.com/public/assets/news/logos/themotleyfool.svg",
+    "favicon_url": "https://s3.massive.com/public/assets/news/favicons/themotleyfool.ico"
+   },
+   "title": "TSMC Just Posted Record Profit for the Sixth Straight Quarter. Why Did the Stock Fall?",
+   "author": "Jeremy Bowman",
+   "published_utc": "2026-10-16T02:30:02Z",
+   "article_url": "https://www.fool.com/investing/2026/10/15/tsmc-just-posted-record-profit-for-the-sixth-straight-quarter-why-did-the-stock-fall/?source=iedfolrf0000001",
+   "tickers": [
+    "TSM",
+    "NVDA",
+    "... 6 more"
+   ],
+   "image_url": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F2b939634bdc194883e6c243248c53d2b03cf89a8-2000x1200.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize",
+   "description": "TSMC delivered record Q3 earnings with 50.9% revenue growth and expanded margins, but the stock fell 2.2% amid broader AI sector weakness. CEO warned of consumer market challenges from rising component prices and macroeconomic uncertainties\u2026",
+   "keywords": [
+    "TSMC earnings",
+    "semiconductor industry",
+    "... 5 more"
+   ],
+   "insights": [
+    {
+     "ticker": "TSM",
+     "sentiment": "positive",
+     "sentiment_reasoning": "Record profit for sixth consecutive quarter with 50.9% revenue growth, 66.4% gross margin, and strong AI demand (68% of revenue from HPC). CEO optimistic on agentic AI market. Stock reasonably valued at 32x P/E with strong long-term growth \u2026"
+    },
+    {
+     "ticker": "NVDA",
+     "sentiment": "neutral",
+     "sentiment_reasoning": "Mentioned as a major TSMC customer with strong future chip demand plans, but no specific company performance data provided. Caught in broader AI sector sell-off."
+    },
+    "... 6 more"
+   ]
+  },
+  "... 3 more"
+ ],
+ "status": "OK",
+ "request_id": "ec643f95d474914872d3e91978a1bfec",
+ "count": 5,
+ "next_url": "https://api.massive.com/v2/reference/news?cursor=<cursor>"
+}

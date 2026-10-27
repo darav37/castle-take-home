@@ -1,0 +1,142 @@
+# Routing eval: does the router pick the right entry tool on its FIRST response?
+# expect: acceptable tool names; "none" = answer or ask a clarifying question without a tool.
+# history: prior turns (text only) so follow-ups like "make it 2 weeks" have their context.
+# Labels by the build assistant from SPEC §3.4h routing rules;
+
+- id: load_named
+  prompt: load my balanced portfolio
+  expect: [load_portfolio]
+- id: load_demo_quoted
+  prompt: load demo portfolio "tech_heavy"
+  expect: [load_portfolio]
+- id: load_typed_holdings
+  prompt: I have 100 shares of NVDA and $20k of TLT
+  expect: [load_portfolio]
+
+- id: discovery_3m
+  history: &loaded
+    - {role: user, content: "load demo portfolio \"balanced\""}
+    - {tool: load_portfolio, input: {name: balanced}, result: {portfolio: balanced, total_value: 100000, positions: [SPY, QQQ, NVDA, TLT, GLD, XLE, HYG]}, say: "Loaded balanced: $100k across SPY, QQQ, NVDA, TLT, GLD, XLE, HYG."}
+  prompt: what could hit my portfolio over the next 3 months?
+  expect: [scan_risks]
+- id: discovery_casual
+  history: *loaded
+  prompt: what are the biggest risks for me right now
+  expect: [scan_risks]
+- id: discovery_1m
+  history: *loaded
+  prompt: anything scary coming up for my book in the next month?
+  expect: [scan_risks]
+- id: discovery_horizon_change
+  history: &scanned
+    - {role: user, content: "load demo portfolio \"balanced\""}
+    - {tool: load_portfolio, input: {name: balanced}, result: {portfolio: balanced, total_value: 100000, positions: [SPY, QQQ, NVDA, TLT, GLD, XLE, HYG]}, say: "Loaded balanced: $100k across SPY, QQQ, NVDA, TLT, GLD, XLE, HYG."}
+    - {role: user, content: "what could hit my portfolio over the next 3 months?"}
+    - {tool: scan_risks, input: {horizon_days: 91}, result: {table: {events: [{event_id: KXTARIFF-27MAR, event: "Tariffs >=25% by March"}, {event_id: KXFEDDECISION-26DEC, event: "Fed cut in December"}, {event_id: KXWTI-100, event: "Oil above $100"}]}}, say: "Top swings: KXTARIFF-27MAR (tariffs ≥25% by March), KXFEDDECISION-26DEC (Fed cut in December), KXWTI-100 (oil above $100)."}
+  prompt: what about over a year instead?
+  expect: [scan_risks]
+
+- id: exposure_concentration
+  history: *loaded
+  prompt: how concentrated am I?
+  expect: [exposures]
+- id: exposure_nvda
+  history: *loaded
+  prompt: how much NVDA do I really own?
+  expect: [exposures]
+- id: exposure_semis
+  history: *loaded
+  prompt: am I too heavy in semis?
+  expect: [exposures]
+
+- id: pointed_tariff
+  history: *scanned
+  prompt: tell me more about the tariff one
+  expect: [analyze_event]
+- id: pointed_fed_why
+  history: *scanned
+  prompt: why does the fed one hurt me?
+  expect: [analyze_event, event_analyst]
+- id: pointed_drivers
+  history: *scanned
+  prompt: which of my holdings drive the Fed risk?
+  expect: [analyze_event]
+- id: pointed_fed_cut
+  history: *scanned
+  prompt: what does a Fed cut do to me?
+  expect: [analyze_event, scan_risks]
+- id: pointed_probability
+  history: *scanned
+  prompt: what are the odds of a December cut?
+  expect: [analyze_event, event_analyst, scan_risks]
+
+- id: hedge_that
+  history: &analyzed
+    - {role: user, content: "load demo portfolio \"balanced\""}
+    - {tool: load_portfolio, input: {name: balanced}, result: {portfolio: balanced, total_value: 100000, positions: [SPY, QQQ, NVDA, TLT, GLD, XLE, HYG]}, say: "Loaded balanced: $100k across SPY, QQQ, NVDA, TLT, GLD, XLE, HYG."}
+    - {role: user, content: "what could hit my portfolio over the next 3 months?"}
+    - {tool: scan_risks, input: {horizon_days: 91}, result: {table: {events: [{event_id: KXTARIFF-27MAR, event: "Tariffs >=25% by March"}, {event_id: KXFEDDECISION-26DEC, event: "Fed cut in December"}, {event_id: KXWTI-100, event: "Oil above $100"}]}}, say: "Top swings: KXTARIFF-27MAR (tariffs ≥25% by March), KXFEDDECISION-26DEC (Fed cut in December), KXWTI-100 (oil above $100)."}
+    - {role: user, content: "tell me more about the tariff one"}
+    - {tool: analyze_event, input: {event_id: KXTARIFF-27MAR}, result: {detail: {event: {event_id: KXTARIFF-27MAR}, positions: [QQQ, NVDA, TLT, GLD]}}, say: "KXTARIFF-27MAR: QQQ and NVDA drive it; TLT and GLD offset a bit. About two-thirds is already priced in."}
+  prompt: how would I hedge that?
+  expect: [compare_hedges]
+- id: hedge_cheapest
+  history: *analyzed
+  prompt: what's the cheapest way to protect against that?
+  expect: [compare_hedges]
+- id: hedge_kalshi_contract
+  history: *analyzed
+  prompt: should I just buy the kalshi contract?
+  expect: [compare_hedges, none]
+- id: hedge_ambiguous_no_event
+  history: *loaded
+  prompt: hedge my tech exposure
+  expect: [scan_risks, compare_hedges, options_desk, exposures, none]
+
+- id: view_tariffs_nvda
+  history: *analyzed
+  prompt: actually I think tariffs get delayed but NVDA rips on earnings
+  expect: [view_and_strategies, options_desk]
+- id: view_make_2w
+  history: &viewed
+    - {role: user, content: "I think NVDA rallies 8% over the next 6 weeks"}
+    - {tool: options_desk, input: {request: "NVDA up 8% over 6 weeks"}, result: {picks: [{id: call_debit_spread}, {id: long_call}, {id: risk_reversal}]}, say: "Got it: NVDA up 8% in 6 weeks. Three ideas: call debit spread, long call, risk reversal."}
+  prompt: make it 2 weeks instead of 6
+  expect: [view_and_strategies, options_desk]
+- id: view_conviction
+  history: *viewed
+  prompt: what if I'm only moderately confident?
+  expect: [view_and_strategies, options_desk]
+- id: view_vol_rich
+  prompt: is NVDA vol expensive right now?
+  expect: [options_desk]
+- id: view_calm_market
+  prompt: I think the market stays calm through December
+  expect: [view_and_strategies, options_desk]
+
+- id: chart_payoff
+  history: *viewed
+  prompt: show me a payoff chart for the call spread
+  expect: [chart]
+- id: chart_scan
+  history: *scanned
+  prompt: chart that table for me
+  expect: [chart]
+
+- id: chitchat_hi
+  prompt: hi worsey
+  expect: [none]
+- id: chitchat_thanks
+  history: *analyzed
+  prompt: thanks, that's helpful
+  expect: [none]
+- id: concept_put_spread
+  prompt: what's a put spread?
+  expect: [none, options_desk]
+
+- id: iran_iwm_trace
+  prompt: >-
+    ok I'm worried about another flare up in Iran because I have a bunch of IWM stuff and I guess I'm
+    worried there's like rate impact there because of inflation? I don't know much, should I do like a
+    prediction markets hedge or buy some oil calls or something? I don't know where to start.
+  expect: [load_portfolio, scan_risks, analyze_event, event_analyst]

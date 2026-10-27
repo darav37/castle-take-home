@@ -1,0 +1,324 @@
+{
+ "best_c1c_rung": "A gate",
+ "rows": 4725,
+ "events": {
+  "test": 92,
+  "validation": 484
+ },
+ "tau": {
+  "cheap options": 1.55,
+  "system": 1.7
+ },
+ "validation": {
+  "never": {
+   "share_hedged": 0.0,
+   "premium_per_book_event": 0.0,
+   "net_hedge_pnl_per_book_event": 0.0,
+   "mean_pnl": 181.92318882142592,
+   "mean_shortfall": 29.498142289905473,
+   "worst_5pct_mean": -3602.766730132887,
+   "hedged_when_it_paid": 0.0,
+   "paid_when_hedged": null,
+   "utility_gain_vs_never_lam0": 0.0,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": 0.0,
+   "support_lam1": 0.0,
+   "utility_gain_vs_never_lam3": 0.0,
+   "support_lam3": 0.0
+  },
+  "always": {
+   "share_hedged": 1.0,
+   "premium_per_book_event": 948.3585707239112,
+   "net_hedge_pnl_per_book_event": -130.91441613396051,
+   "mean_pnl": 51.00877268746537,
+   "mean_shortfall": 9.162195125978558,
+   "worst_5pct_mean": -2659.7317974768303,
+   "hedged_when_it_paid": 1.0,
+   "paid_when_hedged": 0.29456351280710924,
+   "utility_gain_vs_never_lam0": -130.91441613396051,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": -110.57846897003361,
+   "support_lam1": 0.0,
+   "utility_gain_vs_never_lam3": -69.9065746421798,
+   "support_lam3": 0.0035
+  },
+  "cheap options": {
+   "share_hedged": 0.0,
+   "premium_per_book_event": 0.0,
+   "net_hedge_pnl_per_book_event": 0.0,
+   "mean_pnl": 181.92318882142592,
+   "mean_shortfall": 29.498142289905473,
+   "worst_5pct_mean": -3602.766730132887,
+   "hedged_when_it_paid": 0.0,
+   "paid_when_hedged": null,
+   "utility_gain_vs_never_lam0": 0.0,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": 0.0,
+   "support_lam1": 0.0,
+   "utility_gain_vs_never_lam3": 0.0,
+   "support_lam3": 0.0
+  },
+  "system": {
+   "share_hedged": 0.010454783063251438,
+   "premium_per_book_event": 21.62543314581257,
+   "net_hedge_pnl_per_book_event": -2.8339099670293515,
+   "mean_pnl": 179.08927885439655,
+   "mean_shortfall": 26.098058647921054,
+   "worst_5pct_mean": -3539.3237531289656,
+   "hedged_when_it_paid": 0.009760425909494233,
+   "paid_when_hedged": 0.275,
+   "utility_gain_vs_never_lam0": -2.8339099670293524,
+   "support_lam0": 0.2305,
+   "utility_gain_vs_never_lam1": 0.566173674955066,
+   "support_lam1": 0.5295,
+   "utility_gain_vs_never_lam3": 7.366340958923901,
+   "support_lam3": 0.794
+  },
+  "share_of_hedges_that_paid_if_always": 0.29456351280710924,
+  "big_events_always_net_hedge_pnl": -95.92768761907996
+ },
+ "test": {
+  "never": {
+   "share_hedged": 0.0,
+   "premium_per_book_event": 0.0,
+   "net_hedge_pnl_per_book_event": 0.0,
+   "mean_pnl": 185.44156294229745,
+   "mean_shortfall": 68.56623894123301,
+   "worst_5pct_mean": -5067.73322115465,
+   "hedged_when_it_paid": 0.0,
+   "paid_when_hedged": null,
+   "utility_gain_vs_never_lam0": 0.0,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": 0.0,
+   "support_lam1": 0.0,
+   "utility_gain_vs_never_lam3": 0.0,
+   "support_lam3": 0.0
+  },
+  "always": {
+   "share_hedged": 1.0,
+   "premium_per_book_event": 1242.5182180282115,
+   "net_hedge_pnl_per_book_event": -150.09489184605255,
+   "mean_pnl": 35.34667109624489,
+   "mean_shortfall": 17.816372605654983,
+   "worst_5pct_mean": -3522.440190784464,
+   "hedged_when_it_paid": 1.0,
+   "paid_when_hedged": 0.3003337041156841,
+   "utility_gain_vs_never_lam0": -150.09489184605252,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": -99.34502551047454,
+   "support_lam1": 0.043,
+   "utility_gain_vs_never_lam3": 2.154707160681569,
+   "support_lam3": 0.512
+  },
+  "cheap options": {
+   "share_hedged": 0.0,
+   "premium_per_book_event": 0.0,
+   "net_hedge_pnl_per_book_event": 0.0,
+   "mean_pnl": 185.44156294229745,
+   "mean_shortfall": 68.56623894123301,
+   "worst_5pct_mean": -5067.73322115465,
+   "hedged_when_it_paid": 0.0,
+   "paid_when_hedged": null,
+   "utility_gain_vs_never_lam0": 0.0,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": 0.0,
+   "support_lam1": 0.0,
+   "utility_gain_vs_never_lam3": 0.0,
+   "support_lam3": 0.0
+  },
+  "system": {
+   "share_hedged": 0.0,
+   "premium_per_book_event": 0.0,
+   "net_hedge_pnl_per_book_event": 0.0,
+   "mean_pnl": 185.44156294229745,
+   "mean_shortfall": 68.56623894123301,
+   "worst_5pct_mean": -5067.73322115465,
+   "hedged_when_it_paid": 0.0,
+   "paid_when_hedged": null,
+   "utility_gain_vs_never_lam0": 0.0,
+   "support_lam0": 0.0,
+   "utility_gain_vs_never_lam1": 0.0,
+   "support_lam1": 0.0,
+   "utility_gain_vs_never_lam3": 0.0,
+   "support_lam3": 0.0
+  },
+  "naive LLM": {
+   "share_hedged": 0.0033370411568409346,
+   "premium_per_book_event": 4.62772322809684,
+   "net_hedge_pnl_per_book_event": 1.399557797450914,
+   "mean_pnl": 186.84112073974833,
+   "mean_shortfall": 67.97545323784804,
+   "worst_5pct_mean": -5039.559469006312,
+   "hedged_when_it_paid": 0.007407407407407408,
+   "paid_when_hedged": 0.6666666666666666,
+   "utility_gain_vs_never_lam0": 1.399557797450914,
+   "support_lam0": 0.8155,
+   "utility_gain_vs_never_lam1": 1.9903435008358858,
+   "support_lam1": 0.8155,
+   "utility_gain_vs_never_lam3": 3.1719149076058297,
+   "support_lam3": 0.8155
+  },
+  "share_of_hedges_that_paid_if_always": 0.3003337041156841,
+  "big_events_always_net_hedge_pnl": -152.2464818792104
+ },
+ "product_evidence": {
+  "book_events": 4725,
+  "events": 576,
+  "years": "2023-2026",
+  "hold": "1-2 sessions after the news",
+  "net_per_100k": -134.56378071918186,
+  "premium_per_100k": 1004.3267237242426,
+  "share_paid": 0.2956613756613757,
+  "beyond_bad_case_share": 0.02582010582010582,
+  "hedge_return_when_beyond": 1427.76267039452,
+  "loss_when_beyond": -4331.792403422553,
+  "by_severity": {
+   "extreme": {
+    "book_events": 96,
+    "events": 12,
+    "net_per_100k": -31.83107399234503,
+    "share_paid": 0.4791666666666667,
+    "beyond_bad_case_share": 0.09375
+   },
+   "major": {
+    "book_events": 1240,
+    "events": 151,
+    "net_per_100k": -114.0613370090835,
+    "share_paid": 0.325,
+    "beyond_bad_case_share": 0.029838709677419355
+   },
+   "minor": {
+    "book_events": 1094,
+    "events": 137,
+    "net_per_100k": -142.67600590544552,
+    "share_paid": 0.2696526508226691,
+    "beyond_bad_case_share": 0.024680073126142597
+   },
+   "moderate": {
+    "book_events": 2295,
+    "events": 276,
+    "net_per_100k": -146.0716655525264,
+    "share_paid": 0.2845315904139434,
+    "beyond_bad_case_share": 0.021350762527233117
+   }
+  },
+  "break_even_weight": [
+   6.43758636264477,
+   2.957542604222172
+  ],
+  "by_instrument": {
+   "EEM": {
+    "net_per_100k": -53.86283475097831,
+    "premium_per_100k": 395.2977261353942,
+    "book_events": 200
+   },
+   "EWZ": {
+    "net_per_100k": -220.37907909575347,
+    "premium_per_100k": 1393.1343431306452,
+    "book_events": 411
+   },
+   "GDX": {
+    "net_per_100k": -294.95131365073803,
+    "premium_per_100k": 2523.054001003532,
+    "book_events": 381
+   },
+   "IWM": {
+    "net_per_100k": -123.72730256698108,
+    "premium_per_100k": 950.1362226588775,
+    "book_events": 424
+   },
+   "QQQ": {
+    "net_per_100k": -150.7326410441661,
+    "premium_per_100k": 1082.7723486441173,
+    "book_events": 492
+   },
+   "SPY": {
+    "net_per_100k": -80.39612108119034,
+    "premium_per_100k": 612.7702372322433,
+    "book_events": 1569
+   },
+   "TLT": {
+    "net_per_100k": -61.37868661007579,
+    "premium_per_100k": 585.0794469190602,
+    "book_events": 382
+   },
+   "USO": {
+    "net_per_100k": -134.9954194944257,
+    "premium_per_100k": 1276.1722938817336,
+    "book_events": 406
+   },
+   "XLE": {
+    "net_per_100k": -312.8033326018244,
+    "premium_per_100k": 1752.5012871281087,
+    "book_events": 71
+   },
+   "XLF": {
+    "net_per_100k": -208.21510111219376,
+    "premium_per_100k": 1023.3014791034119,
+    "book_events": 304
+   },
+   "XLU": {
+    "net_per_100k": -65.47610973544867,
+    "premium_per_100k": 686.6663262431633,
+    "book_events": 85
+   }
+  }
+ },
+ "test_by_hedge_etf_if_always": {
+  "EEM": {
+   "rows": 29,
+   "net": -66.0,
+   "premium": 532.2
+  },
+  "EWZ": {
+   "rows": 78,
+   "net": -274.7,
+   "premium": 1604.4
+  },
+  "GDX": {
+   "rows": 65,
+   "net": -350.4,
+   "premium": 4051.4
+  },
+  "IWM": {
+   "rows": 71,
+   "net": -111.1,
+   "premium": 782.2
+  },
+  "QQQ": {
+   "rows": 85,
+   "net": -122.1,
+   "premium": 1463.7
+  },
+  "SPY": {
+   "rows": 270,
+   "net": -91.2,
+   "premium": 668.8
+  },
+  "TLT": {
+   "rows": 57,
+   "net": -37.9,
+   "premium": 355.9
+  },
+  "USO": {
+   "rows": 77,
+   "net": -158.6,
+   "premium": 1850.6
+  },
+  "XLE": {
+   "rows": 60,
+   "net": -295.6,
+   "premium": 1817.2
+  },
+  "XLF": {
+   "rows": 33,
+   "net": -243.3,
+   "premium": 885.9
+  },
+  "XLU": {
+   "rows": 74,
+   "net": -78.0,
+   "premium": 696.3
+  }
+ }
+}

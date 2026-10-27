@@ -1,0 +1,125 @@
+{
+ "Economics": [
+  {
+   "additional_prohibitions": [
+    "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+    "... 1 more"
+   ],
+   "categories": [
+    "Economics"
+   ],
+   "category": "Economics",
+   "contract_terms_url": "https://assets.kalshi.com/contract_terms/ECONSTATB.pdf",
+   "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/ECONSTATB.pdf",
+   "exchange_index": 0,
+   "fee_multiplier": 1,
+   "fee_type": "quadratic",
+   "frequency": "monthly",
+   "last_updated_ts": "2026-10-15T22:19:38.007338Z",
+   "settlement_sources": [
+    {
+     "name": "FRED",
+     "url": "https://fred.stlouisfed.org/series/ACTLISCOUUS"
+    }
+   ],
+   "tags": [
+    "Housing"
+   ],
+   "ticker": "KXUSHOMEINVENT",
+   "title": "US Active Housing Inventory"
+  },
+  "... 4 more"
+ ],
+ "Politics": [
+  {
+   "additional_prohibitions": [
+    "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+    "... 1 more"
+   ],
+   "categories": [
+    "Politics"
+   ],
+   "category": "Politics",
+   "contract_terms_url": "https://assets.kalshi.com/contract_terms/RECOG.pdf",
+   "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/RECOG.pdf",
+   "exchange_index": 0,
+   "fee_multiplier": 1,
+   "fee_type": "quadratic",
+   "frequency": "custom",
+   "last_updated_ts": "2026-10-15T08:14:10.229686Z",
+   "settlement_sources": [
+    {
+     "name": "White House",
+     "url": "https://whitehouse.gov/"
+    }
+   ],
+   "tags": [
+    "International",
+    "... 1 more"
+   ],
+   "ticker": "KXRECOGROC",
+   "title": "Trump recognize Taiwan"
+  },
+  "... 4 more"
+ ],
+ "Climate and Weather": [
+  {
+   "additional_prohibitions": [
+    "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+    "... 1 more"
+   ],
+   "categories": [
+    "Climate and Weather"
+   ],
+   "category": "Climate and Weather",
+   "contract_terms_url": "https://assets.kalshi.com/contract_terms/CITYLOW.pdf",
+   "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/CITYLOW.pdf",
+   "exchange_index": 0,
+   "fee_multiplier": 1,
+   "fee_type": "quadratic",
+   "frequency": "daily",
+   "last_updated_ts": "2026-10-15T08:02:28.792359Z",
+   "settlement_sources": [
+    {
+     "name": "National Weather Service",
+     "url": "https://www.weather.gov/srh/nwsoffices"
+    }
+   ],
+   "tags": null,
+   "ticker": "KXLOWMIA",
+   "title": "Lowest temperature in Miami"
+  },
+  "... 4 more"
+ ],
+ "World": [
+  {
+   "additional_prohibitions": [
+    "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+    "... 1 more"
+   ],
+   "categories": [
+    "World"
+   ],
+   "category": "World",
+   "contract_terms_url": "https://assets.kalshi.com/contract_terms/FLIGHTLAX.pdf",
+   "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/FLIGHTLAX.pdf",
+   "exchange_index": 0,
+   "fee_multiplier": 1,
+   "fee_type": "quadratic",
+   "frequency": "daily",
+   "last_updated_ts": "2026-10-15T08:14:10.229686Z",
+   "settlement_sources": [
+    {
+     "name": "FlightAware",
+     "url": "https://flightaware.com/live/cancelled/yesterday/LAX"
+    }
+   ],
+   "tags": [
+    "Flights"
+   ],
+   "ticker": "KXFLIGHTLAX",
+   "title": "Los Angeles International Airport total delays and cancellations"
+  },
+  "... 4 more"
+ ]
+}

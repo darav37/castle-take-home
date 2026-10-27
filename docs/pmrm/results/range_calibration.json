@@ -1,0 +1,1965 @@
+{
+ "base": {
+  "width_scale": 1.0,
+  "2026": {
+   "books_end_of_day": {
+    "events": 92,
+    "rows": 1012,
+    "middle_half": [
+     0.503,
+     0.47,
+     0.534
+    ],
+    "nine_in_ten": [
+     0.898,
+     0.874,
+     0.92
+    ],
+    "below_bad_case": [
+     0.036,
+     0.023,
+     0.049
+    ],
+    "above_top": [
+     0.066,
+     0.047,
+     0.085
+    ],
+    "mean_signed_error_sd": 0.08,
+    "crps_skill_vs_zero": -0.022,
+    "diagnosis": "calibrated"
+   },
+   "books_by_severity": {
+    "minor": {
+     "events": 13,
+     "rows": 143,
+     "middle_half": [
+      0.406,
+      0.322,
+      0.504
+     ],
+     "nine_in_ten": [
+      0.853,
+      0.769,
+      0.944
+     ],
+     "below_bad_case": [
+      0.056,
+      0.007,
+      0.133
+     ],
+     "above_top": [
+      0.091,
+      0.014,
+      0.161
+     ],
+     "mean_signed_error_sd": 0.146,
+     "crps_skill_vs_zero": -0.007,
+     "diagnosis": "calibrated"
+    },
+    "moderate": {
+     "events": 48,
+     "rows": 528,
+     "middle_half": [
+      0.483,
+      0.439,
+      0.523
+     ],
+     "nine_in_ten": [
+      0.873,
+      0.841,
+      0.902
+     ],
+     "below_bad_case": [
+      0.044,
+      0.027,
+      0.062
+     ],
+     "above_top": [
+      0.083,
+      0.059,
+      0.114
+     ],
+     "mean_signed_error_sd": 0.045,
+     "crps_skill_vs_zero": 0.002,
+     "diagnosis": "calibrated"
+    },
+    "major": {
+     "events": 27,
+     "rows": 297,
+     "middle_half": [
+      0.569,
+      0.505,
+      0.633
+     ],
+     "nine_in_ten": [
+      0.96,
+      0.943,
+      0.98
+     ],
+     "below_bad_case": [
+      0.01,
+      0.0,
+      0.024
+     ],
+     "above_top": [
+      0.03,
+      0.013,
+      0.047
+     ],
+     "mean_signed_error_sd": 0.116,
+     "crps_skill_vs_zero": -0.037,
+     "diagnosis": "calibrated"
+    },
+    "extreme": {
+     "events": 4,
+     "rows": 44,
+     "middle_half": [
+      0.614,
+      0.568,
+      0.636
+     ],
+     "nine_in_ten": [
+      0.932,
+      0.909,
+      0.977
+     ],
+     "below_bad_case": [
+      0.045,
+      0.023,
+      0.068
+     ],
+     "above_top": [
+      0.023,
+      0.0,
+      0.045
+     ],
+     "mean_signed_error_sd": 0.038,
+     "crps_skill_vs_zero": -0.238,
+     "diagnosis": "calibrated"
+    }
+   },
+   "books_by_book": {
+    "Broad market (SPY)": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.652,
+      0.576,
+      0.739
+     ],
+     "nine_in_ten": [
+      0.924,
+      0.87,
+      0.967
+     ],
+     "below_bad_case": [
+      0.011,
+      0.0,
+      0.033
+     ],
+     "above_top": [
+      0.065,
+      0.022,
+      0.109
+     ],
+     "mean_signed_error_sd": 0.115,
+     "crps_skill_vs_zero": 0.008,
+     "diagnosis": "calibrated"
+    },
+    "Balanced 60/40": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.587,
+      0.511,
+      0.663
+     ],
+     "nine_in_ten": [
+      0.913,
+      0.87,
+      0.957
+     ],
+     "below_bad_case": [
+      0.022,
+      0.0,
+      0.054
+     ],
+     "above_top": [
+      0.065,
+      0.022,
+      0.109
+     ],
+     "mean_signed_error_sd": 0.106,
+     "crps_skill_vs_zero": 0.015,
+     "diagnosis": "calibrated"
+    },
+    "Tech growth (QQQ)": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.402,
+      0.315,
+      0.489
+     ],
+     "nine_in_ten": [
+      0.826,
+      0.761,
+      0.891
+     ],
+     "below_bad_case": [
+      0.054,
+      0.022,
+      0.098
+     ],
+     "above_top": [
+      0.12,
+      0.076,
+      0.174
+     ],
+     "mean_signed_error_sd": 0.138,
+     "crps_skill_vs_zero": -0.002,
+     "diagnosis": "shifted up (middle too low)"
+    },
+    "Banks (KBE)": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.576,
+      0.489,
+      0.652
+     ],
+     "nine_in_ten": [
+      0.946,
+      0.902,
+      0.978
+     ],
+     "below_bad_case": [
+      0.033,
+      0.011,
+      0.065
+     ],
+     "above_top": [
+      0.022,
+      0.0,
+      0.044
+     ],
+     "mean_signed_error_sd": -0.037,
+     "crps_skill_vs_zero": -0.038,
+     "diagnosis": "calibrated"
+    },
+    "Energy producers": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.489,
+      0.402,
+      0.576
+     ],
+     "nine_in_ten": [
+      0.957,
+      0.924,
+      0.989
+     ],
+     "below_bad_case": [
+      0.011,
+      0.0,
+      0.033
+     ],
+     "above_top": [
+      0.033,
+      0.0,
+      0.065
+     ],
+     "mean_signed_error_sd": 0.047,
+     "crps_skill_vs_zero": -0.035,
+     "diagnosis": "calibrated"
+    },
+    "Agriculture / weather": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.554,
+      0.467,
+      0.652
+     ],
+     "nine_in_ten": [
+      0.957,
+      0.924,
+      0.989
+     ],
+     "below_bad_case": [
+      0.022,
+      0.0,
+      0.044
+     ],
+     "above_top": [
+      0.022,
+      0.0,
+      0.043
+     ],
+     "mean_signed_error_sd": 0.073,
+     "crps_skill_vs_zero": -0.027,
+     "diagnosis": "calibrated"
+    },
+    "Gold miners (GDX)": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.261,
+      0.195,
+      0.348
+     ],
+     "nine_in_ten": [
+      0.717,
+      0.641,
+      0.793
+     ],
+     "below_bad_case": [
+      0.141,
+      0.087,
+      0.196
+     ],
+     "above_top": [
+      0.141,
+      0.076,
+      0.196
+     ],
+     "mean_signed_error_sd": 0.085,
+     "crps_skill_vs_zero": -0.029,
+     "diagnosis": "too narrow (misses on both sides)"
+    },
+    "Latin America": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.511,
+      0.424,
+      0.609
+     ],
+     "nine_in_ten": [
+      0.88,
+      0.826,
+      0.935
+     ],
+     "below_bad_case": [
+      0.033,
+      0.0,
+      0.065
+     ],
+     "above_top": [
+      0.087,
+      0.043,
+      0.141
+     ],
+     "mean_signed_error_sd": 0.12,
+     "crps_skill_vs_zero": 0.002,
+     "diagnosis": "shifted up (middle too low)"
+    },
+    "Utilities + REITs": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.5,
+      0.413,
+      0.587
+     ],
+     "nine_in_ten": [
+      0.978,
+      0.956,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.022,
+      0.0,
+      0.044
+     ],
+     "mean_signed_error_sd": 0.127,
+     "crps_skill_vs_zero": -0.068,
+     "diagnosis": "calibrated"
+    },
+    "Long Treasuries (TLT)": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.674,
+      0.587,
+      0.75
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "mean_signed_error_sd": -0.011,
+     "crps_skill_vs_zero": -0.074,
+     "diagnosis": "too wide"
+    },
+    "Commodities (DBC)": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.326,
+      0.25,
+      0.413
+     ],
+     "nine_in_ten": [
+      0.783,
+      0.707,
+      0.848
+     ],
+     "below_bad_case": [
+      0.065,
+      0.033,
+      0.109
+     ],
+     "above_top": [
+      0.152,
+      0.098,
+      0.217
+     ],
+     "mean_signed_error_sd": 0.114,
+     "crps_skill_vs_zero": -0.004,
+     "diagnosis": "shifted up (middle too low)"
+    }
+   },
+   "factors_end_of_day": {
+    "market": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.652,
+      0.565,
+      0.728
+     ],
+     "nine_in_ten": [
+      0.935,
+      0.88,
+      0.978
+     ],
+     "below_bad_case": [
+      0.011,
+      0.0,
+      0.033
+     ],
+     "above_top": [
+      0.054,
+      0.011,
+      0.098
+     ],
+     "mean_signed_error_sd": 0.047,
+     "diagnosis": "calibrated"
+    },
+    "rates_2y": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.293,
+      0.217,
+      0.37
+     ],
+     "nine_in_ten": [
+      0.935,
+      0.88,
+      0.978
+     ],
+     "below_bad_case": [
+      0.011,
+      0.0,
+      0.033
+     ],
+     "above_top": [
+      0.054,
+      0.022,
+      0.098
+     ],
+     "mean_signed_error_sd": 0.263,
+     "diagnosis": "calibrated"
+    },
+    "rates_10y": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.554,
+      0.467,
+      0.641
+     ],
+     "nine_in_ten": [
+      0.967,
+      0.935,
+      1.0
+     ],
+     "below_bad_case": [
+      0.011,
+      0.0,
+      0.033
+     ],
+     "above_top": [
+      0.022,
+      0.0,
+      0.043
+     ],
+     "mean_signed_error_sd": 0.165,
+     "diagnosis": "calibrated"
+    },
+    "dollar": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.565,
+      0.489,
+      0.652
+     ],
+     "nine_in_ten": [
+      0.935,
+      0.891,
+      0.967
+     ],
+     "below_bad_case": [
+      0.043,
+      0.011,
+      0.076
+     ],
+     "above_top": [
+      0.022,
+      0.0,
+      0.043
+     ],
+     "mean_signed_error_sd": 0.122,
+     "diagnosis": "calibrated"
+    },
+    "oil": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.293,
+      0.217,
+      0.37
+     ],
+     "nine_in_ten": [
+      0.674,
+      0.598,
+      0.761
+     ],
+     "below_bad_case": [
+      0.141,
+      0.087,
+      0.207
+     ],
+     "above_top": [
+      0.185,
+      0.109,
+      0.25
+     ],
+     "mean_signed_error_sd": 0.107,
+     "diagnosis": "too narrow (misses on both sides)"
+    },
+    "gold": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.207,
+      0.141,
+      0.272
+     ],
+     "nine_in_ten": [
+      0.663,
+      0.587,
+      0.728
+     ],
+     "below_bad_case": [
+      0.098,
+      0.054,
+      0.152
+     ],
+     "above_top": [
+      0.239,
+      0.174,
+      0.304
+     ],
+     "mean_signed_error_sd": -0.037,
+     "diagnosis": "too narrow (misses on both sides)"
+    },
+    "credit": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.761,
+      0.685,
+      0.827
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "mean_signed_error_sd": 0.059,
+     "diagnosis": "too wide"
+    },
+    "size": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.424,
+      0.348,
+      0.5
+     ],
+     "nine_in_ten": [
+      0.87,
+      0.815,
+      0.924
+     ],
+     "below_bad_case": [
+      0.043,
+      0.011,
+      0.076
+     ],
+     "above_top": [
+      0.087,
+      0.054,
+      0.141
+     ],
+     "mean_signed_error_sd": -0.09,
+     "diagnosis": "calibrated"
+    },
+    "value": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.239,
+      0.163,
+      0.326
+     ],
+     "nine_in_ten": [
+      0.783,
+      0.717,
+      0.848
+     ],
+     "below_bad_case": [
+      0.065,
+      0.022,
+      0.109
+     ],
+     "above_top": [
+      0.152,
+      0.098,
+      0.217
+     ],
+     "mean_signed_error_sd": 0.215,
+     "diagnosis": "shifted up (middle too low)"
+    },
+    "asia_em": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.272,
+      0.207,
+      0.348
+     ],
+     "nine_in_ten": [
+      0.739,
+      0.674,
+      0.815
+     ],
+     "below_bad_case": [
+      0.163,
+      0.098,
+      0.228
+     ],
+     "above_top": [
+      0.098,
+      0.054,
+      0.141
+     ],
+     "mean_signed_error_sd": 0.05,
+     "diagnosis": "too narrow (misses on both sides)"
+    },
+    "healthcare": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.435,
+      0.348,
+      0.522
+     ],
+     "nine_in_ten": [
+      0.87,
+      0.815,
+      0.924
+     ],
+     "below_bad_case": [
+      0.043,
+      0.011,
+      0.087
+     ],
+     "above_top": [
+      0.087,
+      0.043,
+      0.13
+     ],
+     "mean_signed_error_sd": 0.145,
+     "diagnosis": "calibrated"
+    },
+    "agriculture": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.598,
+      0.522,
+      0.674
+     ],
+     "nine_in_ten": [
+      0.967,
+      0.946,
+      1.0
+     ],
+     "below_bad_case": [
+      0.022,
+      0.0,
+      0.043
+     ],
+     "above_top": [
+      0.011,
+      0.0,
+      0.033
+     ],
+     "mean_signed_error_sd": 0.103,
+     "diagnosis": "calibrated"
+    },
+    "defensive_vs_producers": {
+     "events": 92,
+     "rows": 92,
+     "middle_half": [
+      0.478,
+      0.38,
+      0.565
+     ],
+     "nine_in_ten": [
+      0.891,
+      0.837,
+      0.935
+     ],
+     "below_bad_case": [
+      0.054,
+      0.022,
+      0.098
+     ],
+     "above_top": [
+      0.054,
+      0.022,
+      0.098
+     ],
+     "mean_signed_error_sd": -0.051,
+     "diagnosis": "calibrated"
+    }
+   },
+   "first_hours_factors": {
+    "asia_em": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.818,
+      0.636,
+      1.0
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "too wide"
+    },
+    "credit": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.455,
+      0.182,
+      0.727
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "calibrated"
+    },
+    "defensive_vs_producers": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.909,
+      0.727,
+      1.0
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "too wide"
+    },
+    "dollar": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.909,
+      0.727,
+      1.0
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "too wide"
+    },
+    "gold": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.727,
+      0.541,
+      0.909
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "too wide"
+    },
+    "market": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "too wide"
+    },
+    "oil": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.545,
+      0.273,
+      0.818
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "calibrated"
+    },
+    "rates_10y": {
+     "events": 11,
+     "rows": 11,
+     "middle_half": [
+      0.909,
+      0.727,
+      1.0
+     ],
+     "nine_in_ten": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "below_bad_case": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "above_top": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "diagnosis": "too wide"
+    }
+   }
+  },
+  "2016-2025": {
+   "books_end_of_day": {
+    "events": 1681,
+    "rows": 18491,
+    "middle_half": [
+     0.507,
+     0.498,
+     0.518
+    ],
+    "nine_in_ten": [
+     0.911,
+     0.905,
+     0.918
+    ],
+    "below_bad_case": [
+     0.037,
+     0.033,
+     0.041
+    ],
+    "above_top": [
+     0.052,
+     0.047,
+     0.056
+    ],
+    "mean_signed_error_sd": 0.046,
+    "crps_skill_vs_zero": 0.002,
+    "diagnosis": "calibrated"
+   },
+   "books_by_severity": {
+    "minor": {
+     "events": 494,
+     "rows": 5434,
+     "middle_half": [
+      0.499,
+      0.483,
+      0.517
+     ],
+     "nine_in_ten": [
+      0.906,
+      0.896,
+      0.918
+     ],
+     "below_bad_case": [
+      0.043,
+      0.035,
+      0.052
+     ],
+     "above_top": [
+      0.05,
+      0.042,
+      0.058
+     ],
+     "mean_signed_error_sd": 0.053,
+     "crps_skill_vs_zero": 0.006,
+     "diagnosis": "calibrated"
+    },
+    "moderate": {
+     "events": 786,
+     "rows": 8646,
+     "middle_half": [
+      0.505,
+      0.491,
+      0.519
+     ],
+     "nine_in_ten": [
+      0.915,
+      0.907,
+      0.923
+     ],
+     "below_bad_case": [
+      0.033,
+      0.028,
+      0.039
+     ],
+     "above_top": [
+      0.052,
+      0.046,
+      0.059
+     ],
+     "mean_signed_error_sd": 0.069,
+     "crps_skill_vs_zero": -0.003,
+     "diagnosis": "calibrated"
+    },
+    "major": {
+     "events": 373,
+     "rows": 4103,
+     "middle_half": [
+      0.528,
+      0.506,
+      0.548
+     ],
+     "nine_in_ten": [
+      0.918,
+      0.906,
+      0.932
+     ],
+     "below_bad_case": [
+      0.032,
+      0.023,
+      0.042
+     ],
+     "above_top": [
+      0.05,
+      0.039,
+      0.06
+     ],
+     "mean_signed_error_sd": 0.005,
+     "crps_skill_vs_zero": -0.014,
+     "diagnosis": "calibrated"
+    },
+    "extreme": {
+     "events": 28,
+     "rows": 308,
+     "middle_half": [
+      0.429,
+      0.338,
+      0.526
+     ],
+     "nine_in_ten": [
+      0.818,
+      0.724,
+      0.906
+     ],
+     "below_bad_case": [
+      0.094,
+      0.032,
+      0.182
+     ],
+     "above_top": [
+      0.088,
+      0.036,
+      0.153
+     ],
+     "mean_signed_error_sd": -0.199,
+     "crps_skill_vs_zero": 0.113,
+     "diagnosis": "too narrow (misses on both sides)"
+    }
+   },
+   "books_by_book": {
+    "Broad market (SPY)": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.516,
+      0.496,
+      0.537
+     ],
+     "nine_in_ten": [
+      0.913,
+      0.901,
+      0.926
+     ],
+     "below_bad_case": [
+      0.028,
+      0.021,
+      0.034
+     ],
+     "above_top": [
+      0.059,
+      0.05,
+      0.069
+     ],
+     "mean_signed_error_sd": 0.09,
+     "crps_skill_vs_zero": 0.013,
+     "diagnosis": "calibrated"
+    },
+    "Balanced 60/40": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.481,
+      0.46,
+      0.5
+     ],
+     "nine_in_ten": [
+      0.893,
+      0.88,
+      0.905
+     ],
+     "below_bad_case": [
+      0.038,
+      0.03,
+      0.046
+     ],
+     "above_top": [
+      0.069,
+      0.059,
+      0.078
+     ],
+     "mean_signed_error_sd": 0.101,
+     "crps_skill_vs_zero": 0.002,
+     "diagnosis": "calibrated"
+    },
+    "Tech growth (QQQ)": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.44,
+      0.423,
+      0.46
+     ],
+     "nine_in_ten": [
+      0.872,
+      0.858,
+      0.884
+     ],
+     "below_bad_case": [
+      0.046,
+      0.038,
+      0.055
+     ],
+     "above_top": [
+      0.083,
+      0.071,
+      0.093
+     ],
+     "mean_signed_error_sd": 0.118,
+     "crps_skill_vs_zero": -0.002,
+     "diagnosis": "calibrated"
+    },
+    "Banks (KBE)": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.54,
+      0.522,
+      0.56
+     ],
+     "nine_in_ten": [
+      0.914,
+      0.903,
+      0.924
+     ],
+     "below_bad_case": [
+      0.04,
+      0.033,
+      0.049
+     ],
+     "above_top": [
+      0.046,
+      0.037,
+      0.054
+     ],
+     "mean_signed_error_sd": 0.021,
+     "crps_skill_vs_zero": 0.01,
+     "diagnosis": "calibrated"
+    },
+    "Energy producers": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.463,
+      0.446,
+      0.482
+     ],
+     "nine_in_ten": [
+      0.905,
+      0.894,
+      0.918
+     ],
+     "below_bad_case": [
+      0.046,
+      0.037,
+      0.055
+     ],
+     "above_top": [
+      0.049,
+      0.04,
+      0.058
+     ],
+     "mean_signed_error_sd": -0.009,
+     "crps_skill_vs_zero": 0.004,
+     "diagnosis": "calibrated"
+    },
+    "Agriculture / weather": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.491,
+      0.472,
+      0.508
+     ],
+     "nine_in_ten": [
+      0.939,
+      0.927,
+      0.949
+     ],
+     "below_bad_case": [
+      0.029,
+      0.023,
+      0.036
+     ],
+     "above_top": [
+      0.032,
+      0.025,
+      0.04
+     ],
+     "mean_signed_error_sd": 0.009,
+     "crps_skill_vs_zero": -0.003,
+     "diagnosis": "calibrated"
+    },
+    "Gold miners (GDX)": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.584,
+      0.562,
+      0.603
+     ],
+     "nine_in_ten": [
+      0.928,
+      0.917,
+      0.938
+     ],
+     "below_bad_case": [
+      0.024,
+      0.017,
+      0.03
+     ],
+     "above_top": [
+      0.048,
+      0.04,
+      0.057
+     ],
+     "mean_signed_error_sd": 0.053,
+     "crps_skill_vs_zero": -0.003,
+     "diagnosis": "calibrated"
+    },
+    "Latin America": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.57,
+      0.551,
+      0.59
+     ],
+     "nine_in_ten": [
+      0.953,
+      0.945,
+      0.961
+     ],
+     "below_bad_case": [
+      0.026,
+      0.019,
+      0.032
+     ],
+     "above_top": [
+      0.021,
+      0.016,
+      0.027
+     ],
+     "mean_signed_error_sd": -0.006,
+     "crps_skill_vs_zero": 0.003,
+     "diagnosis": "calibrated"
+    },
+    "Utilities + REITs": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.518,
+      0.501,
+      0.538
+     ],
+     "nine_in_ten": [
+      0.904,
+      0.893,
+      0.915
+     ],
+     "below_bad_case": [
+      0.04,
+      0.032,
+      0.048
+     ],
+     "above_top": [
+      0.057,
+      0.048,
+      0.065
+     ],
+     "mean_signed_error_sd": 0.089,
+     "crps_skill_vs_zero": 0.007,
+     "diagnosis": "calibrated"
+    },
+    "Long Treasuries (TLT)": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.537,
+      0.516,
+      0.556
+     ],
+     "nine_in_ten": [
+      0.928,
+      0.917,
+      0.939
+     ],
+     "below_bad_case": [
+      0.03,
+      0.023,
+      0.037
+     ],
+     "above_top": [
+      0.042,
+      0.035,
+      0.051
+     ],
+     "mean_signed_error_sd": 0.009,
+     "crps_skill_vs_zero": -0.007,
+     "diagnosis": "calibrated"
+    },
+    "Commodities (DBC)": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.441,
+      0.421,
+      0.462
+     ],
+     "nine_in_ten": [
+      0.879,
+      0.866,
+      0.894
+     ],
+     "below_bad_case": [
+      0.059,
+      0.049,
+      0.068
+     ],
+     "above_top": [
+      0.062,
+      0.054,
+      0.073
+     ],
+     "mean_signed_error_sd": 0.028,
+     "crps_skill_vs_zero": -0.002,
+     "diagnosis": "calibrated"
+    }
+   },
+   "factors_end_of_day": {
+    "market": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.532,
+      0.513,
+      0.552
+     ],
+     "nine_in_ten": [
+      0.917,
+      0.906,
+      0.929
+     ],
+     "below_bad_case": [
+      0.032,
+      0.023,
+      0.039
+     ],
+     "above_top": [
+      0.052,
+      0.043,
+      0.06
+     ],
+     "mean_signed_error_sd": 0.017,
+     "diagnosis": "calibrated"
+    },
+    "rates_2y": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.475,
+      0.458,
+      0.496
+     ],
+     "nine_in_ten": [
+      0.874,
+      0.86,
+      0.886
+     ],
+     "below_bad_case": [
+      0.057,
+      0.049,
+      0.065
+     ],
+     "above_top": [
+      0.07,
+      0.059,
+      0.079
+     ],
+     "mean_signed_error_sd": 0.081,
+     "diagnosis": "calibrated"
+    },
+    "rates_10y": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.509,
+      0.489,
+      0.526
+     ],
+     "nine_in_ten": [
+      0.903,
+      0.89,
+      0.913
+     ],
+     "below_bad_case": [
+      0.047,
+      0.038,
+      0.056
+     ],
+     "above_top": [
+      0.05,
+      0.042,
+      0.058
+     ],
+     "mean_signed_error_sd": 0.046,
+     "diagnosis": "calibrated"
+    },
+    "dollar": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.388,
+      0.369,
+      0.407
+     ],
+     "nine_in_ten": [
+      0.917,
+      0.907,
+      0.929
+     ],
+     "below_bad_case": [
+      0.04,
+      0.031,
+      0.049
+     ],
+     "above_top": [
+      0.043,
+      0.036,
+      0.05
+     ],
+     "mean_signed_error_sd": 0.034,
+     "diagnosis": "calibrated"
+    },
+    "oil": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.394,
+      0.373,
+      0.415
+     ],
+     "nine_in_ten": [
+      0.858,
+      0.844,
+      0.873
+     ],
+     "below_bad_case": [
+      0.065,
+      0.055,
+      0.075
+     ],
+     "above_top": [
+      0.076,
+      0.067,
+      0.086
+     ],
+     "mean_signed_error_sd": 0.041,
+     "diagnosis": "calibrated"
+    },
+    "gold": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.535,
+      0.516,
+      0.557
+     ],
+     "nine_in_ten": [
+      0.94,
+      0.931,
+      0.949
+     ],
+     "below_bad_case": [
+      0.033,
+      0.026,
+      0.039
+     ],
+     "above_top": [
+      0.027,
+      0.021,
+      0.033
+     ],
+     "mean_signed_error_sd": 0.028,
+     "diagnosis": "calibrated"
+    },
+    "credit": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.498,
+      0.476,
+      0.519
+     ],
+     "nine_in_ten": [
+      0.955,
+      0.946,
+      0.964
+     ],
+     "below_bad_case": [
+      0.02,
+      0.015,
+      0.026
+     ],
+     "above_top": [
+      0.024,
+      0.018,
+      0.031
+     ],
+     "mean_signed_error_sd": 0.035,
+     "diagnosis": "calibrated"
+    },
+    "size": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.453,
+      0.431,
+      0.471
+     ],
+     "nine_in_ten": [
+      0.86,
+      0.844,
+      0.875
+     ],
+     "below_bad_case": [
+      0.071,
+      0.059,
+      0.081
+     ],
+     "above_top": [
+      0.07,
+      0.059,
+      0.08
+     ],
+     "mean_signed_error_sd": -0.066,
+     "diagnosis": "calibrated"
+    },
+    "value": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.312,
+      0.296,
+      0.329
+     ],
+     "nine_in_ten": [
+      0.755,
+      0.74,
+      0.77
+     ],
+     "below_bad_case": [
+      0.122,
+      0.111,
+      0.135
+     ],
+     "above_top": [
+      0.123,
+      0.111,
+      0.136
+     ],
+     "mean_signed_error_sd": -0.05,
+     "diagnosis": "too narrow (misses on both sides)"
+    },
+    "asia_em": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.559,
+      0.54,
+      0.579
+     ],
+     "nine_in_ten": [
+      0.925,
+      0.914,
+      0.935
+     ],
+     "below_bad_case": [
+      0.033,
+      0.027,
+      0.04
+     ],
+     "above_top": [
+      0.042,
+      0.033,
+      0.049
+     ],
+     "mean_signed_error_sd": -0.044,
+     "diagnosis": "calibrated"
+    },
+    "healthcare": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.503,
+      0.484,
+      0.523
+     ],
+     "nine_in_ten": [
+      0.902,
+      0.891,
+      0.914
+     ],
+     "below_bad_case": [
+      0.055,
+      0.046,
+      0.065
+     ],
+     "above_top": [
+      0.043,
+      0.035,
+      0.051
+     ],
+     "mean_signed_error_sd": -0.023,
+     "diagnosis": "calibrated"
+    },
+    "agriculture": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.407,
+      0.387,
+      0.428
+     ],
+     "nine_in_ten": [
+      0.928,
+      0.917,
+      0.938
+     ],
+     "below_bad_case": [
+      0.036,
+      0.029,
+      0.043
+     ],
+     "above_top": [
+      0.036,
+      0.029,
+      0.045
+     ],
+     "mean_signed_error_sd": 0.045,
+     "diagnosis": "calibrated"
+    },
+    "defensive_vs_producers": {
+     "events": 1681,
+     "rows": 1681,
+     "middle_half": [
+      0.434,
+      0.415,
+      0.454
+     ],
+     "nine_in_ten": [
+      0.848,
+      0.833,
+      0.863
+     ],
+     "below_bad_case": [
+      0.073,
+      0.061,
+      0.084
+     ],
+     "above_top": [
+      0.079,
+      0.068,
+      0.09
+     ],
+     "mean_signed_error_sd": 0.038,
+     "diagnosis": "calibrated"
+    }
+   },
+   "first_hours_factors": {
+    "asia_em": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.658,
+      0.6,
+      0.723
+     ],
+     "nine_in_ten": [
+      0.948,
+      0.916,
+      0.974
+     ],
+     "below_bad_case": [
+      0.032,
+      0.013,
+      0.058
+     ],
+     "above_top": [
+      0.019,
+      0.0,
+      0.039
+     ],
+     "diagnosis": "calibrated"
+    },
+    "credit": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.639,
+      0.574,
+      0.703
+     ],
+     "nine_in_ten": [
+      0.91,
+      0.865,
+      0.948
+     ],
+     "below_bad_case": [
+      0.026,
+      0.006,
+      0.045
+     ],
+     "above_top": [
+      0.065,
+      0.032,
+      0.097
+     ],
+     "diagnosis": "calibrated"
+    },
+    "defensive_vs_producers": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.645,
+      0.574,
+      0.71
+     ],
+     "nine_in_ten": [
+      0.916,
+      0.877,
+      0.948
+     ],
+     "below_bad_case": [
+      0.045,
+      0.019,
+      0.077
+     ],
+     "above_top": [
+      0.039,
+      0.019,
+      0.065
+     ],
+     "diagnosis": "calibrated"
+    },
+    "dollar": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.626,
+      0.561,
+      0.691
+     ],
+     "nine_in_ten": [
+      0.961,
+      0.935,
+      0.987
+     ],
+     "below_bad_case": [
+      0.026,
+      0.006,
+      0.045
+     ],
+     "above_top": [
+      0.013,
+      0.0,
+      0.032
+     ],
+     "diagnosis": "too wide"
+    },
+    "gold": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.671,
+      0.613,
+      0.723
+     ],
+     "nine_in_ten": [
+      0.942,
+      0.903,
+      0.968
+     ],
+     "below_bad_case": [
+      0.052,
+      0.026,
+      0.084
+     ],
+     "above_top": [
+      0.006,
+      0.0,
+      0.019
+     ],
+     "diagnosis": "calibrated"
+    },
+    "market": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.619,
+      0.561,
+      0.677
+     ],
+     "nine_in_ten": [
+      0.91,
+      0.871,
+      0.942
+     ],
+     "below_bad_case": [
+      0.019,
+      0.0,
+      0.039
+     ],
+     "above_top": [
+      0.071,
+      0.045,
+      0.11
+     ],
+     "diagnosis": "calibrated"
+    },
+    "oil": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.639,
+      0.574,
+      0.703
+     ],
+     "nine_in_ten": [
+      0.89,
+      0.845,
+      0.929
+     ],
+     "below_bad_case": [
+      0.032,
+      0.013,
+      0.058
+     ],
+     "above_top": [
+      0.077,
+      0.045,
+      0.123
+     ],
+     "diagnosis": "calibrated"
+    },
+    "rates_10y": {
+     "events": 155,
+     "rows": 155,
+     "middle_half": [
+      0.606,
+      0.542,
+      0.671
+     ],
+     "nine_in_ten": [
+      0.929,
+      0.89,
+      0.961
+     ],
+     "below_bad_case": [
+      0.039,
+      0.013,
+      0.071
+     ],
+     "above_top": [
+      0.032,
+      0.013,
+      0.052
+     ],
+     "diagnosis": "calibrated"
+    }
+   }
+  }
+ }
+}

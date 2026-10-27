@@ -1,0 +1,255 @@
+<title>Worsey Event Pipeline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Libre+Franklin:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+/* Layout: one top-down flowchart; lines split where a step has several paths and merge where they rejoin. */
+:root {
+  --bg: #f6f7f9; --panel: #ffffff; --ink: #18212b; --muted: #5d6874; --edge: #8d98a5; --rule: #e3e7ec;
+  --user: #3d5a80; --user-bg: #e8eef6;
+  --llm: #8a4f7d;  --llm-bg: #f5ebf2;
+  --code: #1f7a6d; --code-bg: #e5f3f0;
+  --mkt: #a86d1f;  --mkt-bg: #faf0e1;
+  --out: #18212b;  --out-fg: #ffffff;
+  --display: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12171d; --panel: #1a2129; --ink: #e8ecf0; --muted: #9aa5b1; --edge: #6b7784; --rule: #26303a;
+    --user: #8fb0d9; --user-bg: #1f2b3a; --llm: #d39ac6; --llm-bg: #33232f;
+    --code: #6cc7b8; --code-bg: #182e2b; --mkt: #e2ac62; --mkt-bg: #33281a;
+    --out: #e8ecf0; --out-fg: #12171d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12171d; --panel: #1a2129; --ink: #e8ecf0; --muted: #9aa5b1; --edge: #6b7784; --rule: #26303a;
+  --user: #8fb0d9; --user-bg: #1f2b3a; --llm: #d39ac6; --llm-bg: #33232f;
+  --code: #6cc7b8; --code-bg: #182e2b; --mkt: #e2ac62; --mkt-bg: #33281a;
+  --out: #e8ecf0; --out-fg: #12171d; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.4;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 36px 48px;
+}
+.wrap { max-width: 1260px; margin: 0 auto; display: grid; gap: 22px; }
+header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 32px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 27px; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 6px 0 0; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.canvas { background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; padding: 18px; overflow-x: auto; }
+.canvas svg { display: block; width: 100%; min-width: 920px; height: auto; }
+
+.edge { fill: none; stroke: var(--edge); stroke-width: 1.6; stroke-linejoin: round; }
+.edge.dash { stroke-dasharray: 5 4; }
+.ahp { fill: var(--edge); }
+.dot { fill: var(--edge); }
+.grpbox { fill: none; stroke: var(--edge); stroke-width: 1.2; stroke-dasharray: 3 4; opacity: .7; }
+.frame { fill: none; stroke: var(--rule); stroke-width: 1.5; stroke-dasharray: 6 5; }
+.sec { font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: .08em; fill: var(--ink); }
+.grp { font-family: var(--body); font-weight: 600; font-size: 13px; fill: var(--muted); }
+.lbl { font-family: var(--body); font-size: 12.5px; font-style: italic; fill: var(--muted);
+       paint-order: stroke; stroke: var(--panel); stroke-width: 5px; stroke-linejoin: round; }
+.node rect { stroke-width: 1.6; }
+.node .t { font-family: var(--display); font-weight: 600; font-size: 14.5px; }
+.node .s { font-family: var(--body); font-size: 12.5px; fill: var(--muted); }
+.node.user rect { fill: var(--user-bg); stroke: var(--user); } .node.user .t { fill: var(--user); }
+.node.llm rect { fill: var(--llm-bg); stroke: var(--llm); }   .node.llm .t { fill: var(--llm); }
+.node.code rect { fill: var(--code-bg); stroke: var(--code); } .node.code .t { fill: var(--code); }
+.node.mkt rect { fill: var(--mkt-bg); stroke: var(--mkt); }   .node.mkt .t { fill: var(--mkt); }
+.node.out rect { fill: var(--out); stroke: var(--out); }      .node.out .t { fill: var(--out-fg); }
+.node.out .s { fill: var(--out-fg); opacity: .72; }
+.node .fn { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 11.5px; fill: var(--muted); opacity: .9; }
+.node.out .fn { fill: var(--out-fg); opacity: .6; }
+</style>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Worsey: from a portfolio to a priced event list</h1>
+      <p class="sub">Castle take-home, question 1. How one request flows through the system (current through DECISIONS #238).</p>
+    </div>
+    <div class="legend" aria-label="Legend">
+      <span><i style="background:var(--user)"></i>User input</span>
+      <span><i style="background:var(--llm)"></i>LLM judgment</span>
+      <span><i style="background:var(--code)"></i>Code</span>
+      <span><i style="background:var(--mkt)"></i>Market data</span>
+      <span><i style="background:var(--out)"></i>What the user sees</span>
+      <span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px">fn()</span><span style="margin-left:-12px">= code, discovery.py unless prefixed</span>
+    </div>
+  </header>
+  <div class="canvas">
+<svg viewBox="0 0 1360 2430" width="1360" height="2430" role="img" aria-label="Worsey question 1 flowchart">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahp" d="M0 0L10 5L0 10z"/></marker></defs>
+<rect class="frame" x="12" y="980" width="1336" height="760" rx="14"/>
+<rect class="grpbox" x="620" y="292" width="560" height="124" rx="10"/>
+<text class="grp" x="632" y="311">What’s coming</text>
+<rect class="grpbox" x="850" y="1330" width="480" height="130" rx="10"/>
+<text class="grp" x="862" y="1349">For each position</text>
+<text class="sec" x="24" y="40">INPUTS</text>
+<text class="sec" x="24" y="470">EVENT UNIVERSE</text>
+<text class="sec" x="24" y="1000">FOR EACH EVENT: THE LOGIC</text>
+<text class="grp" x="24" y="1020">Listed markets finish both halves when listed;</text>
+<text class="grp" x="24" y="1037">proposals and your events walk through it.</text>
+<text class="sec" x="24" y="1768">COMBINE AND ANSWER</text>
+
+<!-- inputs -->
+<path class="edge" d="M115 136 L115 176" marker-end="url(#ah)"/>
+<path class="edge" d="M115 252 L115 330" marker-end="url(#ah)"/>
+<path class="edge" d="M420 136 L420 176" marker-end="url(#ah)"/>
+<path class="edge" d="M490 252 L490 330" marker-end="url(#ah)"/>
+<path class="edge" d="M310 98 L275 98 L275 330" marker-end="url(#ah)"/>
+<!-- into the proposal call -->
+<path class="edge" d="M115 406 L115 445"/>
+<path class="edge" d="M305 406 L305 445"/>
+<path class="edge" d="M490 406 L490 445"/>
+<path class="edge" d="M115 445 L490 445"/>
+<path class="edge" d="M300 445 L300 480" marker-end="url(#ah)"/>
+<!-- what's coming: priced on arrival -->
+<path class="edge" d="M720 406 L720 440"/>
+<path class="edge" d="M900 406 L900 440"/>
+<path class="edge" d="M1080 406 L1080 440"/>
+<path class="edge" d="M720 440 L1080 440"/>
+<path class="edge" d="M730 440 L730 480" marker-end="url(#ah)"/>
+<path class="edge" d="M560 518 L460 518" marker-end="url(#ah)"/>
+<path class="edge" d="M900 518 L1000 518" marker-end="url(#ah)"/>
+<path class="edge" d="M730 556 L730 715"/>
+<!-- proposal outputs -->
+<path class="edge" d="M300 556 L300 580"/>
+<path class="edge" d="M190 580 L420 580"/>
+<path class="edge" d="M190 580 L190 600" marker-end="url(#ah)"/>
+<path class="edge" d="M420 580 L420 600" marker-end="url(#ah)"/>
+<path class="edge" d="M190 676 L190 715"/>
+<path class="edge" d="M420 676 L420 715"/>
+<path class="edge" d="M190 715 L730 715"/>
+<path class="edge" d="M640 715 L640 740" marker-end="url(#ah)"/>
+<path class="edge" d="M820 778 L1000 778" marker-end="url(#ah)"/>
+<path class="edge" d="M640 816 L640 860" marker-end="url(#ah)"/>
+<path class="edge" d="M640 936 L640 1010" marker-end="url(#ah)"/>
+<!-- for each event: split -->
+<path class="edge" d="M640 1086 L640 1110"/>
+<path class="edge" d="M90 1110 L1090 1110"/>
+<path class="edge" d="M350 1110 L350 1135" marker-end="url(#ah)"/>
+<path class="edge" d="M1090 1110 L1090 1135" marker-end="url(#ah)"/>
+<path class="edge" d="M90 1110 L90 1260" marker-end="url(#ah)"/>
+<!-- how likely -->
+<path class="edge" d="M350 1211 L350 1235"/>
+<path class="edge" d="M90 1235 L622 1235"/>
+<path class="edge" d="M255 1235 L255 1260" marker-end="url(#ah)"/>
+<path class="edge" d="M425 1235 L425 1260" marker-end="url(#ah)"/>
+<path class="edge" d="M622 1235 L622 1260" marker-end="url(#ah)"/>
+<path class="edge" d="M497.5 1298 L537.5 1298" marker-end="url(#ah)"/>
+<path class="edge" d="M622 1336 L622 1358"/>
+<path class="edge" d="M622 1358 L730 1358"/>
+<path class="edge" d="M622 1358 L622 1380" marker-end="url(#ah)"/>
+<path class="edge" d="M730 1358 L730 1480"/>
+<path class="edge" d="M90 1336 L90 1480"/>
+<path class="edge" d="M255 1336 L255 1480"/>
+<path class="edge" d="M425 1336 L425 1480"/>
+<path class="edge" d="M622 1456 L622 1480"/>
+<path class="edge" d="M90 1480 L730 1480"/>
+<path class="edge" d="M352 1480 L352 1500" marker-end="url(#ah)"/>
+<!-- how big -->
+<path class="edge" d="M1090 1211 L1090 1235" marker-end="url(#ah)"/>
+<path class="edge" d="M1090 1311 L1090 1356"/>
+<path class="edge" d="M970 1356 L1090 1356"/>
+<path class="edge" d="M970 1356 L970 1372" marker-end="url(#ah)"/>
+<path class="edge" d="M1080 1410 L1100 1410" marker-end="url(#ah)"/>
+<path class="edge" d="M970 1448 L970 1480"/>
+<path class="edge" d="M1210 1448 L1210 1480"/>
+<path class="edge" d="M970 1480 L1210 1480"/>
+<path class="edge" d="M1090 1480 L1090 1500" marker-end="url(#ah)"/>
+<path class="edge" d="M1090 1576 L1090 1600" marker-end="url(#ah)"/>
+<path class="edge dash" d="M945 1538 L830 1538 L830 1298 L707.5 1298" marker-end="url(#ah)"/>
+<!-- merge -->
+<path class="edge" d="M352 1576 L352 1720"/>
+<path class="edge" d="M1090 1676 L1090 1720"/>
+<path class="edge" d="M352 1720 L1090 1720"/>
+<path class="edge" d="M640 1720 L640 1780" marker-end="url(#ah)"/>
+<!-- combine and answer -->
+<path class="edge" d="M640 1856 L640 1890" marker-end="url(#ah)"/>
+<path class="edge" d="M640 1966 L640 2000" marker-end="url(#ah)"/>
+<path class="edge" d="M640 2076 L640 2110" marker-end="url(#ah)"/>
+<path class="edge" d="M640 2186 L640 2220" marker-end="url(#ah)"/>
+<path class="edge" d="M640 2296 L640 2330" marker-end="url(#ah)"/>
+<path class="edge dash" d="M470 2258 L420 2258 L420 2148 L470 2148" marker-end="url(#ah)"/>
+<path class="edge dash" d="M810 2368 L900 2368" marker-end="url(#ah)"/>
+
+<circle class="dot" cx="300" cy="445" r="3.2"/>
+<circle class="dot" cx="730" cy="440" r="3.2"/>
+<circle class="dot" cx="640" cy="715" r="3.2"/>
+<circle class="dot" cx="622" cy="1358" r="3.2"/>
+
+<!-- INPUTS -->
+<g class="node user"><rect x="10" y="60" width="210" height="76" rx="8"/><text class="t" x="115" y="84" text-anchor="middle">Questions and worries</text><text class="s" x="115" y="103" text-anchor="middle">“Oil spike, and anything else?”</text><text class="fn" x="115" y="123" text-anchor="middle">run_turn()</text></g>
+<g class="node llm"><rect x="10" y="176" width="210" height="76" rx="8"/><text class="t" x="115" y="200" text-anchor="middle">Router (one LLM call)</text><text class="s" x="115" y="219" text-anchor="middle">Picks the scan; lists your worries</text><text class="fn" x="115" y="239" text-anchor="middle">→ scan_risks(user_events)</text></g>
+<g class="node user"><rect x="310" y="60" width="220" height="76" rx="8"/><text class="t" x="420" y="84" text-anchor="middle">Portfolio</text><text class="s" x="420" y="103" text-anchor="middle">Stocks, ETFs, options</text><text class="fn" x="420" y="123" text-anchor="middle">load_portfolio()</text></g>
+<g class="node code"><rect x="295" y="176" width="250" height="76" rx="8"/><text class="t" x="420" y="200" text-anchor="middle">ETF look-through</text><text class="s" x="420" y="219" text-anchor="middle">QQQ holders own NVDA</text><text class="fn" x="420" y="239" text-anchor="middle">lookthrough.effective_exposure()</text></g>
+<g class="node user"><rect x="20" y="330" width="190" height="76" rx="8"/><text class="t" x="115" y="354" text-anchor="middle">Your events</text><text class="s" x="115" y="373" text-anchor="middle">Named in the question</text><text class="fn" x="115" y="393" text-anchor="middle">user_events</text></g>
+<g class="node code"><rect x="220" y="330" width="170" height="76" rx="8"/><text class="t" x="305" y="354" text-anchor="middle">Past event replay</text><text class="s" x="305" y="373" text-anchor="middle">Risk card, sent first (~5 s)</text><text class="fn" x="305" y="393" text-anchor="middle">live.scan()</text></g>
+<g class="node code"><rect x="400" y="330" width="180" height="76" rx="8"/><text class="t" x="490" y="354" text-anchor="middle">Biggest exposures</text><text class="s" x="490" y="373" text-anchor="middle">Factors, sectors, names</text><text class="fn" x="490" y="393" text-anchor="middle">exposures()</text></g>
+<g class="node mkt"><rect x="635" y="330" width="170" height="76" rx="8"/><text class="t" x="720" y="354" text-anchor="middle">Prediction markets</text><text class="s" x="720" y="373" text-anchor="middle">Kalshi, Polymarket</text><text class="fn" x="720" y="393" text-anchor="middle">market_candidates()</text></g>
+<g class="node code"><rect x="815" y="330" width="170" height="76" rx="8"/><text class="t" x="900" y="354" text-anchor="middle">Calendar</text><text class="s" x="900" y="373" text-anchor="middle">Fed, CPI, earnings, EIA</text><text class="fn" x="900" y="393" text-anchor="middle">calendar()</text></g>
+<g class="node code"><rect x="995" y="330" width="170" height="76" rx="8"/><text class="t" x="1080" y="354" text-anchor="middle">News feed</text><text class="s" x="1080" y="373" text-anchor="middle">Labelled daily by an LLM</text><text class="fn" x="1080" y="393" text-anchor="middle">news_candidates()</text></g>
+
+<!-- EVENT UNIVERSE -->
+<g class="node llm"><rect x="140" y="480" width="320" height="76" rx="8"/><text class="t" x="300" y="504" text-anchor="middle">Proposal call (one LLM call)</text><text class="s" x="300" y="523" text-anchor="middle">Labels yours, invents 6 (2+ from history)</text><text class="fn" x="300" y="543" text-anchor="middle">propose() + history() → impact()</text></g>
+<g class="node code"><rect x="560" y="480" width="340" height="76" rx="8"/><text class="t" x="730" y="504" text-anchor="middle">Listed candidates, priced now</text><text class="s" x="730" y="523" text-anchor="middle">Move + corrected odds (tier 1) done here</text><text class="fn" x="730" y="543" text-anchor="middle">impact() · probability.corrected()</text></g>
+<g class="node out"><rect x="1000" y="480" width="300" height="76" rx="8"/><text class="t" x="1150" y="504" text-anchor="middle">Message 1: your book at a glance</text><text class="s" x="1150" y="523" text-anchor="middle">Swing, exposures, past kinds that hurt it</text><text class="fn" x="1150" y="543" text-anchor="middle">scan_messages.book()</text></g>
+<g class="node llm"><rect x="80" y="600" width="220" height="76" rx="8"/><text class="t" x="190" y="624" text-anchor="middle">Book-driven events</text><text class="s" x="190" y="643" text-anchor="middle">The 6 it invented, priced</text><text class="fn" x="190" y="663" text-anchor="middle">source “proposal”</text></g>
+<g class="node user"><rect x="310" y="600" width="220" height="76" rx="8"/><text class="t" x="420" y="624" text-anchor="middle">Your events, labelled</text><text class="s" x="420" y="643" text-anchor="middle">Directions, sizes, legs; priced</text><text class="fn" x="420" y="663" text-anchor="middle">source “user”</text></g>
+<g class="node code"><rect x="460" y="740" width="360" height="76" rx="8"/><text class="t" x="640" y="764" text-anchor="middle">Fold</text><text class="s" x="640" y="783" text-anchor="middle">Anything that is really your event goes under it</text><text class="fn" x="640" y="803" text-anchor="middle">same_move() / same market</text></g>
+<g class="node out"><rect x="1000" y="740" width="300" height="76" rx="8"/><text class="t" x="1150" y="764" text-anchor="middle">Message 2: your events</text><text class="s" x="1150" y="783" text-anchor="middle">Move, positions, honest noise verdict</text><text class="fn" x="1150" y="803" text-anchor="middle">scan_messages.yours()</text></g>
+<g class="node code"><rect x="460" y="860" width="360" height="76" rx="8"/><text class="t" x="640" y="884" text-anchor="middle">Universe</text><text class="s" x="640" y="903" text-anchor="middle">Every candidate for this book, priced</text><text class="fn" x="640" y="923" text-anchor="middle">watchlist()</text></g>
+
+<!-- FOR EACH EVENT -->
+<g class="node code"><rect x="530" y="1010" width="220" height="76" rx="8"/><text class="t" x="640" y="1041" text-anchor="middle">Event</text><text class="s" x="640" y="1061" text-anchor="middle">One candidate</text></g>
+<g class="node llm"><rect x="150" y="1135" width="400" height="76" rx="8"/><text class="t" x="350" y="1159" text-anchor="middle">Relation call (one LLM call for all events)</text><text class="s" x="350" y="1178" text-anchor="middle">Proposals and yours vs their closest markets and stories</text><text class="fn" x="350" y="1198" text-anchor="middle">probability.classify_many() ← candidates_for()</text></g>
+<g class="node mkt"><rect x="17.5" y="1260" width="145" height="76" rx="8"/><text class="t" x="90" y="1284" text-anchor="middle">Exact market</text><text class="s" x="90" y="1303" text-anchor="middle">Corrected price</text><text class="fn" x="90" y="1323" text-anchor="middle">corrected()</text></g>
+<g class="node code"><rect x="182.5" y="1260" width="145" height="76" rx="8"/><text class="t" x="255" y="1284" text-anchor="middle">Nearby market</text><text class="s" x="255" y="1303" text-anchor="middle">Strike or date ladder</text><text class="fn" x="255" y="1323" text-anchor="middle">derive_*()</text></g>
+<g class="node code"><rect x="352.5" y="1260" width="145" height="76" rx="8"/><text class="t" x="425" y="1284" text-anchor="middle">Related market</text><text class="s" x="425" y="1303" text-anchor="middle">Relation → bounds</text><text class="fn" x="425" y="1323" text-anchor="middle">bounds()</text></g>
+<g class="node code"><rect x="537.5" y="1260" width="170" height="76" rx="8"/><text class="t" x="622.5" y="1284" text-anchor="middle">Pick what to forecast</text><text class="s" x="622.5" y="1303" text-anchor="middle">Yours + top 3; sends msg 3</text><text class="fn" x="622.5" y="1323" text-anchor="middle">forecast_probabilities()</text></g>
+<g class="node llm"><rect x="537.5" y="1380" width="170" height="76" rx="8"/><text class="t" x="622.5" y="1404" text-anchor="middle">Forecaster</text><text class="s" x="622.5" y="1423" text-anchor="middle">3 agents: library, news, mkts</text><text class="fn" x="622.5" y="1443" text-anchor="middle">forecaster.forecast()</text></g>
+<g class="node code"><rect x="237" y="1500" width="230" height="76" rx="8"/><text class="t" x="352" y="1524" text-anchor="middle">Probability p</text><text class="s" x="352" y="1543" text-anchor="middle">With its tier; raw market price kept</text><text class="fn" x="352" y="1563" text-anchor="middle">“odds”, “odds_raw”, “tier”</text></g>
+<g class="node code"><rect x="945" y="1135" width="290" height="76" rx="8"/><text class="t" x="1090" y="1159" text-anchor="middle">Look up its label</text><text class="s" x="1090" y="1178" text-anchor="middle">Made earlier, no new LLM call</text><text class="fn" x="1090" y="1198" text-anchor="middle">market_labels.json / propose() / news log</text></g>
+<g class="node code"><rect x="965" y="1235" width="250" height="76" rx="8"/><text class="t" x="1090" y="1259" text-anchor="middle">Factor moves</text><text class="s" x="1090" y="1278" text-anchor="middle">Measured move per size call</text><text class="fn" x="1090" y="1298" text-anchor="middle">live.real_event_draws()</text></g>
+<g class="node code"><rect x="860" y="1372" width="220" height="76" rx="8"/><text class="t" x="970" y="1396" text-anchor="middle">Stocks, ETFs, underliers</text><text class="s" x="970" y="1415" text-anchor="middle">Factors + the largest of 3 legs</text><text class="fn" x="970" y="1435" text-anchor="middle">impact() · combine_legs()</text></g>
+<g class="node code"><rect x="1100" y="1372" width="220" height="76" rx="8"/><text class="t" x="1210" y="1396" text-anchor="middle">Options</text><text class="s" x="1210" y="1415" text-anchor="middle">Underlier = the stock; full reprice</text><text class="fn" x="1210" y="1435" text-anchor="middle">live.option_pnl()</text></g>
+<g class="node code"><rect x="945" y="1500" width="290" height="76" rx="8"/><text class="t" x="1090" y="1524" text-anchor="middle">Book move and size</text><text class="s" x="1090" y="1543" text-anchor="middle">vs ½ your 2-day swing; verdict for yours</text><text class="fn" x="1090" y="1563" text-anchor="middle">watchlist(): ½ swing · _verdict_words()</text></g>
+<g class="node code"><rect x="965" y="1600" width="250" height="76" rx="8"/><text class="t" x="1090" y="1624" text-anchor="middle">Bad case</text><text class="s" x="1090" y="1643" text-anchor="middle">Book draws, 1 in 20 (options at middle)</text><text class="fn" x="1090" y="1663" text-anchor="middle">impact()</text></g>
+
+<!-- COMBINE AND ANSWER -->
+<g class="node code"><rect x="470" y="1780" width="340" height="76" rx="8"/><text class="t" x="640" y="1804" text-anchor="middle">Priced in</text><text class="s" x="640" y="1823" text-anchor="middle">Split on the raw market price; risk left from p</text><text class="fn" x="640" y="1843" text-anchor="middle">_with_odds() · _set_prob()</text></g>
+<g class="node code"><rect x="470" y="1890" width="340" height="76" rx="8"/><text class="t" x="640" y="1914" text-anchor="middle">Remove duplicates</text><text class="s" x="640" y="1933" text-anchor="middle">A proposal that IS a listed market or story absorbs it</text><text class="fn" x="640" y="1953" text-anchor="middle">watchlist(): “absorbs”</text></g>
+<g class="node code"><rect x="470" y="2000" width="340" height="76" rx="8"/><text class="t" x="640" y="2024" text-anchor="middle">Pick three</text><text class="s" x="640" y="2043" text-anchor="middle">Top 3 by risk left; no two the same move</text><text class="fn" x="640" y="2063" text-anchor="middle">choose_three()</text></g>
+<g class="node llm"><rect x="470" y="2110" width="340" height="76" rx="8"/><text class="t" x="640" y="2134" text-anchor="middle">Write the last message</text><text class="s" x="640" y="2153" text-anchor="middle">Your odds, the three to watch, noise, N more</text><text class="fn" x="640" y="2173" text-anchor="middle">run_expert(“event_analyst”)</text></g>
+<g class="node code"><rect x="470" y="2220" width="340" height="76" rx="8"/><text class="t" x="640" y="2244" text-anchor="middle">Grounding check</text><text class="s" x="640" y="2263" text-anchor="middle">Every number must come from code</text><text class="fn" x="640" y="2283" text-anchor="middle">grounding.check()</text></g>
+<g class="node out"><rect x="470" y="2330" width="340" height="76" rx="8"/><text class="t" x="640" y="2354" text-anchor="middle">What the user sees</text><text class="s" x="640" y="2373" text-anchor="middle">Risk card → messages 1–3 (code) → last message</text><text class="fn" x="640" y="2393" text-anchor="middle">s.send(“card”) · s.send(“reply”)</text></g>
+<g class="node code"><rect x="900" y="2330" width="330" height="76" rx="8"/><text class="t" x="1065" y="2354" text-anchor="middle">Hedge verdict (separate turn)</text><text class="s" x="1065" y="2373" text-anchor="middle">Only when the user asks</text><text class="fn" x="1065" y="2393" text-anchor="middle">compare_hedges → live.hedge_verdict()</text></g>
+
+<!-- edge labels -->
+<text class="lbl" x="400" y="437" text-anchor="middle">history: top 4 kinds</text>
+<text class="lbl" x="510" y="508" text-anchor="middle">catalyst only</text>
+<text class="lbl" x="736" y="640" text-anchor="start">candidates themselves</text>
+<text class="lbl" x="350" y="1101" text-anchor="middle">2. how likely</text>
+<text class="lbl" x="1090" y="1101" text-anchor="middle">1. how big (priced when listed or proposed)</text>
+<text class="lbl" x="96" y="1127" text-anchor="start">listed market: no call</text>
+<text class="lbl" x="96" y="1252" text-anchor="start">same</text>
+<text class="lbl" x="261" y="1252" text-anchor="start">other strike/date</text>
+<text class="lbl" x="431" y="1252" text-anchor="start">related</text>
+<text class="lbl" x="628" y="1252" text-anchor="start">nothing close</text>
+<text class="lbl" x="517" y="1290" text-anchor="middle">too wide</text>
+<text class="lbl" x="431" y="1372" text-anchor="start">narrow: midpoint</text>
+<text class="lbl" x="736" y="1410" text-anchor="start">the rest:</text>
+<text class="lbl" x="736" y="1426" text-anchor="start">base rate</text>
+<text class="lbl" x="736" y="1442" text-anchor="start">(calendar: no p)</text>
+<text class="lbl" x="887" y="1530" text-anchor="middle">size screen</text>
+<text class="lbl" x="410" y="2207" text-anchor="end">fails: one rewrite</text>
+<text class="lbl" x="855" y="2358" text-anchor="middle">if asked</text>
+</svg>
+  </div>
+</div>

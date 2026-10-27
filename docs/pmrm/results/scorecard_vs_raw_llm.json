@@ -1,0 +1,106 @@
+{
+ "runs": 39,
+ "dates": [
+  "2026-07-01",
+  "2026-08-01",
+  "2026-09-01"
+ ],
+ "books": 13,
+ "coverage": {
+  "worsey_picks": {
+   "share": 0.07762552827303673,
+   "ci90": [
+    0.019218547320054596,
+    0.16724764334679776
+   ],
+   "windows": 28
+  },
+  "worsey_full": {
+   "share": 0.15579804702554095,
+   "ci90": [
+    0.06624172073079727,
+    0.2906937957643376
+   ],
+   "windows": 28
+  },
+  "raw": {
+   "share": 0.34391599272475337,
+   "ci90": [
+    0.19080815357279396,
+    0.5137283169659349
+   ],
+   "windows": 28
+  }
+ },
+ "probabilities": {
+  "worsey": {
+   "brier": 0.03785893056412994,
+   "log": 0.1368919634904882,
+   "n": 113,
+   "yes_rate": 0.035398230088495575,
+   "ci90_brier": [
+    0.019792248346482303,
+    0.0568007737049236
+   ]
+  },
+  "raw": {
+   "brier": 0.17682205882352942,
+   "log": 0.5519727724848855,
+   "n": 68,
+   "yes_rate": 0.19117647058823528,
+   "ci90_brier": [
+    0.12475703984287316,
+    0.24504453283996297
+   ]
+  },
+  "worsey_base_rate_only_events_not_scored": 32
+ },
+ "moves_ranges": {
+  "worsey": {
+   "interval_score": 9814.114190597105,
+   "coverage_90": 1.0,
+   "median_middle_error": 709.4577393798089,
+   "n": 9,
+   "ci90_interval_score": [
+    7756.369871259958,
+    11829.765408593243
+   ]
+  },
+  "raw": {
+   "interval_score": 31695.765814611725,
+   "coverage_90": 0.38461538461538464,
+   "median_middle_error": 3326.5335593744203,
+   "n": 13,
+   "ci90_interval_score": [
+    18529.6574437698,
+    45713.17253851581
+   ]
+  },
+  "floor": {
+   "interval_score": 6426.5399269539375,
+   "coverage_90": 0.9545454545454546,
+   "median_middle_error": 495.68040263363616,
+   "n": 22,
+   "ci90_interval_score": [
+    4359.8448250056945,
+    9677.198183512157
+   ]
+  }
+ },
+ "traceability": {
+  "numbers_from_data": {
+   "worsey": "every number from code (grounding check, #28/#83/#182)",
+   "raw": "none: no data access"
+  },
+  "probability_error_vs_market": {
+   "worsey": {
+    "mean_abs": 0.0906759933804413,
+    "n": 114
+   },
+   "raw": {
+    "mean_abs": 0.2575,
+    "n": 4
+   }
+  }
+ }
+}

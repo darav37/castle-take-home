@@ -1,0 +1,237 @@
+{
+ "fit": [
+  "2019-01-01",
+  "2020-12-31"
+ ],
+ "test": [
+  "2021-01-01",
+  "2026-10-16"
+ ],
+ "sector_factors": {
+  "semis": {
+   "etf": "SMH",
+   "macro_r2_fit": 0.8261945770607952,
+   "residual_daily_sd": 0.009487057063210297
+  },
+  "software": {
+   "etf": "IGV",
+   "macro_r2_fit": 0.8993108699125891,
+   "residual_daily_sd": 0.006022431873791222
+  },
+  "internet": {
+   "etf": "FDN",
+   "macro_r2_fit": 0.9193869837504121,
+   "residual_daily_sd": 0.005047939692876375
+  },
+  "regional banks": {
+   "etf": "KRE",
+   "macro_r2_fit": 0.8947408171298461,
+   "residual_daily_sd": 0.009289798658025076
+  },
+  "insurers": {
+   "etf": "KIE",
+   "macro_r2_fit": 0.9174666048673666,
+   "residual_daily_sd": 0.0059475065929403825
+  },
+  "biotech": {
+   "etf": "XBI",
+   "macro_r2_fit": 0.755908717344386,
+   "residual_daily_sd": 0.010700992311476911
+  },
+  "medtech": {
+   "etf": "IHI",
+   "macro_r2_fit": 0.8935314829375103,
+   "residual_daily_sd": 0.00536433548473629
+  },
+  "energy stocks": {
+   "etf": "XLE",
+   "macro_r2_fit": 0.9451852087086987,
+   "residual_daily_sd": 0.006578132895839032
+  },
+  "industrials": {
+   "etf": "XLI",
+   "macro_r2_fit": 0.9287199721253385,
+   "residual_daily_sd": 0.00504983588227761
+  },
+  "defense": {
+   "etf": "ITA",
+   "macro_r2_fit": 0.814463227443085,
+   "residual_daily_sd": 0.009633961014440352
+  },
+  "homebuilders": {
+   "etf": "ITB",
+   "macro_r2_fit": 0.6747352305228039,
+   "residual_daily_sd": 0.014673439339202985
+  },
+  "transports": {
+   "etf": "IYT",
+   "macro_r2_fit": 0.8805461908498425,
+   "residual_daily_sd": 0.006788423197049976
+  },
+  "consumer discretionary": {
+   "etf": "XLY",
+   "macro_r2_fit": 0.9303589334356541,
+   "residual_daily_sd": 0.0042874238860816346
+  },
+  "retail": {
+   "etf": "XRT",
+   "macro_r2_fit": 0.8336554117001893,
+   "residual_daily_sd": 0.008149237654064586
+  },
+  "staples": {
+   "etf": "XLP",
+   "macro_r2_fit": 0.8644988102386276,
+   "residual_daily_sd": 0.0048854258964967255
+  },
+  "utilities": {
+   "etf": "XLU",
+   "macro_r2_fit": 0.8641900669527061,
+   "residual_daily_sd": 0.006578132895839031
+  },
+  "real estate": {
+   "etf": "IYR",
+   "macro_r2_fit": 0.8303860706926534,
+   "residual_daily_sd": 0.007813283491621166
+  },
+  "materials": {
+   "etf": "XLB",
+   "macro_r2_fit": 0.8782730544847538,
+   "residual_daily_sd": 0.006409188705031705
+  },
+  "metals & mining": {
+   "etf": "XME",
+   "macro_r2_fit": 0.8139925857705514,
+   "residual_daily_sd": 0.010520209273685237
+  }
+ },
+ "stock": {
+  "names": 456,
+  "median_r2_macro": 0.24224194658838838,
+  "median_r2_macro_sectors": 0.30977568153057683,
+  "median_gain": 0.05714526254877711,
+  "share_improved": 0.6907894736842105,
+  "p25_gain": -0.014949294788001416,
+  "p75_gain": 0.15078224246460728,
+  "best_one_sector": {
+   "median_r2": 0.3331005122086905,
+   "median_gain": 0.062491458573955605,
+   "share_improved": 0.6513157894736842,
+   "share_worse": 0.09210526315789473,
+   "share_with_a_sector": 0.7456140350877193
+  }
+ },
+ "etf": {
+  "names": 77,
+  "median_r2_macro": 0.61022976436919,
+  "median_r2_macro_sectors": 0.6144695938393487,
+  "median_gain": 0.0,
+  "share_improved": 0.4805194805194805,
+  "p25_gain": -0.0313842493264167,
+  "p75_gain": 0.036441657018266405,
+  "best_one_sector": {
+   "median_r2": 0.6233182736445936,
+   "median_gain": 0.0,
+   "share_improved": 0.16883116883116883,
+   "share_worse": 0.03896103896103896,
+   "share_with_a_sector": 0.2077922077922078
+  }
+ },
+ "stock_by_sector": {
+  "Communication Services": {
+   "n": 13,
+   "r2_macro": 0.14,
+   "r2_macro_sectors": 0.113,
+   "gain": -0.002,
+   "r2_best_one": 0.14,
+   "gain_best_one": 0.0
+  },
+  "Consumer Discretionary": {
+   "n": 35,
+   "r2_macro": 0.156,
+   "r2_macro_sectors": 0.198,
+   "gain": -0.001,
+   "r2_best_one": 0.223,
+   "gain_best_one": 0.03
+  },
+  "Consumer Staples": {
+   "n": 26,
+   "r2_macro": 0.069,
+   "r2_macro_sectors": 0.174,
+   "gain": 0.108,
+   "r2_best_one": 0.204,
+   "gain_best_one": 0.131
+  },
+  "Energy": {
+   "n": 14,
+   "r2_macro": 0.55,
+   "r2_macro_sectors": 0.509,
+   "gain": -0.005,
+   "r2_best_one": 0.566,
+   "gain_best_one": 0.022
+  },
+  "Financials": {
+   "n": 57,
+   "r2_macro": 0.415,
+   "r2_macro_sectors": 0.449,
+   "gain": 0.087,
+   "r2_best_one": 0.469,
+   "gain_best_one": 0.041
+  },
+  "Health Care": {
+   "n": 39,
+   "r2_macro": 0.189,
+   "r2_macro_sectors": 0.203,
+   "gain": -0.006,
+   "r2_best_one": 0.24,
+   "gain_best_one": 0.021
+  },
+  "Industrials": {
+   "n": 61,
+   "r2_macro": 0.256,
+   "r2_macro_sectors": 0.345,
+   "gain": 0.065,
+   "r2_best_one": 0.345,
+   "gain_best_one": 0.066
+  },
+  "Information Technology": {
+   "n": 97,
+   "r2_macro": 0.298,
+   "r2_macro_sectors": 0.319,
+   "gain": 0.046,
+   "r2_best_one": 0.338,
+   "gain_best_one": 0.031
+  },
+  "Materials": {
+   "n": 25,
+   "r2_macro": 0.275,
+   "r2_macro_sectors": 0.393,
+   "gain": 0.082,
+   "r2_best_one": 0.374,
+   "gain_best_one": 0.082
+  },
+  "Real Estate": {
+   "n": 19,
+   "r2_macro": 0.242,
+   "r2_macro_sectors": 0.312,
+   "gain": 0.238,
+   "r2_best_one": 0.364,
+   "gain_best_one": 0.273
+  },
+  "Utilities": {
+   "n": 34,
+   "r2_macro": 0.286,
+   "r2_macro_sectors": 0.477,
+   "gain": 0.162,
+   "r2_best_one": 0.524,
+   "gain_best_one": 0.226
+  },
+  "unknown": {
+   "n": 36,
+   "r2_macro": 0.191,
+   "r2_macro_sectors": 0.226,
+   "gain": 0.039,
+   "r2_best_one": 0.261,
+   "gain_best_one": 0.061
+  }
+ }
+}

@@ -1,0 +1,667 @@
+{
+ "questions": 29,
+ "scored": 29,
+ "yes_rate": 0.2413793103448276,
+ "brier": {
+  "A": 0.16686637931034484,
+  "B": 0.1719939655172414,
+  "C": 0.13900002144796472,
+  "D": 0.14337983620689657
+ },
+ "logloss": {
+  "A": 0.47220414821481965,
+  "B": 0.5006811920733113,
+  "C": 0.4262053796847991,
+  "D": 0.47204635291549185
+ },
+ "C_minus_A": {
+  "mean": -0.0278663578623801,
+  "ci": [
+   -0.06032230667444128,
+   -5.8253774145715854e-05
+  ]
+ },
+ "C_minus_B": {
+  "mean": -0.03299394406927665,
+  "ci": [
+   -0.07635924632961369,
+   0.012874267137619915
+  ]
+ },
+ "C_minus_D": {
+  "mean": -0.004379814758931824,
+  "ci": [
+   -0.10779327520892402,
+   0.09589508126977948
+  ]
+ },
+ "B_minus_A": {
+  "mean": 0.005127586206896552,
+  "ci": [
+   -0.031072586206896572,
+   0.03503370689655169
+  ]
+ },
+ "rows": [
+  {
+   "qid": "q0011",
+   "venue": "kalshi",
+   "T": "2026-09-01",
+   "question": "Will a Russia sanctions bill receive above 250 Yea votes in the House? Above 250",
+   "y": 1,
+   "category": "sanctions",
+   "base_rate": 0.10502447201048959,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.12,
+   "B": 0.08,
+   "C": 0.07000000000000002,
+   "C_agents": [
+    0.08,
+    0.07,
+    0.04
+   ],
+   "D": 0.6000000000000001,
+   "why_C": "l has long stalled and Trump is reluctant.\", \"why2\": \"If a vote did occur it would likely clear 250, but limited fall floor time before the midterms and the Sep 16 resolution date make one unlikely.\"}"
+  },
+  {
+   "qid": "q0052",
+   "venue": "polymarket",
+   "T": "2026-08-15",
+   "question": "Will Iran target Ukraine by September 30, 2026? September 30",
+   "y": 0,
+   "category": "conflict_war",
+   "base_rate": 0.6193037342922922,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.02,
+   "B": 0.02,
+   "C": 0.024507590476762917,
+   "C_agents": [
+    0.02,
+    null,
+    0.03
+   ],
+   "D": 0.037,
+   "why_C": "s never directly struck Ukraine; it is absorbed in its own war with the US/Israel and Gulf tensions.\", \"why2\": \"Russian use of Iranian-designed drones isn't Iranian-initiated, so it shouldn't count.\"}"
+  },
+  {
+   "qid": "q0076",
+   "venue": "polymarket",
+   "T": "2026-08-15",
+   "question": "Will there be between 40 and 60 average daily transits of the Strait of Hormuz on August 31? 40-60",
+   "y": 0,
+   "category": "supply_shock",
+   "base_rate": 0.2396470934379984,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.25,
+   "B": 0.12,
+   "C": 0.25,
+   "C_agents": [
+    0.2,
+    0.25,
+    0.25
+   ],
+   "D": 0.026,
+   "why_C": "d a partial recovery into 40-60 by Aug 31 is plausible but uncertain.\"}\n```\n\nCorrected to the required format:\n\n{\"p\": 0.2, \"why\": \"Strait declared closed since July 13 with ongoing attacks and a US bl"
+  },
+  {
+   "qid": "q0078",
+   "venue": "polymarket",
+   "T": "2026-07-15",
+   "question": "Israel closes its airspace by August 31? August 31",
+   "y": 0,
+   "category": "conflict_war",
+   "base_rate": 0.6270464395345448,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.17,
+   "B": 0.17,
+   "C": 0.10000000000000002,
+   "C_agents": [
+    0.1,
+    0.1,
+    0.1
+   ],
+   "D": 0.27,
+   "why_C": " appears over (Khamenei funeral, ceasefire phase); Lebanon/Houthi fire alone rarely triggers full airspace closure.\",\"why2\":\"Renewed Iran-Israel round within ~47 days possible but not the base case.\"}"
+  },
+  {
+   "qid": "q0087",
+   "venue": "kalshi",
+   "T": "2026-07-01",
+   "question": "Will Kansas have a maximum drought category of at least D4 during June 4\u2013July 30, 2026? Kansas",
+   "y": 0,
+   "category": "disaster",
+   "base_rate": 0.2742487438186182,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.12,
+   "B": 0.12,
+   "C": 0.12,
+   "C_agents": [
+    0.12,
+    0.2,
+    0.12
+   ],
+   "D": 0.41,
+   "why_C": "as is historically rare (2012, 2022-23 only); no evidence of current D4 coverage.\", \"alt\": \"June rains in Kansas typically ease drought; reaching D4 within the window would need rapid deterioration.\"}"
+  },
+  {
+   "qid": "q0109",
+   "venue": "kalshi",
+   "T": "2026-08-15",
+   "question": "Will Iran\u2019s average daily crude oil production for August 2026 be at least 2.8M bpd? At least 2.8M bpd",
+   "y": 0,
+   "category": "supply_shock",
+   "base_rate": 0.2479342360909721,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.65,
+   "B": 0.6,
+   "C": 0.35,
+   "C_agents": [
+    0.35,
+    0.35,
+    0.35
+   ],
+   "D": 0.15,
+   "why_C": "depressed Iranian output below the pre-war ~3.2M bpd; 2.8M is probably near the recent level, with downside risk.\", \"Also\": \"OPEC report timing near the Sept 10 deadline adds slight resolution risk.\"}"
+  },
+  {
+   "qid": "q0113",
+   "venue": "kalshi",
+   "T": "2026-08-15",
+   "question": "Will the highest daily number of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be at least 50 in Aug 2026? At least 50",
+   "y": 0,
+   "category": "supply_shock",
+   "base_rate": 0.16997658675713911,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.4,
+   "B": 0.45,
+   "C": 0.2,
+   "C_agents": [
+    0.2,
+    0.2,
+    0.1
+   ],
+   "D": 0.08,
+   "why_C": "ks; traffic well below the normal ~100/day, and 50 requires a major rebound.\", \"why2\": \"A US-Iran deal is reportedly close, which could lift traffic, but only ~16 days remain and PortWatch data lag.\"}"
+  },
+  {
+   "qid": "q0116",
+   "venue": "polymarket",
+   "T": "2026-08-01",
+   "question": "NATO downs another Russian drone by August 31? August 31",
+   "y": 1,
+   "category": "conflict_war",
+   "base_rate": 0.3636806980412517,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.35,
+   "B": 0.3,
+   "C": 0.44999999999999996,
+   "C_agents": [
+    0.45,
+    0.5,
+    0.42
+   ],
+   "D": 0.57,
+   "why_C": " Romanian F-16 shootdown (Jul 24) and Polish airspace incursions show rising frequency of NATO engagements.\", \"why2\": \"Actual shootdowns are still sporadic, so a month window is roughly a coin flip.\"}"
+  },
+  {
+   "qid": "q0138",
+   "venue": "kalshi",
+   "T": "2026-08-15",
+   "question": "When will COMPASS Pathways plc submit a NDA for COMP360 psilocybin to the FDA? before October",
+   "y": 0,
+   "category": "regulatory_court",
+   "base_rate": 0.3116271519496484,
+   "n_similar": 8,
+   "n_news": 6,
+   "A": 0.12,
+   "B": 0.2,
+   "C": 0.15,
+   "C_agents": [
+    0.25,
+    0.12,
+    0.15
+   ],
+   "D": 0.265,
+   "why_C": ": 0.25, \"why\": \"Compass guided to a rolling NDA submission with completion likely late 2026; timing before Oct 1 is possible but uncertain.\", \"why2\": \"No news confirming completion as of mid-August.\"}"
+  },
+  {
+   "qid": "q0151",
+   "venue": "kalshi",
+   "T": "2026-07-01",
+   "question": "Will Hernan be the first named hurricane in the Eastern Pacific in 2026? Hernan",
+   "y": 0,
+   "category": "disaster",
+   "base_rate": 0.2178849485619755,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.02,
+   "B": 0.02,
+   "C": 0.02,
+   "C_agents": [
+    0.01,
+    0.01,
+    0.02
+   ],
+   "D": 0.030000000000000002,
+   "why_C": "26 EPAC list; it would need to be the first hurricane after seven non-hurricane storms.\", \"why2\": \"The first EPAC hurricane typically comes from the 2nd-4th named storm, and the window ends July 24.\"}"
+  },
+  {
+   "qid": "q0168",
+   "venue": "kalshi",
+   "T": "2026-08-15",
+   "question": "Will United States of America v. James Brien Comey, Jr. have their case dismissed before Oct 1, 2026? Before Oct 1, 2026",
+   "y": 0,
+   "category": "regulatory_court",
+   "base_rate": 0.3116271519496484,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.0,
+   "B": 0.25,
+   "C": 0.17000000000000004,
+   "C_agents": [
+    0.15,
+    0.17,
+    0.17
+   ],
+   "D": 0.605,
+   "why_C": "a pending case (e.g., the 2026 threat indictment) with motions to dismiss possible.\\nShort ~47-day window; courts rarely dismiss on a specific schedule.\\nAmbiguity about which case adds some upside.\"}"
+  },
+  {
+   "qid": "q0179",
+   "venue": "kalshi",
+   "T": "2026-09-01",
+   "question": "Will it be reported by the U.S. District Court for the Northern District of California or the California Department of Justice that the California Attorney Gene",
+   "y": 1,
+   "category": "regulatory_court",
+   "base_rate": 0.14692184293769683,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.3,
+   "B": 0.2,
+   "C": 0.37999999999999995,
+   "C_agents": [
+    0.35,
+    0.4,
+    0.38
+   ],
+   "D": 0.65,
+   "why_C": " politically motivated, and trial, abandonment, or dismissal without a consent judgment are real alternatives.\\nTrial likely scheduled in the window; settlement could take a non-qualifying form.\"}\n```"
+  },
+  {
+   "qid": "q0187",
+   "venue": "polymarket",
+   "T": "2026-07-15",
+   "question": "Iran military action against a Gulf State on July 28? July 28",
+   "y": 0,
+   "category": "conflict_war",
+   "base_rate": 0.2499918702746372,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.12,
+   "B": 0.13,
+   "C": 0.25,
+   "C_agents": [
+    0.25,
+    0.25,
+    0.2
+   ],
+   "D": 0.23,
+   "why_C": "ualifying Iranian strike must directly hit a Gulf State on one specific day; strikes appear sporadic.\", \"why3\": \"Uncertainty about whether Iran is currently targeting Gulf territory versus shipping.\"}"
+  },
+  {
+   "qid": "q0206",
+   "venue": "polymarket",
+   "T": "2026-09-01",
+   "question": "Will there be between 25 and 30 average daily transits of the Strait of Hormuz on September 30? 25-30",
+   "y": 0,
+   "category": "supply_shock",
+   "base_rate": 0.31856992920924154,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.15,
+   "B": 0.08,
+   "C": 0.10000000000000002,
+   "C_agents": [
+    0.09,
+    0.1,
+    0.1
+   ],
+   "D": 0.0455,
+   "why_C": " traffic sharply depressed (about 7 ships/day per Kpler), attacks ongoing, reopening conditions unresolved.\", \"why2\": \"Narrow 25-30 bracket needs partial recovery; wide distribution across brackets.\"}"
+  },
+  {
+   "qid": "q0234",
+   "venue": "kalshi",
+   "T": "2026-07-15",
+   "question": "Will a crypto market structure bill becomes law before Oct 1, 2026? Before Oct 1, 2026",
+   "y": 0,
+   "category": "regulatory_court",
+   "base_rate": 0.4619081601764642,
+   "n_similar": 8,
+   "n_news": 3,
+   "A": 0.05,
+   "B": 0.06,
+   "C": 0.06000000000000001,
+   "C_agents": [
+    0.07,
+    0.06,
+    0.05
+   ],
+   "D": 0.23,
+   "why_C": " midterm calendar leave little time.\\nRepeated delays over stablecoin yield, DeFi, and ethics provisions; no sign of imminent floor action.\\nEnactment by Oct 1 would require unusually fast movement.\"}"
+  },
+  {
+   "qid": "q0241",
+   "venue": "kalshi",
+   "T": "2026-07-15",
+   "question": "Will the highest daily number of transit calls through the Strait of Hormuz as reported by the IMF PortWatch be at least 80 in Jul 2026? At least 80",
+   "y": 0,
+   "category": "supply_shock",
+   "base_rate": 0.19682132640142547,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.3,
+   "B": 0.4,
+   "C": 0.10000000000000002,
+   "C_agents": [
+    0.12,
+    0.08,
+    0.1
+   ],
+   "D": 0.06,
+   "why_C": " attacks on ships as late as Jul 7 and thousands of seafarers stranded, so traffic is likely well below the normal 100+/day.\\n80 is probably a high rung; a single-day spike is possible but unlikely.\"}"
+  },
+  {
+   "qid": "q0257",
+   "venue": "kalshi",
+   "T": "2026-08-15",
+   "question": "Will any New York Times reporter whose alleged offense arises from newsgathering, publication, source protection, or compliance with investigative demands conce",
+   "y": 0,
+   "category": "regulatory_court",
+   "base_rate": 0.12634392981817055,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.015,
+   "B": 0.015,
+   "C": 0.02,
+   "C_agents": [
+    0.01,
+    0.01,
+    0.01
+   ],
+   "D": 0.025,
+   "why_C": "obability event.\n\n{\"p\": 0.01, \"why\": \"Charging a NYT reporter over newsgathering is nearly unprecedented; leak probes target sources, not reporters. Window is only ~2 weeks, with no news of charges.\"}"
+  },
+  {
+   "qid": "q0263",
+   "venue": "kalshi",
+   "T": "2026-09-01",
+   "question": "Will the U.S. Department of Energy announce issuing a solicitation to exchange or sell crude oil from the Strategic Petroleum Reserve before Oct 1, 2026? Before",
+   "y": 1,
+   "category": "supply_shock",
+   "base_rate": 0.27225765794318435,
+   "n_similar": 8,
+   "n_news": 11,
+   "A": 0.3,
+   "B": 0.25,
+   "C": 0.5,
+   "C_agents": [
+    0.55,
+    0.5,
+    0.5
+   ],
+   "D": 0.095,
+   "why_C": "ventory strain makes SPR exchange/sale solicitations plausible.|Hurricane season adds exchange-request chances in September.|Unclear whether DOE release program is still active, so not near-certain.\"}"
+  },
+  {
+   "qid": "q0267",
+   "venue": "kalshi",
+   "T": "2026-09-01",
+   "question": "Will the President try to fire the Lisa Cook as member of the Board of Governors of the Federal Reserve System before Jan 1, 2027? Before Jan 1, 2027",
+   "y": 1,
+   "category": "regulatory_court",
+   "base_rate": 0.28939874950010436,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.85,
+   "B": 0.88,
+   "C": 0.8999999999999999,
+   "C_agents": [
+    0.93,
+    0.88,
+    0.9
+   ],
+   "D": 0.845,
+   "why_C": "rump already announced Cook's firing on Aug 25, 2025, which satisfies 'has tried to fire before Jan 1, 2027'.\", \"uncertainty\": \"Small risk the question intends a new attempt after the creation date.\"}"
+  },
+  {
+   "qid": "q0280",
+   "venue": "kalshi",
+   "T": "2026-08-15",
+   "question": "Will there be more than 150 tornadoes in August? Above 150",
+   "y": 0,
+   "category": "disaster",
+   "base_rate": 0.16610170759799792,
+   "n_similar": 8,
+   "n_news": 3,
+   "A": 0.06,
+   "B": 0.06,
+   "C": 0.05000000000000001,
+   "C_agents": [
+    0.04,
+    0.07,
+    0.05
+   ],
+   "D": 0.11,
+   "why_C": "count is ~70-100; exceeding 150 preliminary is very rare.\\nNo sign of a major tropical-driven outbreak so far in the news.\\nHalf the month remains, but the threshold would need an exceptional surge.\"}"
+  },
+  {
+   "qid": "q0282",
+   "venue": "polymarket",
+   "T": "2026-09-01",
+   "question": "US imposes new sanctions on China by September 30?",
+   "y": 0,
+   "category": "sanctions",
+   "base_rate": 0.19901880429989705,
+   "n_similar": 8,
+   "n_news": 13,
+   "A": 0.8,
+   "B": 0.5,
+   "C": 0.8,
+   "C_agents": [
+    0.85,
+    0.8,
+    0.77
+   ],
+   "D": 0.165,
+   "why_C": "ns and Iran-oil-related designations of Chinese firms are likely within the month.\", \"why3\": \"Some risk the resolver requires sanctions on China as a state, or that a trade truce suppresses actions.\"}"
+  },
+  {
+   "qid": "q0284",
+   "venue": "kalshi",
+   "T": "2026-08-01",
+   "question": "Will legislation that specifically targets Russia by (i) mandating or authorizing primary sanctions on Russia or key Russian sectors, (ii) imposing secondary pe",
+   "y": 0,
+   "category": "sanctions",
+   "base_rate": 0.20492200998626453,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.04,
+   "B": 0.04,
+   "C": 0.2,
+   "C_agents": [
+    0.2,
+    0.3,
+    0.2
+   ],
+   "D": 0.08,
+   "why_C": "ure.\", \"mid\": \"Unclear whether the House already passed it; Trump historically hesitant, though a veto-proof margin exists.\", \"end\": \"Short window makes enactment before Sep 1 unlikely but possible.\"}"
+  },
+  {
+   "qid": "q0315",
+   "venue": "kalshi",
+   "T": "2026-07-01",
+   "question": "Will Lala be the first named hurricane in the Central Pacific in 2026? Lala",
+   "y": 0,
+   "category": "disaster",
+   "base_rate": 0.24255792955126387,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.02,
+   "B": 0.03,
+   "C": 0.040000000000000015,
+   "C_agents": [
+    0.04,
+    0.05,
+    0.03
+   ],
+   "D": 0.95,
+   "why_C": "ion date is July 27.\n\n{\"p\": 0.04, \"why\": \"Lala is the next Central Pacific name, but a Central Pacific hurricane by July 27 is rare.\", \"why2\": \"El Ni\u00f1o raises odds slightly, but the window is short.\"}"
+  },
+  {
+   "qid": "q0327",
+   "venue": "kalshi",
+   "T": "2026-08-01",
+   "question": "When will FDA announce Reclassification of BPC-157 to Category 1 of the Bulk Drug Substances List? Before September",
+   "y": 0,
+   "category": "regulatory_court",
+   "base_rate": 0.21831338736333106,
+   "n_similar": 8,
+   "n_news": 6,
+   "A": 0.1,
+   "B": 0.07,
+   "C": 0.08000000000000002,
+   "C_agents": [
+    0.12,
+    0.07,
+    0.08
+   ],
+   "D": 0.21,
+   "why_C": " sits in Category 2; political pressure for peptide reclassification exists, but FDA process (PCAC review, notices) is slow.\", \"why2\": \"One-month window is short; no confirmed imminent announcement.\"}"
+  },
+  {
+   "qid": "q0348",
+   "venue": "polymarket",
+   "T": "2026-07-15",
+   "question": "Will Russia enter Orikhiv by September 30? September 30",
+   "y": 1,
+   "category": "conflict_war",
+   "base_rate": 0.3636806980412517,
+   "n_similar": 8,
+   "n_news": 10,
+   "A": 0.25,
+   "B": 0.15,
+   "C": 0.2,
+   "C_agents": [
+    0.2,
+    0.12,
+    0.25
+   ],
+   "D": 0.145,
+   "why_C": "sed toward Orikhiv for months, but progress there has been slow and the window to Aug 6 is short.\",\"why2\":\"ISW shading inside the town must persist through another daily update, which adds friction.\"}"
+  },
+  {
+   "qid": "q0350",
+   "venue": "polymarket",
+   "T": "2026-07-01",
+   "question": "Will Russia enter Svitle by September 30? September 30",
+   "y": 1,
+   "category": "conflict_war",
+   "base_rate": 0.3636806980412517,
+   "n_similar": 8,
+   "n_news": 14,
+   "A": 0.3,
+   "B": 0.3,
+   "C": 0.30000000000000004,
+   "C_agents": [
+    0.22,
+    0.35,
+    0.3
+   ],
+   "D": 0.485,
+   "why_C": "p\":0.22,\"why\":\"Svitle lies on the Dobropillia/Pokrovsk axis; market implies not yet ISW-shaded.\\nAdvance pace there is moderate and the window is short.\\nNo news indicating an imminent breakthrough.\"}"
+  },
+  {
+   "qid": "q0367",
+   "venue": "kalshi",
+   "T": "2026-09-01",
+   "question": "Will a human case of Ebola disease in Nigeria be reported before Oct 1, 2026? Nigeria",
+   "y": 0,
+   "category": "health_pandemic",
+   "base_rate": 0.21207798864479444,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.02,
+   "B": 0.02,
+   "C": 0.02,
+   "C_agents": [
+    0.02,
+    0.01,
+    0.012
+   ],
+   "D": 0.08,
+   "why_C": "2, \"why\": \"Ongoing Ebola outbreak is in DRC; Uganda's was declared over on Aug 27, with no sign of spread to Nigeria.\", \"why2\": \"Imported cases to Nigeria are rare, and the window is only one month.\"}"
+  },
+  {
+   "qid": "q0368",
+   "venue": "polymarket",
+   "T": "2026-08-15",
+   "question": "Will at least 60 ships transit the Strait of Hormuz on any day by August 31, 2026? 60+",
+   "y": 0,
+   "category": "supply_shock",
+   "base_rate": 0.2396470934379984,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.3,
+   "B": 0.2,
+   "C": 0.08000000000000002,
+   "C_agents": [
+    0.1,
+    0.08,
+    0.08
+   ],
+   "D": 0.05,
+   "why_C": "oing Iran war, with ships still being attacked; 60/day is likely far above current levels.\", \"why2\": \"A deal being 'close' has recurred; even if signed, recovery to 60+ within two weeks is unlikely.\"}"
+  },
+  {
+   "qid": "q0380",
+   "venue": "kalshi",
+   "T": "2026-07-15",
+   "question": "Will Donald Trump issue any executive action on establishing or directing a mandatory federal review, evaluation, or approval process that at least one class of",
+   "y": 0,
+   "category": "regulatory_court",
+   "base_rate": 0.31707474589010176,
+   "n_similar": 8,
+   "n_news": 15,
+   "A": 0.09,
+   "B": 0.1,
+   "C": 0.06000000000000001,
+   "C_agents": [
+    0.06,
+    0.07,
+    0.06
+   ],
+   "D": 0.17,
+   "why_C": "\"p\": 0.06, \"why\": \"Administration is deregulatory; any frontier-model vetting EO would likely be voluntary, not mandatory.\", \"why2\": \"No sign of imminent action in recent news; about 47 days remain.\"}"
+  }
+ ],
+ "llm": {
+  "job": "part2_pilot",
+  "model": "claude-sonnet-5-5",
+  "calls": 0,
+  "cache_hits": 153,
+  "est_usd": 0.0,
+  "caps": {
+   "calls": 300,
+   "usd": 5.0
+  }
+ }
+}

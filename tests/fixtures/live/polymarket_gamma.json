@@ -1,0 +1,33 @@
+[
+ {
+  "id": "601819",
+  "question": "Will Luiz In\u00e1cio Lula da Silva win the 2026 Brazilian presidential election?",
+  "conditionId": "0xdf8e2dc5860027decbe6164555c3c1c9645c3bd33e16b9dc57ca87125047d4a8",
+  "slug": "will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election",
+  "resolutionSource": "https://dadosabertos.tse.jus.br/",
+  "endDate": "2026-10-05T03:59:00Z",
+  "liquidity": "448005.5674",
+  "startDate": "2025-09-18T20:07:59.727557Z",
+  "image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election-reTil6nEVB1J.jpg",
+  "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-luiz-incio-lula-da-silva-win-the-2026-brazilian-presidential-election-reTil6nEVB1J.jpg",
+  "description": "A presidential election is scheduled to take place in Brazil on October 4, 2026.\n\nThis market will resolve according to the listed candidate that wins this election.\n\nThis market includes any potential second round. If the result of this el\u2026",
+  "outcomes": "[\"Yes\", \"No\"]",
+  "...": "81 more keys"
+ },
+ {
+  "id": "2589812",
+  "question": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+  "conditionId": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
+  "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+  "resolutionSource": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "endDate": "2026-10-29T03:59:00Z",
+  "liquidity": "267711.3927",
+  "startDate": "2026-06-18T00:02:51.727205Z",
+  "description": "The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal funds range are made by the Federal Open Market Committee (FOMC) meetings.\n\nThis market will resolve\u2026",
+  "outcomes": "[\"Yes\", \"No\"]",
+  "outcomePrices": "[\"0.845\", \"0.155\"]",
+  "volume": "12990524.740840998",
+  "...": "77 more keys"
+ },
+ "... 18 more"
+]

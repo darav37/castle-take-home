@@ -1,0 +1,4 @@
+load demo portfolio "tech_heavy"
+how concentrated am I?
+what would a big tariff escalation do to me?
+how would I hedge that?
